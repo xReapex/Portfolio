@@ -1,0 +1,23 @@
+.carousel-discord{
+    margin-top: 10%;
+}
+
+.about-gauche{
+    text-align: left;
+    display: inline-block;
+}
+.about-droit{
+    text-align: right;
+    display: inline-block;
+}
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+}
+
+.d-block {
+    border-radius: 10px
+}

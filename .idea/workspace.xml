@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/1200x1800.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/discord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,13 +166,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\portfolio\public" />
       <recent name="C:\wamp64\www\portfolio\public\img" />
+      <recent name="C:\wamp64\www\portfolio\public" />
       <recent name="C:\wamp64\www\portfolio\img" />
       <recent name="C:\wamp64\www\portfolio\src\Controller\home" />
       <recent name="C:\wamp64\www\portfolio\templates\home" />
@@ -186,12 +194,26 @@
       <workItem from="1599936700150" duration="570000" />
       <workItem from="1599980617507" duration="34000" />
       <workItem from="1599980664413" duration="679000" />
-      <workItem from="1599986195985" duration="15061000" />
+      <workItem from="1599986195985" duration="21096000" />
+      <workItem from="1600013646925" duration="485000" />
+      <workItem from="1600098114726" duration="8385000" />
     </task>
+    <task id="LOCAL-00001" summary="Update">
+      <created>1600004883347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600004883347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599935071077">
@@ -202,14 +224,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1599991592707" />
+    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1600010184065">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600010184065" />
     <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599936065920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599936065920" />
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1600004882803">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600004882803" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1599987558692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599987558692" />
+    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600010244210">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1600010244210" />
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599996117910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

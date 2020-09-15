@@ -2,7 +2,10 @@
 
 namespace App\Controller\project;
 
+use App\Repository\DiscordProjectImageRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ProjectController extends AbstractController

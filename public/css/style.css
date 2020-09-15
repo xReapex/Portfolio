@@ -1,12 +1,12 @@
-.carousel-discord{
+.carousel-discord {
     margin-top: 10%;
 }
 
-.about-gauche{
+.about-gauche {
     text-align: left;
     display: inline-block;
 }
-.about-droit{
+.about-droit {
     text-align: right;
     display: inline-block;
 }
@@ -16,8 +16,9 @@
 
 .zoom:hover {
     transform: scale(1.03);
+
 }
 
-.d-block {
-    border-radius: 10px
+.zoom:hover .imgflou {
+    filter: blur(3px)
 }

@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1200x1800.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/discord.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,6 +150,8 @@
       <path value="$PROJECT_DIR$/vendor/amphp/http-client" />
       <path value="$PROJECT_DIR$/vendor/amphp/http" />
       <path value="$PROJECT_DIR$/vendor/amphp/hpack" />
+      <path value="$PROJECT_DIR$/vendor/amphp/http-tunnel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hQEHlGYc7TEjD4sPvpm6nkekyp" />
@@ -165,9 +167,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v14.10.1/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -236,10 +239,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600004882803" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1599987558692">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog" timestamp="1600249031908">
+      <screen x="0" y="196" width="1920" height="1004" />
+    </state>
+    <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600249031908" />
+    <state width="1874" height="327" key="GridCell.Tab.0.bottom" timestamp="1600259170054">
+      <screen x="0" y="196" width="1920" height="1004" />
+    </state>
+    <state width="1874" height="327" key="GridCell.Tab.0.bottom/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
+    <state width="1874" height="327" key="GridCell.Tab.0.center" timestamp="1600259170054">
+      <screen x="0" y="196" width="1920" height="1004" />
+    </state>
+    <state width="1874" height="327" key="GridCell.Tab.0.center/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
+    <state width="1874" height="327" key="GridCell.Tab.0.left" timestamp="1600259170054">
+      <screen x="0" y="196" width="1920" height="1004" />
+    </state>
+    <state width="1874" height="327" key="GridCell.Tab.0.left/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
+    <state width="1874" height="327" key="GridCell.Tab.0.right" timestamp="1600259170054">
+      <screen x="0" y="196" width="1920" height="1004" />
+    </state>
+    <state width="1874" height="327" key="GridCell.Tab.0.right/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
+    <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog" timestamp="1600242528645">
+      <screen x="0" y="196" width="1920" height="1004" />
+    </state>
+    <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600242528645" />
+    <state x="461" y="355" key="SettingsEditor" timestamp="1600259164113">
+      <screen x="0" y="196" width="1920" height="1004" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599987558692" />
+    <state x="461" y="355" key="SettingsEditor/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259164113" />
     <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600010244210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

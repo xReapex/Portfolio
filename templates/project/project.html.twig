@@ -5,40 +5,47 @@
 {% block body %}
 
     <div class="container" style="margin-bottom: 3%">
+        <div class="centre">
+            <div>
+                <h2>Portfolio de projets</h2>
+                <p>Bienvenue sur ma page qui regroupe tous mes projets répértorié à ce jour. Vous pouvez soit accèder directement à mon<a href="https://gitlab.com/reapex" class="text-warning"> GitLab</a> ou bien parcourir les différents thèmes de mes projets. Vous pouvez par exemple commencer à aller voir mes <a href="#projet-formation" class="text-info">projets de formation</a>, c'est à dire les projets qui m'ont permit de me former dans diverses technologies...</p>
+            </div>
+        </div>
 
-        <center>
-            <h1 style="margin-top: 5%" class="text-info effect-underline">Projets</h1><br><br>
-        </center>
-
+        <div id="projet-formation">
+            <center><h1>Projets de formation.</h1></center><br><br>
+        </div>
         <div class="row">
-            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 zoom">
+            <div class="zoom col-sm-4">
                 <div class="card border-primary" style="width: 18rem;">
                     <img src="{{ asset('img/test.png') }}" class="card-img-top imgflou" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><span class="badge badge-pill badge-secondary"><i class="fab fa-symfony"></i> Symfony</span> <span class="badge badge-pill badge-info"><i class="fab fa-php"></i> PHP</span><br><span class="badge badge-pill badge-success"><i class="fas fa-code"></i> Twig & CSS</span> <span class="badge badge-pill badge-warning"> <i class="fab fa-js-square"></i> JavaScript</span></h5>
-                        <p class="card-text">Ce site a été réalisé en 2020 lors de ma formation en PHP Symfony. Vous pouvez y retrouver un catalogue d'avis sur divers films...</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">{% for langue in projet1 %} {{ langue | raw }} {% endfor %}</h5>
+                        <p class="card-text">Ce projet est le site que vous visitez actuellement... Codé en Symfony 5.</p>
+                            <a href="#" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>
                             <a href="https://gitlab.com/reapex/site_symfony5" class="btn btn-warning"><i class="fab fa-gitlab"></i> Gitlab</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 zoom">
+            <div class="zoom col-sm-4">
                 <div class="card border-primary" style="width: 18rem;">
                     <img src="{{ asset('img/test.png') }}" class="card-img-top imgflou" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">{% for langue in projet2 %} {{ langue | raw }} {% endfor %}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>
+                        <a href="https://gitlab.com/reapex/site_symfony5" class="btn btn-warning"><i class="fab fa-gitlab"></i> Gitlab</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4 zoom">
+            <div class=" zoom col-sm-4">
                 <div class="card border-primary" style="width: 18rem;">
                     <img src="{{ asset('img/test.png') }}" class="card-img-top imgflou" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">{% for langue in projet3 %} {{ langue | raw }} {% endfor %}</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>
+                        <a href="https://gitlab.com/reapex/site_symfony5" class="btn btn-warning"><i class="fab fa-gitlab"></i> Gitlab</a>
                     </div>
                 </div>
             </div>

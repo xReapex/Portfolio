@@ -2,7 +2,7 @@
 
 namespace App\Controller\project;
 
-use App\Repository\DiscordProjectImageRepository;
+use App\Services\ProjectManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,9 +12,19 @@ class ProjectController extends AbstractController
 {
     /**
      * @Route("/project", name="app.project")
+     * @param ProjectManager $manager
+     * @return Response
      */
-    public function showProjects()
+    public function showProjects(ProjectManager $manager)
     {
-        return $this->render('project/project.html.twig');
+        $projet1 = $manager->getLanguage(21095567); //site actuel
+        $projet2 = $manager->getLanguage(19872619); //site film
+        $projet3 = $manager->getLanguage(20577993); //saway
+
+        return $this->render('project/project.html.twig', [
+            "projet1" => $projet1,
+            "projet2" => $projet2,
+            "projet3" => $projet3
+        ]);
     }
 }

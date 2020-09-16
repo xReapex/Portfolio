@@ -1,7 +1,3 @@
-.carousel-discord {
-    margin-top: 10%;
-}
-
 .about-gauche {
     text-align: left;
     display: inline-block;
@@ -21,4 +17,11 @@
 
 .zoom:hover .imgflou {
     filter: blur(3px)
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

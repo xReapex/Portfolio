@@ -1,3 +1,36 @@
-body {
-    background-color: lightgray;
+.about-gauche {
+    text-align: left;
+    display: inline-block;
+}
+.about-droit {
+    text-align: right;
+    display: inline-block;
+}
+
+.about-centre {
+    display: inline-block;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+
+}
+
+.zoom:hover .imgflou {
+    filter: blur(3px)
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: inline-block;
 }

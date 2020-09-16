@@ -18,7 +18,6 @@ class ProjectManager
         $languages = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id/languages")->toArray();
         $res = [];
         $i = 0;
-        dump($languages);
 
         foreach ($languages as $language => $pourcentage)
         {

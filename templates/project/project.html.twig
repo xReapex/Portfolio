@@ -12,10 +12,12 @@
             </div>
         </div>
 
+        <div class="centre"></div>
         <a id="projet-formation">
             <div style="height: 25vh"></div>
             <center><h1 >Projets de formation.</h1></center><br><br>
         </a>
+
         <div class="row">
             <div class="zoom col-sm-4">
                 <div class="card border-primary" style="width: 18rem; height: 430px">
@@ -51,9 +53,53 @@
                 </div>
             </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <!-------------------------------------------------------->
+
+        <div class="centre"></div>
+        <a id="projet-perso">
+            <div style="height: 25vh"></div>
+            <center><h1 >Projets personnels.</h1></center><br><br>
+        </a>
+
+        <div class="row">
+            <div class="zoom col-sm-4">
+                <div class="card border-primary" style="width: 18rem; height: 430px">
+                    <img src="{{ asset('img/img2.png') }}" class="card-img-top imgflou" alt="...">
+                    <div class="card-body">
+                        <h8 class="card-title">{% for langue in projet1 %} {{ langue | raw }} {% endfor %}</h8>
+                        <p class="card-text">Ce projet est le site que vous visitez actuellement... Il est utilisé comme <font class="text-primary">Portfolio</font>. Codé avec <i class="fab fa-symfony"></i> Symfony 5.</p>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>
+                        <a href="https://gitlab.com/reapex/portfolio_website" class="btn btn-warning"><i class="fab fa-gitlab"></i> Gitlab</a>
+                    </div>
+                </div>
+            </div>
+            <div class="zoom col-sm-4">
+                <div class="card border-primary" style="width: 18rem; height: 430px">
+                    <img src="{{ asset('img/img3.png') }}" class="card-img-top imgflou" alt="...">
+                    <div class="card-body">
+                        <h8 class="card-title">{% for langue in projet2 %} {{ langue | raw }} {% endfor %}</h8>
+                        <p class="card-text">Ce site m'a servit de projet pour augmenter mes compétences en <i class="fab fa-symfony"></i> Symfony 5, c'est un catalogue complet de films.</p>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>
+                        <a href="https://gitlab.com/reapex/site_symfony5" class="btn btn-warning"><i class="fab fa-gitlab"></i> Gitlab</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" zoom col-sm-4">
+                <div class="card border-primary" style="width: 18rem; height: 430px">
+                    <img src="{{ asset('img/img2.png') }}" class="card-img-top imgflou" alt="...">
+                    <div class="card-body">
+                        <h8 class="card-title">{% for langue in projet3 %} {{ langue | raw }} {% endfor %}</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>
+                        <a href="https://gitlab.com/reapex/site_symfony5" class="btn btn-warning"><i class="fab fa-gitlab"></i> Gitlab</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#top" type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-link"></i></a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-
-
 
 {% endblock %}

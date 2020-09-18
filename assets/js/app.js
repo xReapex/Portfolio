@@ -7,8 +7,17 @@
 
 // any CSS you import will output into a single css file (app.css in this case)
 import '../css/app.css';
-
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
-// import $ from 'jquery';
+import $ from 'jquery';
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
+
+$('a').click(function (){
+    var target = $(this.getAttribute('href'));
+    if(target.length){
+        event.preventDefault()
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 2000);
+    }
+});

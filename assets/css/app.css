@@ -2,6 +2,7 @@
     text-align: left;
     display: inline-block;
 }
+
 .about-droit {
     text-align: right;
     display: inline-block;
@@ -36,5 +37,17 @@
     justify-content: center;
     align-items: center;
     height: 80vh;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1;
 }
 

@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +200,7 @@
       <workItem from="1600327834325" duration="6175000" />
       <workItem from="1600334543855" duration="14642000" />
       <workItem from="1600412335793" duration="80000" />
-      <workItem from="1600417882626" duration="6952000" />
+      <workItem from="1600417882626" duration="17037000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -241,7 +237,35 @@
       <option name="project" value="LOCAL" />
       <updated>1600352290846</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add effects">
+      <created>1600427517427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600427517427</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ajout Python">
+      <created>1600430737190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600430737190</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Remove commentaires">
+      <created>1600430762290</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600430762290</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ajouts effets nav-item">
+      <created>1600430781378</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600430781378</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +274,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webpack" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Add effects" />
+    <MESSAGE value="Ajout Python" />
+    <MESSAGE value="Remove commentaires" />
+    <MESSAGE value="Ajouts effets nav-item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajouts effets nav-item" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599935071077">
@@ -269,11 +297,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599936065920" />
-    <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2" timestamp="1600352290753">
-      <screen x="0" y="196" width="1920" height="1004" />
+    <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2" timestamp="1600430781209">
+      <screen x="1920" y="169" width="1366" height="768" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600004882803" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
+    <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
     <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog" timestamp="1600249031908">
       <screen x="0" y="196" width="1920" height="1004" />
     </state>

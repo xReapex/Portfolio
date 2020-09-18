@@ -13,7 +13,7 @@ class ProjectManager
         $this->http = HttpClient::create();
     }
 
-    public function getLanguage($gitlab_project_id)
+    private function getLanguages($gitlab_project_id)
     {
         $languages = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id/languages")->toArray();
         $res = [];
@@ -42,10 +42,51 @@ class ProjectManager
                 case 'python':
                     $res[$i] = '<span class="badge badge-pill badge-primary"><i class="fab fa-python"></i> ' .$pourcentage. '%</span>';
                     break;
+
+                case 'tsql':
+                    $res[$i] = '<span class="badge badge-pill badge-light"><i class="fas fa-database"></i> ' .$pourcentage. '%</span>';
+                    break;
+
+                case 'java':
+                    $res[$i] = '<span class="badge badge-pill badge-success"><i class="fab fa-java"></i> ' .$pourcentage. '%</span>';
+                    break;
             }
             $i++;
         }
         return $res;
 
+    }
+
+    private function getDescription($gitlab_project_id)
+    {
+        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['description'];
+    }
+
+    private function getProjectUrl($gitlab_project_id)
+    {
+        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['web_url'];
+    }
+
+    private function getReadme($gitlab_project_id)
+    {
+        $response = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['readme_url'];
+        if ($response == null)
+        {
+            return '<a class="btn btn-primary disabled"><i class="fab fa-readme"></i> README.md</a>';
+        }
+        else{
+            return '<a href="'.$response.'" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>';
+        }
+    }
+
+    public function getProject($gitlab_project_id)
+    {
+        $object = [];
+        $object['languages'] = $this->getLanguages($gitlab_project_id);
+        $object['description'] = $this->getDescription($gitlab_project_id);
+        $object['web_url'] = $this->getProjectUrl($gitlab_project_id);
+        $object['readme_url'] = $this->getReadme($gitlab_project_id);
+
+        return $object;
     }
 }

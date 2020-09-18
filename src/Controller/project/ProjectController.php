@@ -17,9 +17,9 @@ class ProjectController extends AbstractController
      */
     public function showProjects(ProjectManager $manager)
     {
-        $projet1 = $manager->getLanguage(21095567); //site actuel
-        $projet2 = $manager->getLanguage(19872619); //site film
-        $projet3 = $manager->getLanguage(20577993); //saway
+        $projet1 = $manager->getLanguage(21095567);
+        $projet2 = $manager->getLanguage(19872619);
+        $projet3 = $manager->getLanguage(20577993);
 
         return $this->render('project/project.html.twig', [
             "projet1" => $projet1,

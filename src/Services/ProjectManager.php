@@ -38,6 +38,10 @@ class ProjectManager
                 case 'javascript':
                     $res[$i] = '<span class="badge badge-pill badge-warning"><i class="fab fa-js-square"></i> ' .$pourcentage. '%</span>';
                     break;
+
+                case 'python':
+                    $res[$i] = '<span class="badge badge-pill badge-primary"><i class="fab fa-python"></i> ' .$pourcentage. '%</span>';
+                    break;
             }
             $i++;
         }

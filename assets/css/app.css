@@ -51,3 +51,25 @@
     z-index: 1;
 }
 
+nav {
+    display: inline-block;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.underline-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.underline-link:hover::after{
+    width: 100%;
+    transition: width .3s;
+}

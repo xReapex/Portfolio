@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/home/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,22 +170,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v14.10.1/bin/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\portfolio_website\public\img" />
       <recent name="C:\wamp64\www\portfolio\public\img" />
       <recent name="C:\wamp64\www\portfolio\public" />
       <recent name="C:\wamp64\www\portfolio\img" />
       <recent name="C:\wamp64\www\portfolio\src\Controller\home" />
-      <recent name="C:\wamp64\www\portfolio\templates\home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -201,6 +212,19 @@
       <workItem from="1600334543855" duration="14642000" />
       <workItem from="1600412335793" duration="80000" />
       <workItem from="1600417882626" duration="17037000" />
+      <workItem from="1600443280242" duration="1000000" />
+      <workItem from="1600449611964" duration="1027000" />
+      <workItem from="1600453065518" duration="1448000" />
+      <workItem from="1600505373878" duration="5756000" />
+      <workItem from="1600515294725" duration="132000" />
+      <workItem from="1600515687023" duration="531000" />
+      <workItem from="1600525408987" duration="11202000" />
+      <workItem from="1600538997625" duration="414000" />
+      <workItem from="1600584677939" duration="6152000" />
+      <workItem from="1600595469885" duration="989000" />
+      <workItem from="1600608002362" duration="92000" />
+      <workItem from="1600616641318" duration="637000" />
+      <workItem from="1600665554133" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -265,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600430781378</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update">
+      <created>1600616665810</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600616665810</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,12 +304,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webpack" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Add effects" />
     <MESSAGE value="Ajout Python" />
     <MESSAGE value="Remove commentaires" />
     <MESSAGE value="Ajouts effets nav-item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajouts effets nav-item" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599935071077">
@@ -297,10 +328,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599936065920" />
-    <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2" timestamp="1600430781209">
-      <screen x="1920" y="169" width="1366" height="768" />
+    <state x="585" y="88" width="912" height="692" key="CommitChangelistDialog2" timestamp="1600616665067">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600004882803" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600616665067" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
     <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog" timestamp="1600249031908">
@@ -336,10 +367,14 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599987558692" />
     <state x="461" y="355" key="SettingsEditor/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259164113" />
-    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600010244210">
+    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1600525657486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1600010244210" />
+    <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600525657486" />
+    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600527298075">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1600527298075" />
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599996117910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

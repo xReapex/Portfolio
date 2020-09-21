@@ -32,13 +32,6 @@
     height: 90vh;
 }
 
-.newsletter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
 .btn-circle.btn-lg {
     width: 50px;
     height: 50px;

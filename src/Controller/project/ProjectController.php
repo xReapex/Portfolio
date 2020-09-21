@@ -29,20 +29,20 @@ class ProjectController extends AbstractController
         $projet3 = $manager->getProject($array[$rand_formation[2]]);
 
         //Projet personnels
-        /*$array = $IdManager->getPersonnalProjectID();
-        $rand_perso = array_rand($array, 3);
+        $array1 = $IdManager->getPersonnalProjectID();
+        $rand_perso = array_rand($array1, 3);
 
-        $projet_perso1 = $manager->getProject($array[$rand_perso[0]]);
-        $projet_perso2 = $manager->getProject($array[$rand_perso[1]]);
-        $projet_perso3 = $manager->getProject($array[$rand_perso[2]]);*/
+        $projet_perso1 = $manager->getProject($array1[$rand_perso[0]]);
+        $projet_perso2 = $manager->getProject($array1[$rand_perso[1]]);
+        $projet_perso3 = $manager->getProject($array1[$rand_perso[2]]);
 
         return $this->render('project/project.html.twig', [
             "projet1" => $projet1,
             "projet2" => $projet2,
             "projet3" => $projet3,
-            /*"projet4" => $projet_perso1,
+            "projet4" => $projet_perso1,
             "projet5" => $projet_perso2,
-            "projet6" => $projet_perso3*/
+            "projet6" => $projet_perso3
         ]);
     }
 }

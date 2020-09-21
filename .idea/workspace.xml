@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/img3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/home/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ProjectId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectId.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,6 +232,8 @@
       <workItem from="1600608002362" duration="92000" />
       <workItem from="1600616641318" duration="637000" />
       <workItem from="1600665554133" duration="302000" />
+      <workItem from="1600694842803" duration="888000" />
+      <workItem from="1600697165181" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -302,6 +311,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webpack" />
     <MESSAGE value="Add effects" />
@@ -312,10 +332,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599935071077">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600697228807">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599935071077" />
+    <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599991592707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -342,26 +363,31 @@
       <screen x="0" y="196" width="1920" height="1004" />
     </state>
     <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600412370803" />
-    <state width="1874" height="327" key="GridCell.Tab.0.bottom" timestamp="1600259170054">
-      <screen x="0" y="196" width="1920" height="1004" />
+    <state width="1802" height="209" key="GridCell.Tab.0.bottom" timestamp="1600695028102">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1874" height="327" key="GridCell.Tab.0.bottom/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1874" height="327" key="GridCell.Tab.0.center" timestamp="1600259170054">
-      <screen x="0" y="196" width="1920" height="1004" />
+    <state width="1802" height="209" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028102" />
+    <state width="1802" height="209" key="GridCell.Tab.0.center" timestamp="1600695028101">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1874" height="327" key="GridCell.Tab.0.center/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1874" height="327" key="GridCell.Tab.0.left" timestamp="1600259170054">
-      <screen x="0" y="196" width="1920" height="1004" />
+    <state width="1802" height="209" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028101" />
+    <state width="1802" height="209" key="GridCell.Tab.0.left" timestamp="1600695028099">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1874" height="327" key="GridCell.Tab.0.left/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1874" height="327" key="GridCell.Tab.0.right" timestamp="1600259170054">
-      <screen x="0" y="196" width="1920" height="1004" />
+    <state width="1802" height="209" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028099" />
+    <state width="1802" height="209" key="GridCell.Tab.0.right" timestamp="1600695028102">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1874" height="327" key="GridCell.Tab.0.right/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog" timestamp="1600242528645">
-      <screen x="0" y="196" width="1920" height="1004" />
+    <state width="1802" height="209" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028102" />
+    <state x="813" y="117" width="369" height="633" key="RollbackChangesDialog" timestamp="1600697379861">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600242528645" />
+    <state x="813" y="117" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697379861" />
     <state x="461" y="355" key="SettingsEditor" timestamp="1600259164113">
       <screen x="0" y="196" width="1920" height="1004" />
     </state>

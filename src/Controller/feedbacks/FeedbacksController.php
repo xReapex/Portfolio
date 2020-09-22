@@ -13,7 +13,7 @@ class FeedbacksController extends AbstractController
      */
     public function showFeedbacks()
     {
-        return $this->render('feedbacks.html.twig');
+        return $this->render('feedbacks/feedbacks.html.twig');
     }
 
 }

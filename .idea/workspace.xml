@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7b6c58ff-2f27-421d-8e02-4474a1bc3e5b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/90057553-fd1e-445c-856d-b225fee1fa5c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/90057553-fd1e-445c-856d-b225fee1fa5c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/feedbacks/FeedbacksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/feedbacks/FeedbacksController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/skills/SkillsController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/skills/skills.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/skills/skills_fiche.html.twig" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,6 +237,10 @@
       <workItem from="1600665554133" duration="302000" />
       <workItem from="1600694842803" duration="888000" />
       <workItem from="1600697165181" duration="714000" />
+      <workItem from="1601124289787" duration="39000" />
+      <workItem from="1601138219318" duration="752000" />
+      <workItem from="1601139824501" duration="365000" />
+      <workItem from="1601195020697" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -309,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600616665810</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update">
+      <created>1600794058195</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600794058196</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,10 +364,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599936065920" />
-    <state x="585" y="88" width="912" height="692" key="CommitChangelistDialog2" timestamp="1600616665067">
+    <state x="585" y="88" width="912" height="692" key="CommitChangelistDialog2" timestamp="1600794057681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600616665067" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600794057681" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
     <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog" timestamp="1600249031908">

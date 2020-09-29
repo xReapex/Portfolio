@@ -91,7 +91,7 @@ class __TwigTemplate_bcc97f86857c552d1edde913fae63f3e6f8e245dc03b8e0e1a19f9a4c92
     <div class=\"centre\" id=\"created\">
         <div>
             <h2>Merci !</h2>
-            <p>Vous avez participé à <a class=\"text-success\">l'évolution</a> du site grâce à ce commentaire ! Vous voulez voir ce qui se dit ? Alors rendez-vous dans la partie <a href=\"#commentaires\" class=\"text-info\">commentaires</a> du site !</p>
+            <p>Vous avez participé à <c class=\"text-success\">l'évolution</c> du site grâce à ce commentaire ! Vous voulez voir ce qui se dit ? Alors rendez-vous dans la partie <a href=\"#commentaires\" class=\"text-info\">commentaires</a> du site !</p>
         </div>
     </div>
 
@@ -153,7 +153,7 @@ class __TwigTemplate_bcc97f86857c552d1edde913fae63f3e6f8e245dc03b8e0e1a19f9a4c92
     <div class=\"centre\" id=\"created\">
         <div>
             <h2>Merci !</h2>
-            <p>Vous avez participé à <a class=\"text-success\">l'évolution</a> du site grâce à ce commentaire ! Vous voulez voir ce qui se dit ? Alors rendez-vous dans la partie <a href=\"#commentaires\" class=\"text-info\">commentaires</a> du site !</p>
+            <p>Vous avez participé à <c class=\"text-success\">l'évolution</c> du site grâce à ce commentaire ! Vous voulez voir ce qui se dit ? Alors rendez-vous dans la partie <a href=\"#commentaires\" class=\"text-info\">commentaires</a> du site !</p>
         </div>
     </div>
 

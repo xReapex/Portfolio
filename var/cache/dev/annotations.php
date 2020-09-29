@@ -115,10 +115,6 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CFeedbacks%23getDate%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CFeedbacks%23setDate%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CFeedbacks%23setDate%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CFeedbacks%23getPassword%5D%5B1%5D' => 1,
-'%5B%5BC%5DApp%5CEntity%5CFeedbacks%23getPassword%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CFeedbacks%23setPassword%5D%5B1%5D' => 1,
-'%5B%5BC%5DApp%5CEntity%5CFeedbacks%23setPassword%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CFeedbacks%24id%5D%5B1%5D' => 12,
 '%5B%5BC%5DApp%5CEntity%5CFeedbacks%24id%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CFeedbacks%24title%5D%5B1%5D' => 13,
@@ -129,9 +125,7 @@ return [[
 '%5B%5BC%5DApp%5CEntity%5CFeedbacks%24author%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CFeedbacks%24date%5D%5B1%5D' => 16,
 '%5B%5BC%5DApp%5CEntity%5CFeedbacks%24date%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CFeedbacks%24password%5D%5B1%5D' => 17,
-'%5B%5BC%5DApp%5CEntity%5CFeedbacks%24password%5D%5B1%5D' => 2,
-'%5BApp%5CEntity%5CNewsletter%5D%5B1%5D' => 18,
+'%5BApp%5CEntity%5CNewsletter%5D%5B1%5D' => 17,
 '%5B%5BC%5DApp%5CEntity%5CNewsletter%5D%5B1%5D' => 2,
 '%5BApp%5CEntity%5CNewsletter%23getId%5D%5B1%5D' => 1,
 '%5B%5BC%5DApp%5CEntity%5CNewsletter%23getId%5D%5B1%5D' => 2,
@@ -684,7 +678,7 @@ return [[
 
 0 => 'N;',
 1 => [],
-2 => 1601292223,
+2 => 1601370381,
 3 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -716,10 +710,10 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/feedbacks',
+                    '/feedback',
                 ],
                 'name' => [
-                    'app.feedbacks',
+                    'app.feedbacks.home',
                 ],
             ],
         ],
@@ -864,18 +858,20 @@ return [[
 11 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
         ],
         null,
         [
             'stdClass' => [
                 'repositoryClass' => [
-                    'App\\Repository\\FeedbacksRepository',
+                    1 => 'App\\Repository\\FeedbacksRepository',
                 ],
             ],
         ],
         [
             $o[0],
+            $o[1],
         ],
         []
     );
@@ -974,6 +970,9 @@ return [[
                 'type' => [
                     'date',
                 ],
+                'nullable' => [
+                    true,
+                ],
             ],
         ],
         [
@@ -985,37 +984,20 @@ return [[
 17 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Column'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Column')),
-        ],
-        null,
-        [
-            'stdClass' => [
-                'length' => [
-                    50,
-                ],
-            ],
-        ],
-        [
-            $o[0],
-        ],
-        []
-    );
-},
-18 => static function () {
-    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
-        $o = [
-            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+            clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['ApiPlatform\\Core\\Annotation\\ApiResource'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('ApiPlatform\\Core\\Annotation\\ApiResource')),
+            clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
         ],
         null,
         [
             'stdClass' => [
                 'repositoryClass' => [
-                    'App\\Repository\\NewsletterRepository',
+                    1 => 'App\\Repository\\NewsletterRepository',
                 ],
             ],
         ],
         [
             $o[0],
+            $o[1],
         ],
         []
     );

@@ -89,7 +89,7 @@ class __TwigTemplate_8cd70695ebab49203e84489dfcbdeeab34659e92e9c5db774ef45caa8ff
 <div class=\"container\">
 
     <center>
-        <h1 style=\"margin-top: 5%\">A propos</h1><br><br>
+        <h2 style=\"margin-top: 5%\">A propos</h2><br><br>
 
         <div class=\"about-gauche zoom\">
             <div class=\"card border-primary\" style=\"width: 1000px; height: 200px;\">
@@ -155,7 +155,7 @@ class __TwigTemplate_8cd70695ebab49203e84489dfcbdeeab34659e92e9c5db774ef45caa8ff
 <div class=\"container\">
 
     <center>
-        <h1 style=\"margin-top: 5%\">A propos</h1><br><br>
+        <h2 style=\"margin-top: 5%\">A propos</h2><br><br>
 
         <div class=\"about-gauche zoom\">
             <div class=\"card border-primary\" style=\"width: 1000px; height: 200px;\">

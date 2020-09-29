@@ -71,6 +71,14 @@ class __TwigTemplate_ac7c4fab5e0176c5199abd8fd75aad9b7a2120ad71e353a293477853c9e
         echo "\"><i class=\"fas fa-comments\"></i> Feedbacks</a>
                 </li>
             </ul>
+            <ul class=\"navbar-nav ml-auto\">
+                <li class=\"nav-item underline-link nav-item-right\">
+                    <a class=\"nav-link\" href=\"";
+        // line 22
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app.api");
+        echo "\"><i class=\"fas fa-server\"></i> API</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
@@ -96,7 +104,7 @@ class __TwigTemplate_ac7c4fab5e0176c5199abd8fd75aad9b7a2120ad71e353a293477853c9e
 
     public function getDebugInfo()
     {
-        return array (  70 => 17,  64 => 14,  58 => 11,  47 => 3,  43 => 1,);
+        return array (  78 => 22,  70 => 17,  64 => 14,  58 => 11,  47 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -118,6 +126,11 @@ class __TwigTemplate_ac7c4fab5e0176c5199abd8fd75aad9b7a2120ad71e353a293477853c9e
                 </li>
                 <li class=\"nav-item underline-link\">
                     <a class=\"nav-link\" href=\"{{ path('app.feedbacks.home') }}\"><i class=\"fas fa-comments\"></i> Feedbacks</a>
+                </li>
+            </ul>
+            <ul class=\"navbar-nav ml-auto\">
+                <li class=\"nav-item underline-link nav-item-right\">
+                    <a class=\"nav-link\" href=\"{{ path('app.api') }}\"><i class=\"fas fa-server\"></i> API</a>
                 </li>
             </ul>
         </div>

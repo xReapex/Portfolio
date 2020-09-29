@@ -16,6 +16,7 @@ return [
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     'app.about' => [[], ['_controller' => 'App\\Controller\\about\\AboutController::showAbout'], [], [['text', '/about']], [], []],
+    'app.api' => [[], ['_controller' => 'App\\Controller\\api\\ApiController::showApi'], [], [['text', '/api']], [], []],
     'app.feedbacks.home' => [[], ['_controller' => 'App\\Controller\\feedbacks\\FeedbacksController::showFeedbacks'], [], [['text', '/feedback']], [], []],
     'app.redirect' => [[], ['_controller' => 'App\\Controller\\home\\HomeController::redirectRoute'], [], [['text', '/']], [], []],
     'app.home' => [[], ['_controller' => 'App\\Controller\\home\\HomeController::showHome'], [], [['text', '/home']], [], []],
@@ -23,5 +24,10 @@ return [
     'app.test' => [[], ['_controller' => 'App\\Controller\\home\\HomeController::test'], [], [['text', '/test']], [], []],
     'app.newsletter.send.all' => [[], ['_controller' => 'App\\Controller\\home\\HomeController::sendNewsletter'], [], [['text', '/newsletter/send/all']], [], []],
     'app.project' => [[], ['_controller' => 'App\\Controller\\project\\ProjectController::showProjects'], [], [['text', '/project']], [], []],
+    'api_entrypoint' => [['index', '_format'], ['_controller' => 'api_platform.action.entrypoint', '_format' => '', '_api_respond' => 'true', 'index' => 'index'], ['index' => 'index'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', 'index', 'index', true], ['text', '/api/v1']], [], []],
+    'api_doc' => [['_format'], ['_controller' => 'api_platform.action.documentation', '_format' => '', '_api_respond' => 'true'], [], [['variable', '.', '[^/]++', '_format', true], ['text', '/api/v1/docs']], [], []],
+    'api_jsonld_context' => [['shortName', '_format'], ['_controller' => 'api_platform.jsonld.action.context', '_format' => 'jsonld', '_api_respond' => 'true'], ['shortName' => '.+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '.+', 'shortName', true], ['text', '/api/v1/contexts']], [], []],
+    'api_feedbacks_get_collection' => [['_format'], ['_controller' => 'api_platform.action.get_collection', '_format' => null, '_api_resource_class' => 'App\\Entity\\Feedbacks', '_api_collection_operation_name' => 'get'], [], [['variable', '.', '[^/]++', '_format', true], ['text', '/api/v1/feedbacks']], [], []],
+    'api_feedbacks_get_item' => [['id', '_format'], ['_controller' => 'api_platform.action.get_item', '_format' => null, '_api_resource_class' => 'App\\Entity\\Feedbacks', '_api_item_operation_name' => 'get'], [], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '[^/\\.]++', 'id', true], ['text', '/api/v1/feedbacks']], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\home\\HomeController::showHome'], [], [['text', '/home']], [], []],
 ];

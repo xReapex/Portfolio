@@ -20,6 +20,8 @@
       <parameter key="WebpackEncoreBundle">Symfony\WebpackEncoreBundle\WebpackEncoreBundle</parameter>
       <parameter key="SwiftmailerBundle">Symfony\Bundle\SwiftmailerBundle\SwiftmailerBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
+      <parameter key="NelmioCorsBundle">Nelmio\CorsBundle\NelmioCorsBundle</parameter>
+      <parameter key="ApiPlatformBundle">ApiPlatform\Core\Bridge\Symfony\Bundle\ApiPlatformBundle</parameter>
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
@@ -73,6 +75,14 @@
       <parameter key="WebProfilerBundle" type="collection">
         <parameter key="path">/var/www/portfolio_website/vendor/symfony/web-profiler-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
+      </parameter>
+      <parameter key="NelmioCorsBundle" type="collection">
+        <parameter key="path">/var/www/portfolio_website/vendor/nelmio/cors-bundle</parameter>
+        <parameter key="namespace">Nelmio\CorsBundle</parameter>
+      </parameter>
+      <parameter key="ApiPlatformBundle" type="collection">
+        <parameter key="path">/var/www/portfolio_website/vendor/api-platform/core/src/Bridge/Symfony/Bundle</parameter>
+        <parameter key="namespace">ApiPlatform\Core\Bridge\Symfony\Bundle</parameter>
       </parameter>
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
@@ -261,10 +271,145 @@
     <parameter key="swiftmailer.default_mailer">default</parameter>
     <parameter key="web_profiler.debug_toolbar.intercept_redirects">false</parameter>
     <parameter key="web_profiler.debug_toolbar.mode">2</parameter>
+    <parameter key="nelmio_cors.map" type="collection">
+      <parameter key="^/" type="collection"/>
+    </parameter>
+    <parameter key="nelmio_cors.defaults" type="collection">
+      <parameter key="allow_origin" type="collection">
+        <parameter>%env(CORS_ALLOW_ORIGIN)%</parameter>
+      </parameter>
+      <parameter key="allow_credentials">false</parameter>
+      <parameter key="allow_headers" type="collection">
+        <parameter>content-type</parameter>
+        <parameter>authorization</parameter>
+      </parameter>
+      <parameter key="expose_headers" type="collection">
+        <parameter>Link</parameter>
+      </parameter>
+      <parameter key="allow_methods" type="collection">
+        <parameter>GET</parameter>
+        <parameter>OPTIONS</parameter>
+        <parameter>POST</parameter>
+        <parameter>PUT</parameter>
+        <parameter>PATCH</parameter>
+        <parameter>DELETE</parameter>
+      </parameter>
+      <parameter key="max_age">3600</parameter>
+      <parameter key="hosts" type="collection"/>
+      <parameter key="origin_regex">true</parameter>
+      <parameter key="forced_allow_origin_value">null</parameter>
+    </parameter>
+    <parameter key="nelmio_cors.cors_listener.class">Nelmio\CorsBundle\EventListener\CorsListener</parameter>
+    <parameter key="nelmio_cors.options_resolver.class">Nelmio\CorsBundle\Options\Resolver</parameter>
+    <parameter key="nelmio_cors.options_provider.config.class">Nelmio\CorsBundle\Options\ConfigProvider</parameter>
+    <parameter key="api_platform.enable_entrypoint">true</parameter>
+    <parameter key="api_platform.enable_docs">true</parameter>
+    <parameter key="api_platform.title">Feedbacks API</parameter>
+    <parameter key="api_platform.description">Cette API vous permet de retrouver des commentaires !</parameter>
+    <parameter key="api_platform.version">1.0.0</parameter>
+    <parameter key="api_platform.show_webby">false</parameter>
+    <parameter key="api_platform.exception_to_status" type="collection">
+      <parameter key="Symfony\Component\Serializer\Exception\ExceptionInterface">400</parameter>
+      <parameter key="ApiPlatform\Core\Exception\InvalidArgumentException">400</parameter>
+      <parameter key="ApiPlatform\Core\Exception\FilterValidationException">400</parameter>
+      <parameter key="Doctrine\ORM\OptimisticLockException">409</parameter>
+    </parameter>
+    <parameter key="api_platform.formats" type="collection">
+      <parameter key="jsonld" type="collection">
+        <parameter>application/ld+json</parameter>
+      </parameter>
+      <parameter key="json" type="collection">
+        <parameter>application/json</parameter>
+      </parameter>
+      <parameter key="html" type="collection">
+        <parameter>text/html</parameter>
+      </parameter>
+    </parameter>
+    <parameter key="api_platform.patch_formats" type="collection">
+      <parameter key="json" type="collection">
+        <parameter>application/merge-patch+json</parameter>
+      </parameter>
+    </parameter>
+    <parameter key="api_platform.error_formats" type="collection">
+      <parameter key="jsonproblem" type="collection">
+        <parameter>application/problem+json</parameter>
+      </parameter>
+      <parameter key="jsonld" type="collection">
+        <parameter>application/ld+json</parameter>
+      </parameter>
+    </parameter>
+    <parameter key="api_platform.allow_plain_identifiers">false</parameter>
+    <parameter key="api_platform.eager_loading.enabled">true</parameter>
+    <parameter key="api_platform.eager_loading.max_joins">30</parameter>
+    <parameter key="api_platform.eager_loading.fetch_partial">false</parameter>
+    <parameter key="api_platform.eager_loading.force_eager">true</parameter>
+    <parameter key="api_platform.collection.exists_parameter_name">exists</parameter>
+    <parameter key="api_platform.collection.order">ASC</parameter>
+    <parameter key="api_platform.collection.order_parameter_name">order</parameter>
+    <parameter key="api_platform.collection.pagination.enabled">true</parameter>
+    <parameter key="api_platform.collection.pagination.partial">false</parameter>
+    <parameter key="api_platform.collection.pagination.client_enabled">false</parameter>
+    <parameter key="api_platform.collection.pagination.client_items_per_page">false</parameter>
+    <parameter key="api_platform.collection.pagination.client_partial">false</parameter>
+    <parameter key="api_platform.collection.pagination.items_per_page">30</parameter>
+    <parameter key="api_platform.collection.pagination.maximum_items_per_page">null</parameter>
+    <parameter key="api_platform.collection.pagination.page_parameter_name">page</parameter>
+    <parameter key="api_platform.collection.pagination.enabled_parameter_name">pagination</parameter>
+    <parameter key="api_platform.collection.pagination.items_per_page_parameter_name">itemsPerPage</parameter>
+    <parameter key="api_platform.collection.pagination.partial_parameter_name">partial</parameter>
+    <parameter key="api_platform.collection.pagination" type="collection">
+      <parameter key="enabled">true</parameter>
+      <parameter key="partial">false</parameter>
+      <parameter key="client_enabled">false</parameter>
+      <parameter key="client_items_per_page">false</parameter>
+      <parameter key="client_partial">false</parameter>
+      <parameter key="items_per_page">30</parameter>
+      <parameter key="maximum_items_per_page">null</parameter>
+      <parameter key="page_parameter_name">page</parameter>
+      <parameter key="enabled_parameter_name">pagination</parameter>
+      <parameter key="items_per_page_parameter_name">itemsPerPage</parameter>
+      <parameter key="partial_parameter_name">partial</parameter>
+    </parameter>
+    <parameter key="api_platform.http_cache.etag">true</parameter>
+    <parameter key="api_platform.http_cache.max_age">null</parameter>
+    <parameter key="api_platform.http_cache.shared_max_age">null</parameter>
+    <parameter key="api_platform.http_cache.vary" type="collection">
+      <parameter>Accept</parameter>
+    </parameter>
+    <parameter key="api_platform.http_cache.public">null</parameter>
+    <parameter key="api_platform.resource_class_directories" type="collection">
+      <parameter>/var/www/portfolio_website/src/Entity</parameter>
+    </parameter>
+    <parameter key="api_platform.oauth.enabled">false</parameter>
+    <parameter key="api_platform.oauth.clientId"></parameter>
+    <parameter key="api_platform.oauth.clientSecret"></parameter>
+    <parameter key="api_platform.oauth.type">oauth2</parameter>
+    <parameter key="api_platform.oauth.flow">application</parameter>
+    <parameter key="api_platform.oauth.tokenUrl">/oauth/v2/token</parameter>
+    <parameter key="api_platform.oauth.authorizationUrl">/oauth/v2/auth</parameter>
+    <parameter key="api_platform.oauth.scopes" type="collection"/>
+    <parameter key="api_platform.swagger.versions" type="collection">
+      <parameter>3</parameter>
+    </parameter>
+    <parameter key="api_platform.enable_swagger_ui">true</parameter>
+    <parameter key="api_platform.enable_re_doc">true</parameter>
+    <parameter key="api_platform.swagger.api_keys" type="collection"/>
+    <parameter key="api_platform.graphql.enabled">false</parameter>
+    <parameter key="api_platform.graphql.graphiql.enabled">false</parameter>
+    <parameter key="api_platform.graphql.graphql_playground.enabled">false</parameter>
+    <parameter key="api_platform.graphql.collection.pagination" type="collection">
+      <parameter key="enabled">true</parameter>
+    </parameter>
+    <parameter key="api_platform.validator.serialize_payload_fields" type="collection"/>
+    <parameter key="api_platform.elasticsearch.enabled">false</parameter>
     <parameter key="data_collector.templates" type="collection">
       <parameter key="data_collector.request" type="collection">
         <parameter>request</parameter>
         <parameter>@WebProfiler/Collector/request.html.twig</parameter>
+      </parameter>
+      <parameter key="api_platform.data_collector.request" type="collection">
+        <parameter>api_platform.data_collector.request</parameter>
+        <parameter>@ApiPlatform/DataCollector/request.html.twig</parameter>
       </parameter>
       <parameter key="data_collector.time" type="collection">
         <parameter>time</parameter>
@@ -339,7 +484,10 @@
         <parameter>@WebProfiler/Collector/config.html.twig</parameter>
       </parameter>
     </parameter>
-    <parameter key="console.command.ids" type="collection"/>
+    <parameter key="console.command.ids" type="collection">
+      <parameter>console.command.public_alias.api_platform.json_schema.json_schema_generate_command</parameter>
+      <parameter>console.command.public_alias.api_platform.swagger.command.swagger_command</parameter>
+    </parameter>
   </parameters>
   <services>
     <service id="service_container" class="Symfony\Component\DependencyInjection\ContainerInterface" public="true" synthetic="true"/>
@@ -352,6 +500,13 @@
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.g9CqTPp.App\Controller\about\AboutController"/>
+      </call>
+    </service>
+    <service id="App\Controller\api\ApiController" class="App\Controller\api\ApiController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.g9CqTPp.App\Controller\api\ApiController"/>
       </call>
     </service>
     <service id="App\Controller\feedbacks\FeedbacksController" class="App\Controller\feedbacks\FeedbacksController" public="true" autowire="true" autoconfigure="true">
@@ -494,6 +649,11 @@
         <argument key="cache.webpack_encore" type="service" id="cache.webpack_encore" on-invalid="ignore_uninitialized"/>
         <argument key="webpack_encore.entrypoint_lookup[_default]" type="service" id="webpack_encore.entrypoint_lookup[_default]" on-invalid="ignore_uninitialized"/>
         <argument key="swiftmailer.email_sender.listener" type="service" id="swiftmailer.email_sender.listener" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.route_name_resolver" type="service" id="api_platform.cache.route_name_resolver" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.identifiers_extractor" type="service" id="api_platform.cache.identifiers_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.subresource_operation_factory" type="service" id="api_platform.cache.subresource_operation_factory" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.metadata.resource" type="service" id="api_platform.cache.metadata.resource" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.metadata.property" type="service" id="api_platform.cache.metadata.property" on-invalid="ignore_uninitialized"/>
       </argument>
       <argument type="collection">
         <argument key="cache.app" type="collection">
@@ -558,6 +718,21 @@
           <argument>reset</argument>
         </argument>
         <argument key="swiftmailer.email_sender.listener" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="api_platform.cache.route_name_resolver" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="api_platform.cache.identifiers_extractor" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="api_platform.cache.subresource_operation_factory" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="api_platform.cache.metadata.resource" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="api_platform.cache.metadata.property" type="collection">
           <argument>reset</argument>
         </argument>
       </argument>
@@ -701,6 +876,11 @@
         <argument>cache.doctrine.orm.default.query</argument>
         <argument>cache.security_expression_language</argument>
         <argument>cache.webpack_encore</argument>
+        <argument>api_platform.cache.route_name_resolver</argument>
+        <argument>api_platform.cache.identifiers_extractor</argument>
+        <argument>api_platform.cache.subresource_operation_factory</argument>
+        <argument>api_platform.cache.metadata.resource</argument>
+        <argument>api_platform.cache.metadata.property</argument>
       </argument>
       <call method="setName">
         <argument>cache:pool:list</argument>
@@ -1064,6 +1244,11 @@
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
         <argument key="cache.webpack_encore" type="service" id="cache.webpack_encore" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.route_name_resolver" type="service" id="api_platform.cache.route_name_resolver" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.identifiers_extractor" type="service" id="api_platform.cache.identifiers_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.subresource_operation_factory" type="service" id="api_platform.cache.subresource_operation_factory" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.metadata.resource" type="service" id="api_platform.cache.metadata.resource" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.metadata.property" type="service" id="api_platform.cache.metadata.property" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="cache.global_clearer" class="Symfony\Component\HttpKernel\CacheClearer\Psr6CacheClearer" public="true">
@@ -1080,6 +1265,11 @@
         <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
         <argument key="cache.security_expression_language" type="service" id="cache.security_expression_language" on-invalid="ignore_uninitialized"/>
         <argument key="cache.webpack_encore" type="service" id="cache.webpack_encore" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.route_name_resolver" type="service" id="api_platform.cache.route_name_resolver" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.identifiers_extractor" type="service" id="api_platform.cache.identifiers_extractor" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.subresource_operation_factory" type="service" id="api_platform.cache.subresource_operation_factory" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.metadata.resource" type="service" id="api_platform.cache.metadata.resource" on-invalid="ignore_uninitialized"/>
+        <argument key="api_platform.cache.metadata.property" type="service" id="api_platform.cache.metadata.property" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="identity_translator" class="Symfony\Component\Translation\IdentityTranslator" public="false"/>
@@ -1789,6 +1979,8 @@
           <argument>/var/www/portfolio_website/vendor/symfony/webpack-encore-bundle/src/translations</argument>
           <argument>/var/www/portfolio_website/vendor/symfony/swiftmailer-bundle/translations</argument>
           <argument>/var/www/portfolio_website/vendor/symfony/web-profiler-bundle/translations</argument>
+          <argument>/var/www/portfolio_website/vendor/nelmio/cors-bundle/translations</argument>
+          <argument>/var/www/portfolio_website/vendor/api-platform/core/src/Bridge/Symfony/Bundle/translations</argument>
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
@@ -1809,6 +2001,8 @@
             <argument>vendor/symfony/webpack-encore-bundle/src/translations</argument>
             <argument>vendor/symfony/swiftmailer-bundle/translations</argument>
             <argument>vendor/symfony/web-profiler-bundle/translations</argument>
+            <argument>vendor/nelmio/cors-bundle/translations</argument>
+            <argument>vendor/api-platform/core/src/Bridge/Symfony/Bundle/translations</argument>
           </argument>
         </argument>
       </argument>
@@ -2025,6 +2219,9 @@
         <argument type="service" id="data_collector.request"/>
       </call>
       <call method="add">
+        <argument type="service" id="api_platform.data_collector.request"/>
+      </call>
+      <call method="add">
         <argument type="service" id="data_collector.time"/>
       </call>
       <call method="add">
@@ -2180,6 +2377,26 @@
         <argument>cache.webpack_encore</argument>
         <argument type="service" id="cache.webpack_encore"/>
       </call>
+      <call method="addInstance">
+        <argument>api_platform.cache.route_name_resolver</argument>
+        <argument type="service" id="api_platform.cache.route_name_resolver"/>
+      </call>
+      <call method="addInstance">
+        <argument>api_platform.cache.identifiers_extractor</argument>
+        <argument type="service" id="api_platform.cache.identifiers_extractor"/>
+      </call>
+      <call method="addInstance">
+        <argument>api_platform.cache.subresource_operation_factory</argument>
+        <argument type="service" id="api_platform.cache.subresource_operation_factory"/>
+      </call>
+      <call method="addInstance">
+        <argument>api_platform.cache.metadata.resource</argument>
+        <argument type="service" id="api_platform.cache.metadata.resource"/>
+      </call>
+      <call method="addInstance">
+        <argument>api_platform.cache.metadata.property</argument>
+        <argument type="service" id="api_platform.cache.metadata.property"/>
+      </call>
     </service>
     <service id="cache_pool_clearer.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\CachePoolClearerCacheWarmer" public="false">
       <tag name="kernel.cache_warmer" priority="64"/>
@@ -2267,6 +2484,150 @@
           <argument>onKernelException</argument>
         </argument>
         <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="nelmio_cors.cors_listener"/>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>250</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.response</argument>
+        <argument type="collection">
+          <argument type="service" id="nelmio_cors.cors_listener"/>
+          <argument>onKernelResponse</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.response</argument>
+        <argument type="collection">
+          <argument type="service" id="nelmio_cors.cacheable_response_vary_listener"/>
+          <argument>onResponse</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.request.add_format"/>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>7</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.request.read"/>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>4</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.view</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.view.write"/>
+          <argument>onKernelView</argument>
+        </argument>
+        <argument>32</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.request.deserialize"/>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>2</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.view</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.view.serialize"/>
+          <argument>onKernelView</argument>
+        </argument>
+        <argument>16</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.view</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.view.respond"/>
+          <argument>onKernelView</argument>
+        </argument>
+        <argument>8</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.exception</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.exception.validation"/>
+          <argument>onKernelException</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.exception</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.exception"/>
+          <argument>onKernelException</argument>
+        </argument>
+        <argument>-96</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.swagger.listener.ui"/>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.response</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.hydra.listener.response.add_link_header"/>
+          <argument>onKernelResponse</argument>
+        </argument>
+        <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.response</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.http_cache.listener.response.configure"/>
+          <argument>onKernelResponse</argument>
+        </argument>
+        <argument>-1</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.view</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.view.validate"/>
+          <argument>onKernelView</argument>
+        </argument>
+        <argument>64</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.listener.view.validate_query_parameters"/>
+          <argument>onKernelRequest</argument>
+        </argument>
+        <argument>16</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.security.listener.request.deny_access"/>
+          <argument>onSecurity</argument>
+        </argument>
+        <argument>3</argument>
+      </call>
+      <call method="addListener">
+        <argument>kernel.request</argument>
+        <argument type="collection">
+          <argument type="service" id="api_platform.security.listener.request.deny_access"/>
+          <argument>onSecurityPostDenormalize</argument>
+        </argument>
+        <argument>1</argument>
       </call>
       <call method="addListener">
         <argument>kernel.response</argument>
@@ -2739,6 +3100,9 @@
         <argument type="service" id="routing.loader.container"/>
       </call>
       <call method="addLoader">
+        <argument type="service" id="api_platform.route_loader"/>
+      </call>
+      <call method="addLoader">
         <argument type="service" id="routing.loader.annotation"/>
       </call>
       <call method="addLoader">
@@ -2782,7 +3146,7 @@
     <service id="router.default" class="Symfony\Bundle\FrameworkBundle\Routing\Router" public="false">
       <tag name="monolog.logger" channel="router"/>
       <tag name="container.service_subscriber" id="routing.loader"/>
-      <argument type="service" id=".service_locator.lwpeR6U.router.default"/>
+      <argument type="service" id=".service_locator.K62rNlJ.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
         <argument key="cache_dir">/var/www/portfolio_website/var/cache/dev</argument>
@@ -2930,14 +3294,26 @@
     <service id="serializer" class="Symfony\Component\Serializer\Serializer" public="true">
       <argument type="collection">
         <argument type="service" id="serializer.denormalizer.unwrapping"/>
+        <argument type="service" id="api_platform.swagger.normalizer.api_gateway"/>
+        <argument type="service" id="api_platform.hydra.normalizer.constraint_violation_list"/>
+        <argument type="service" id="api_platform.problem.normalizer.constraint_violation_list"/>
+        <argument type="service" id="api_platform.swagger.normalizer.api_gateway"/>
+        <argument type="service" id="api_platform.hydra.normalizer.documentation"/>
+        <argument type="service" id="api_platform.hydra.normalizer.entrypoint"/>
+        <argument type="service" id="api_platform.hydra.normalizer.error"/>
+        <argument type="service" id="api_platform.problem.normalizer.error"/>
         <argument type="service" id="serializer.normalizer.problem"/>
+        <argument type="service" id="api_platform.jsonld.normalizer.item"/>
+        <argument type="service" id="api_platform.serializer.normalizer.item"/>
         <argument type="service" id="serializer.normalizer.json_serializable"/>
         <argument type="service" id="serializer.normalizer.datetime"/>
         <argument type="service" id="serializer.normalizer.constraint_violation_list"/>
         <argument type="service" id="serializer.normalizer.datetimezone"/>
         <argument type="service" id="serializer.normalizer.dateinterval"/>
         <argument type="service" id="serializer.normalizer.data_uri"/>
+        <argument type="service" id="api_platform.hydra.normalizer.collection_filters"/>
         <argument type="service" id="serializer.denormalizer.array"/>
+        <argument type="service" id="api_platform.jsonld.normalizer.object"/>
         <argument type="service" id="serializer.normalizer.object"/>
       </argument>
       <argument type="collection">
@@ -2945,6 +3321,8 @@
         <argument type="service" id="serializer.encoder.json"/>
         <argument type="service" id="serializer.encoder.yaml"/>
         <argument type="service" id="serializer.encoder.csv"/>
+        <argument type="service" id="api_platform.jsonld.encoder"/>
+        <argument type="service" id="api_platform.problem.encoder"/>
       </argument>
     </service>
     <service id="serializer.mapping.class_discriminator_resolver" class="Symfony\Component\Serializer\Mapping\ClassDiscriminatorFromClassMetadata" public="false">
@@ -3256,6 +3634,14 @@
         <argument>!WebProfiler</argument>
       </call>
       <call method="addPath">
+        <argument>/var/www/portfolio_website/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>ApiPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/var/www/portfolio_website/vendor/api-platform/core/src/Bridge/Symfony/Bundle/Resources/views</argument>
+        <argument>!ApiPlatform</argument>
+      </call>
+      <call method="addPath">
         <argument>/var/www/portfolio_website/templates</argument>
       </call>
       <call method="addPath">
@@ -3440,7 +3826,11 @@
       <argument type="service" id="security.authorization_checker" on-invalid="null"/>
       <argument type="service" id="monolog.logger" on-invalid="null"/>
     </service>
-    <service id="sensio_framework_extra.security.expression_language.default" class="Sensio\Bundle\FrameworkExtraBundle\Security\ExpressionLanguage"/>
+    <service id="sensio_framework_extra.security.expression_language.default" class="Sensio\Bundle\FrameworkExtraBundle\Security\ExpressionLanguage">
+      <call method="registerProvider">
+        <argument type="service" id="api_platform.security.expression_language_provider"/>
+      </call>
+    </service>
     <service id="framework_extra_bundle.event.is_granted" class="Sensio\Bundle\FrameworkExtraBundle\EventListener\IsGrantedListener">
       <tag name="kernel.event_subscriber"/>
       <tag name="container.hot_path"/>
@@ -4011,6 +4401,9 @@
     <service id="security.user_checker" class="Symfony\Component\Security\Core\User\UserChecker" public="false"/>
     <service id="security.expression_language" class="Symfony\Component\Security\Core\Authorization\ExpressionLanguage" public="false">
       <argument type="service" id="cache.security_expression_language" on-invalid="null"/>
+      <call method="registerProvider">
+        <argument type="service" id="api_platform.security.expression_language_provider"/>
+      </call>
     </service>
     <service id="security.authentication_utils" class="Symfony\Component\Security\Http\Authentication\AuthenticationUtils" public="true">
       <argument type="service" id="request_stack"/>
@@ -5039,9 +5432,750 @@
       <argument>^/((index|app(_[\w]+)?)\.php/)?_wdt</argument>
       <argument type="service" id="web_profiler.csp.handler"/>
     </service>
+    <service id="nelmio_cors.cors_listener" class="Nelmio\CorsBundle\EventListener\CorsListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="250"/>
+      <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse" priority="0"/>
+      <tag name="container.hot_path"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="nelmio_cors.options_resolver"/>
+    </service>
+    <service id="nelmio_cors.options_resolver" class="Nelmio\CorsBundle\Options\Resolver" public="false">
+      <argument type="collection">
+        <argument type="service" id="nelmio_cors.options_provider.config"/>
+      </argument>
+    </service>
+    <service id="nelmio_cors.options_provider.config" class="Nelmio\CorsBundle\Options\ConfigProvider">
+      <tag name="nelmio_cors.options_provider" priority="-1"/>
+      <argument>%nelmio_cors.map%</argument>
+      <argument>%nelmio_cors.defaults%</argument>
+    </service>
+    <service id="nelmio_cors.cacheable_response_vary_listener" class="Nelmio\CorsBundle\EventListener\CacheableResponseVaryListener">
+      <tag name="kernel.event_listener" event="kernel.response" method="onResponse"/>
+      <tag name="container.hot_path"/>
+    </service>
+    <service id="api_platform.negotiator" class="Negotiation\Negotiator" public="false"/>
+    <service id="api_platform.resource_class_resolver" class="ApiPlatform\Core\Api\ResourceClassResolver" public="false">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+    </service>
+    <service id="api_platform.operation_method_resolver" class="ApiPlatform\Core\Bridge\Symfony\Routing\OperationMethodResolver" public="false">
+      <argument type="service" id="api_platform.router"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <deprecated package="api-platform/core" version="2.5">The "%service_id%" service is deprecated since API Platform 2.5.</deprecated>
+    </service>
+    <service id="api_platform.route_name_resolver.cached" class="ApiPlatform\Core\Bridge\Symfony\Routing\CachedRouteNameResolver" public="false">
+      <argument type="service" id="api_platform.cache.route_name_resolver"/>
+      <argument type="service" id="api_platform.route_name_resolver.cached.inner"/>
+    </service>
+    <service id="api_platform.route_loader" class="ApiPlatform\Core\Bridge\Symfony\Routing\ApiLoader" public="false">
+      <tag name="routing.loader"/>
+      <argument type="service" id="kernel"/>
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.operation_path_resolver.custom"/>
+      <argument type="service" id="service_container"/>
+      <argument>%api_platform.formats%</argument>
+      <argument>%api_platform.resource_class_directories%</argument>
+      <argument type="service" id="api_platform.subresource_operation_factory.cached"/>
+      <argument>false</argument>
+      <argument>true</argument>
+      <argument>true</argument>
+      <argument>false</argument>
+      <argument>false</argument>
+    </service>
+    <service id="api_platform.router" class="ApiPlatform\Core\Bridge\Symfony\Routing\Router" public="false">
+      <argument type="service" id="router.default"/>
+    </service>
+    <service id="api_platform.iri_converter" class="ApiPlatform\Core\Bridge\Symfony\Routing\IriConverter" public="false">
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="debug.api_platform.item_data_provider"/>
+      <argument type="service" id="api_platform.route_name_resolver.cached"/>
+      <argument type="service" id="api_platform.router"/>
+      <argument type="service" id="property_accessor"/>
+      <argument type="service" id="api_platform.identifiers_extractor.cached"/>
+      <argument type="service" id="debug.api_platform.subresource_data_provider" on-invalid="ignore"/>
+      <argument type="service" id="api_platform.identifier.converter" on-invalid="ignore"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="api_platform.formats_provider" class="ApiPlatform\Core\Api\FormatsProvider">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument>%api_platform.formats%</argument>
+      <deprecated package="api-platform/core" version="2.5">The "%service_id%" service is deprecated since API Platform 2.5.</deprecated>
+    </service>
+    <service id="api_platform.serializer.context_builder.filter" class="ApiPlatform\Core\Serializer\SerializerFilterContextBuilder" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.filter_locator"/>
+      <argument type="service" id="api_platform.serializer.context_builder.filter.inner"/>
+    </service>
+    <service id="api_platform.serializer.property_filter" class="ApiPlatform\Core\Serializer\Filter\PropertyFilter" public="false" abstract="true">
+      <argument>properties</argument>
+      <argument>false</argument>
+      <argument>null</argument>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.serializer.group_filter" class="ApiPlatform\Core\Serializer\Filter\GroupFilter" public="false" abstract="true"/>
+    <service id="api_platform.serializer.normalizer.item" class="ApiPlatform\Core\Serializer\ItemNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-895"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.iri_converter"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+      <argument type="service" id="property_accessor"/>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+      <argument type="service" id="serializer.mapping.cache_class_metadata_factory" on-invalid="ignore"/>
+      <argument type="service" id="debug.api_platform.item_data_provider" on-invalid="ignore"/>
+      <argument>false</argument>
+      <argument>null</argument>
+      <argument type="tagged_iterator" tag="api_platform.data_transformer"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached" on-invalid="ignore"/>
+      <argument>false</argument>
+    </service>
+    <service id="api_platform.operation_path_resolver.router" class="ApiPlatform\Core\Bridge\Symfony\Routing\RouterOperationPathResolver" public="false">
+      <argument type="service" id="api_platform.router"/>
+      <argument type="service" id="api_platform.operation_path_resolver.custom"/>
+      <argument type="service" id="api_platform.subresource_operation_factory.cached"/>
+    </service>
+    <service id="api_platform.operation_path_resolver.custom" class="ApiPlatform\Core\PathResolver\CustomOperationPathResolver" public="false">
+      <argument type="service" id="api_platform.operation_path_resolver.generator"/>
+    </service>
+    <service id="api_platform.operation_path_resolver.generator" class="ApiPlatform\Core\PathResolver\OperationPathResolver" public="false">
+      <argument type="service" id="api_platform.path_segment_name_generator.underscore"/>
+    </service>
+    <service id="api_platform.operation_path_resolver.underscore" class="ApiPlatform\Core\PathResolver\UnderscoreOperationPathResolver" public="false">
+      <deprecated package="api-platform/core" version="2.1">The "%service_id%" service is deprecated since API Platform 2.1 and will be removed in 3.0. Use "api_platform.path_segment_name_generator.underscore" instead.</deprecated>
+    </service>
+    <service id="api_platform.operation_path_resolver.dash" class="ApiPlatform\Core\PathResolver\DashOperationPathResolver" public="false">
+      <deprecated package="api-platform/core" version="2.1">The "%service_id%" service is deprecated since API Platform 2.1 and will be removed in 3.0. Use "api_platform.path_segment_name_generator.dash" instead.</deprecated>
+    </service>
+    <service id="api_platform.path_segment_name_generator.underscore" class="ApiPlatform\Core\Operation\UnderscorePathSegmentNameGenerator" public="false"/>
+    <service id="api_platform.path_segment_name_generator.dash" class="ApiPlatform\Core\Operation\DashPathSegmentNameGenerator" public="false"/>
+    <service id="api_platform.listener.request.add_format" class="ApiPlatform\Core\EventListener\AddFormatListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="7"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="api_platform.negotiator"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument>%api_platform.formats%</argument>
+    </service>
+    <service id="api_platform.listener.request.read" class="ApiPlatform\Core\EventListener\ReadListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="4"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="debug.api_platform.collection_data_provider"/>
+      <argument type="service" id="debug.api_platform.item_data_provider"/>
+      <argument type="service" id="debug.api_platform.subresource_data_provider"/>
+      <argument type="service" id="api_platform.serializer.context_builder.filter"/>
+      <argument type="service" id="api_platform.identifier.converter"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.listener.view.write" class="ApiPlatform\Core\EventListener\WriteListener">
+      <tag name="kernel.event_listener" event="kernel.view" method="onKernelView" priority="32"/>
+      <argument type="service" id="debug.api_platform.data_persister"/>
+      <argument type="service" id="api_platform.iri_converter"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="api_platform.listener.request.deserialize" class="ApiPlatform\Core\EventListener\DeserializeListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="2"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="serializer"/>
+      <argument type="service" id="api_platform.serializer.context_builder.filter"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.listener.view.serialize" class="ApiPlatform\Core\EventListener\SerializeListener">
+      <tag name="kernel.event_listener" event="kernel.view" method="onKernelView" priority="16"/>
+      <argument type="service" id="serializer"/>
+      <argument type="service" id="api_platform.serializer.context_builder.filter"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.listener.view.respond" class="ApiPlatform\Core\EventListener\RespondListener">
+      <tag name="kernel.event_listener" event="kernel.view" method="onKernelView" priority="8"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.listener.exception.validation" class="ApiPlatform\Core\Bridge\Symfony\Validator\EventListener\ValidationExceptionListener">
+      <tag name="kernel.event_listener" event="kernel.exception" method="onKernelException"/>
+      <argument type="service" id="serializer"/>
+      <argument>%api_platform.error_formats%</argument>
+    </service>
+    <service id="api_platform.listener.exception" class="ApiPlatform\Core\EventListener\ExceptionListener">
+      <tag name="kernel.event_listener" event="kernel.exception" method="onKernelException" priority="-96"/>
+      <tag name="monolog.logger" channel="request"/>
+      <argument>api_platform.action.exception</argument>
+      <argument type="service" id="monolog.logger.request" on-invalid="null"/>
+      <argument>false</argument>
+      <argument type="service" id="exception_listener" on-invalid="null"/>
+    </service>
+    <service id="api_platform.action.placeholder" class="ApiPlatform\Core\Action\PlaceholderAction" public="true"/>
+    <service id="api_platform.action.not_found" class="ApiPlatform\Core\Action\NotFoundAction" public="true"/>
+    <service id="api_platform.action.entrypoint" class="ApiPlatform\Core\Action\EntrypointAction" public="true">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+    </service>
+    <service id="api_platform.action.documentation" class="ApiPlatform\Core\Documentation\Action\DocumentationAction" public="true">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument>Feedbacks API</argument>
+      <argument>Cette API vous permet de retrouver des commentaires !</argument>
+      <argument>1.0.0</argument>
+      <argument>null</argument>
+      <argument>%api_platform.swagger.versions%</argument>
+    </service>
+    <service id="api_platform.action.exception" class="ApiPlatform\Core\Action\ExceptionAction" public="true">
+      <argument type="service" id="serializer"/>
+      <argument>%api_platform.error_formats%</argument>
+      <argument>%api_platform.exception_to_status%</argument>
+    </service>
+    <service id="api_platform.identifiers_extractor.cached" class="ApiPlatform\Core\Api\CachedIdentifiersExtractor" public="false">
+      <argument type="service" id="api_platform.cache.identifiers_extractor"/>
+      <argument type="service" id="api_platform.identifiers_extractor.cached.inner"/>
+      <argument type="service" id="property_accessor"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="api_platform.identifier.converter" class="ApiPlatform\Core\Identifier\IdentifierConverter" public="false">
+      <argument type="service" id="api_platform.identifiers_extractor.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="tagged_iterator" tag="api_platform.identifier.denormalizer"/>
+    </service>
+    <service id="api_platform.identifier.integer" class="ApiPlatform\Core\Identifier\Normalizer\IntegerDenormalizer" public="false">
+      <tag name="api_platform.identifier.denormalizer"/>
+    </service>
+    <service id="api_platform.identifier.date_normalizer" class="ApiPlatform\Core\Identifier\Normalizer\DateTimeIdentifierDenormalizer" public="false">
+      <tag name="api_platform.identifier.denormalizer"/>
+    </service>
+    <service id="api_platform.subresource_operation_factory.cached" class="ApiPlatform\Core\Operation\Factory\CachedSubresourceOperationFactory" public="false">
+      <argument type="service" id="api_platform.cache.subresource_operation_factory"/>
+      <argument type="service" id="api_platform.subresource_operation_factory.cached.inner"/>
+    </service>
+    <service id="api_platform.cache.route_name_resolver" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="false">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="api_platform.cache.route_name_resolver.recorder_inner"/>
+    </service>
+    <service id="api_platform.cache.identifiers_extractor" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="false">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="api_platform.cache.identifiers_extractor.recorder_inner"/>
+    </service>
+    <service id="api_platform.cache.subresource_operation_factory" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="false">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="api_platform.cache.subresource_operation_factory.recorder_inner"/>
+    </service>
+    <service id="api_platform.cache_warmer.cache_pool_clearer" class="ApiPlatform\Core\Bridge\Symfony\Bundle\CacheWarmer\CachePoolClearerCacheWarmer" public="false">
+      <tag name="kernel.cache_warmer" priority="64"/>
+      <argument type="service" id="cache.system_clearer"/>
+      <argument type="collection">
+        <argument>api_platform.cache.metadata.property</argument>
+        <argument>api_platform.cache.metadata.resource</argument>
+        <argument>api_platform.cache.route_name_resolver</argument>
+        <argument>api_platform.cache.identifiers_extractor</argument>
+        <argument>api_platform.cache.subresource_operation_factory</argument>
+        <argument>api_platform.elasticsearch.cache.metadata.document</argument>
+      </argument>
+    </service>
+    <service id="api_platform.serializer_locator" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="serializer" type="service" id="serializer"/>
+      </argument>
+    </service>
+    <service id="api_platform.pagination" class="ApiPlatform\Core\DataProvider\Pagination">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument>%api_platform.collection.pagination%</argument>
+      <argument>%api_platform.graphql.collection.pagination%</argument>
+    </service>
+    <service id="api_platform.filter_locator" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection"/>
+    </service>
+    <service id="api_platform.filter_collection_factory" class="ApiPlatform\Core\Api\FilterCollectionFactory" public="false">
+      <argument type="collection"/>
+    </service>
+    <service id="api_platform.filters" class="ApiPlatform\Core\Api\FilterCollection" public="false">
+      <argument type="service" id="api_platform.filter_locator"/>
+      <factory service="api_platform.filter_collection_factory" method="createFilterCollectionFromLocator"/>
+      <deprecated package="api-platform/core" version="2.1">The "%service_id%" service is deprecated since 2.1 and will be removed in 3.0. Use the "api_platform.filter_locator" service instead.</deprecated>
+    </service>
+    <service id="api_platform.metadata.resource.name_collection_factory.cached" class="ApiPlatform\Core\Metadata\Resource\Factory\CachedResourceNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.cache.metadata.resource"/>
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.yaml"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.input_output" class="ApiPlatform\Core\Metadata\Resource\Factory\InputOutputResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.yaml"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.short_name" class="ApiPlatform\Core\Metadata\Resource\Factory\ShortNameResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.php_doc"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.operation" class="ApiPlatform\Core\Metadata\Resource\Factory\OperationResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.filter_metadata_factory.annotation"/>
+      <argument>%api_platform.patch_formats%</argument>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.formats" class="ApiPlatform\Core\Metadata\Resource\Factory\FormatsResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.operation"/>
+      <argument>%api_platform.formats%</argument>
+      <argument>%api_platform.patch_formats%</argument>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.cached" class="ApiPlatform\Core\Metadata\Resource\Factory\CachedResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.cache.metadata.resource"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.formats"/>
+    </service>
+    <service id="api_platform.metadata.property.name_collection_factory.property_info" class="ApiPlatform\Core\Bridge\Symfony\PropertyInfo\Metadata\Property\PropertyInfoPropertyNameCollectionFactory" public="false">
+      <argument type="service" id="property_info"/>
+    </service>
+    <service id="api_platform.metadata.property.name_collection_factory.inherited" class="ApiPlatform\Core\Metadata\Property\Factory\InheritedPropertyNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.property_info"/>
+    </service>
+    <service id="api_platform.metadata.property.name_collection_factory.cached" class="ApiPlatform\Core\Metadata\Property\Factory\CachedPropertyNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.cache.metadata.property"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.yaml"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.property_info" class="ApiPlatform\Core\Bridge\Symfony\PropertyInfo\Metadata\Property\PropertyInfoPropertyMetadataFactory" public="false">
+      <argument type="service" id="property_info"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.xml"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.inherited" class="ApiPlatform\Core\Metadata\Property\Factory\InheritedPropertyMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.property_info"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.serializer" class="ApiPlatform\Core\Metadata\Property\Factory\SerializerPropertyMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="serializer.mapping.cache_class_metadata_factory"/>
+      <argument type="service" id="api_platform.doctrine.orm.metadata.property.metadata_factory"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.cached" class="ApiPlatform\Core\Metadata\Property\Factory\CachedPropertyMetadataFactory" public="false">
+      <argument type="service" id="api_platform.cache.metadata.property"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.validator"/>
+    </service>
+    <service id="api_platform.cache.metadata.resource" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="false">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="api_platform.cache.metadata.resource.recorder_inner"/>
+    </service>
+    <service id="api_platform.cache.metadata.property" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="false">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="api_platform.cache.metadata.property.recorder_inner"/>
+    </service>
+    <service id="api_platform.metadata.extractor.xml" class="ApiPlatform\Core\Metadata\Extractor\XmlExtractor" public="false">
+      <argument type="collection"/>
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="api_platform.metadata.resource.name_collection_factory.xml" class="ApiPlatform\Core\Metadata\Resource\Factory\ExtractorResourceNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.xml"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.xml" class="ApiPlatform\Core\Metadata\Resource\Factory\ExtractorResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.xml"/>
+    </service>
+    <service id="api_platform.metadata.property.name_collection_factory.xml" class="ApiPlatform\Core\Metadata\Property\Factory\ExtractorPropertyNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.xml"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.inherited"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.xml" class="ApiPlatform\Core\Metadata\Property\Factory\ExtractorPropertyMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.xml"/>
+    </service>
+    <service id="api_platform.metadata.resource.name_collection_factory.annotation" class="ApiPlatform\Core\Metadata\Resource\Factory\AnnotationResourceNameCollectionFactory" public="false">
+      <argument type="service" id="annotations.cached_reader"/>
+      <argument>%api_platform.resource_class_directories%</argument>
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.xml"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.annotation" class="ApiPlatform\Core\Metadata\Resource\Factory\AnnotationResourceMetadataFactory" public="false">
+      <argument type="service" id="annotations.cached_reader"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.xml"/>
+    </service>
+    <service id="api_platform.metadata.resource.filter_metadata_factory.annotation" class="ApiPlatform\Core\Metadata\Resource\Factory\AnnotationResourceFilterMetadataFactory" public="false">
+      <argument type="service" id="annotations.cached_reader"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.short_name"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.annotation" class="ApiPlatform\Core\Metadata\Property\Factory\AnnotationPropertyMetadataFactory" public="false">
+      <argument type="service" id="annotations.cached_reader"/>
+      <argument type="service" id="api_platform.metadata.subresource.metadata_factory.annotation"/>
+    </service>
+    <service id="api_platform.metadata.subresource.metadata_factory.annotation" class="ApiPlatform\Core\Metadata\Property\Factory\AnnotationSubresourceMetadataFactory" public="false">
+      <argument type="service" id="annotations.cached_reader"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.serializer"/>
+    </service>
+    <service id="api_platform.metadata.extractor.yaml" class="ApiPlatform\Core\Metadata\Extractor\YamlExtractor" public="false">
+      <argument type="collection"/>
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="api_platform.metadata.resource.name_collection_factory.yaml" class="ApiPlatform\Core\Metadata\Resource\Factory\ExtractorResourceNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.yaml"/>
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.annotation"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.yaml" class="ApiPlatform\Core\Metadata\Resource\Factory\ExtractorResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.yaml"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.annotation"/>
+    </service>
+    <service id="api_platform.metadata.property.name_collection_factory.yaml" class="ApiPlatform\Core\Metadata\Property\Factory\ExtractorPropertyNameCollectionFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.yaml"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.xml"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.yaml" class="ApiPlatform\Core\Metadata\Property\Factory\ExtractorPropertyMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.extractor.yaml"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.annotation"/>
+    </service>
+    <service id="api_platform.metadata.resource.metadata_factory.php_doc" class="ApiPlatform\Core\Metadata\Resource\Factory\PhpDocResourceMetadataFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.input_output"/>
+    </service>
+    <service id="api_platform.json_schema.type_factory" class="ApiPlatform\Core\JsonSchema\TypeFactory" public="false">
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+      <call method="setSchemaFactory">
+        <argument type="service" id="api_platform.hydra.json_schema.schema_factory"/>
+      </call>
+    </service>
+    <service id="api_platform.json_schema.json_schema_generate_command" class="ApiPlatform\Core\JsonSchema\Command\JsonSchemaGenerateCommand" public="false">
+      <tag name="console.command"/>
+      <tag name="container.no_preload"/>
+      <argument type="service" id="api_platform.hydra.json_schema.schema_factory"/>
+      <argument>%api_platform.formats%</argument>
+    </service>
+    <service id="api_platform.swagger.normalizer.api_gateway" class="ApiPlatform\Core\Swagger\Serializer\ApiGatewayNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-780"/>
+      <argument type="service" id="api_platform.swagger.normalizer.api_gateway.inner"/>
+    </service>
+    <service id="api_platform.swagger.command.swagger_command" class="ApiPlatform\Core\Bridge\Symfony\Bundle\Command\SwaggerCommand">
+      <tag name="console.command"/>
+      <tag name="container.no_preload"/>
+      <argument type="service" id="serializer"/>
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument>Feedbacks API</argument>
+      <argument>Cette API vous permet de retrouver des commentaires !</argument>
+      <argument>1.0.0</argument>
+      <argument>null</argument>
+      <argument>%api_platform.swagger.versions%</argument>
+    </service>
+    <service id="api_platform.swagger.listener.ui" class="ApiPlatform\Core\Bridge\Symfony\Bundle\EventListener\SwaggerUiListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest"/>
+      <tag name="container.hot_path"/>
+    </service>
+    <service id="api_platform.swagger.action.ui" class="ApiPlatform\Core\Bridge\Symfony\Bundle\Action\SwaggerUiAction" public="true">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="serializer"/>
+      <argument type="service" id="twig"/>
+      <argument type="service" id="router.default"/>
+      <argument>Feedbacks API</argument>
+      <argument>Cette API vous permet de retrouver des commentaires !</argument>
+      <argument>1.0.0</argument>
+      <argument>%api_platform.formats%</argument>
+      <argument>false</argument>
+      <argument></argument>
+      <argument></argument>
+      <argument>oauth2</argument>
+      <argument>application</argument>
+      <argument>/oauth/v2/token</argument>
+      <argument>/oauth/v2/auth</argument>
+      <argument type="collection"/>
+      <argument>false</argument>
+      <argument>true</argument>
+      <argument>true</argument>
+      <argument>false</argument>
+      <argument>false</argument>
+      <argument>false</argument>
+      <argument>%api_platform.swagger.versions%</argument>
+    </service>
+    <service id="api_platform.jsonld.context_builder" class="ApiPlatform\Core\JsonLd\ContextBuilder" public="false">
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.router"/>
+    </service>
+    <service id="api_platform.jsonld.normalizer.item" class="ApiPlatform\Core\JsonLd\Serializer\ItemNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-890"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.iri_converter"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+      <argument type="service" id="api_platform.jsonld.context_builder"/>
+      <argument type="service" id="property_accessor"/>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+      <argument type="service" id="serializer.mapping.cache_class_metadata_factory" on-invalid="ignore"/>
+      <argument type="collection"/>
+      <argument type="tagged_iterator" tag="api_platform.data_transformer"/>
+      <argument>false</argument>
+    </service>
+    <service id="api_platform.jsonld.normalizer.object" class="ApiPlatform\Core\JsonLd\Serializer\ObjectNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-995"/>
+      <argument type="service" id="serializer.normalizer.object"/>
+      <argument type="service" id="api_platform.iri_converter"/>
+      <argument type="service" id="api_platform.jsonld.context_builder"/>
+    </service>
+    <service id="api_platform.jsonld.encoder" class="ApiPlatform\Core\Serializer\JsonEncoder" public="false">
+      <tag name="serializer.encoder"/>
+      <argument>jsonld</argument>
+    </service>
+    <service id="api_platform.jsonld.action.context" class="ApiPlatform\Core\JsonLd\Action\ContextAction" public="true">
+      <argument type="service" id="api_platform.jsonld.context_builder"/>
+      <argument type="service" id="api_platform.metadata.resource.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.hydra.normalizer.documentation" class="ApiPlatform\Core\Hydra\Serializer\DocumentationNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-800"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+      <argument>null</argument>
+      <argument type="service" id="api_platform.router"/>
+      <argument type="service" id="api_platform.subresource_operation_factory.cached"/>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.hydra.listener.response.add_link_header" class="ApiPlatform\Core\Hydra\EventListener\AddLinkHeaderListener">
+      <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="api_platform.router"/>
+    </service>
+    <service id="api_platform.hydra.normalizer.constraint_violation_list" class="ApiPlatform\Core\Hydra\Serializer\ConstraintViolationListNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-780"/>
+      <argument type="service" id="api_platform.router"/>
+      <argument type="collection"/>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.hydra.normalizer.entrypoint" class="ApiPlatform\Core\Hydra\Serializer\EntrypointNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-800"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.iri_converter"/>
+      <argument type="service" id="api_platform.router"/>
+    </service>
+    <service id="api_platform.hydra.normalizer.error" class="ApiPlatform\Core\Hydra\Serializer\ErrorNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-800"/>
+      <argument type="service" id="api_platform.router"/>
+      <argument>true</argument>
+    </service>
+    <service id="api_platform.hydra.normalizer.partial_collection_view" class="ApiPlatform\Core\Hydra\Serializer\PartialCollectionViewNormalizer" public="false">
+      <argument type="service" id="api_platform.hydra.normalizer.partial_collection_view.inner"/>
+      <argument>page</argument>
+      <argument>pagination</argument>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="property_accessor"/>
+    </service>
+    <service id="api_platform.hydra.normalizer.collection_filters" class="ApiPlatform\Core\Hydra\Serializer\CollectionFiltersNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-985"/>
+      <argument type="service" id="api_platform.hydra.normalizer.partial_collection_view"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+      <argument type="service" id="api_platform.filter_locator"/>
+    </service>
+    <service id="api_platform.hydra.json_schema.schema_factory" class="ApiPlatform\Core\Hydra\JsonSchema\SchemaFactory">
+      <argument type="service" id="api_platform.hydra.json_schema.schema_factory.inner"/>
+    </service>
+    <service id="api_platform.problem.encoder" class="ApiPlatform\Core\Serializer\JsonEncoder" public="false">
+      <tag name="serializer.encoder"/>
+      <argument>jsonproblem</argument>
+    </service>
+    <service id="api_platform.problem.normalizer.constraint_violation_list" class="ApiPlatform\Core\Problem\Serializer\ConstraintViolationListNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-780"/>
+      <argument type="collection"/>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.problem.normalizer.error" class="ApiPlatform\Core\Problem\Serializer\ErrorNormalizer" public="false">
+      <tag name="serializer.normalizer" priority="-810"/>
+      <argument>true</argument>
+    </service>
+    <service id="api_platform.doctrine.metadata_factory" class="Doctrine\Persistence\Mapping\ClassMetadataFactory" public="false">
+      <factory service="doctrine.orm.default_entity_manager" method="getMetadataFactory"/>
+    </service>
+    <service id="api_platform.doctrine.orm.data_persister" class="ApiPlatform\Core\Bridge\Doctrine\Common\DataPersister" public="false">
+      <tag name="api_platform.data_persister" priority="-1000"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id="api_platform.doctrine.orm.collection_data_provider" public="false" abstract="true">
+      <argument type="service" id="doctrine"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.collection"/>
+    </service>
+    <service id="api_platform.doctrine.orm.item_data_provider" public="false" abstract="true">
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.item"/>
+    </service>
+    <service id="api_platform.doctrine.orm.subresource_data_provider" public="false" abstract="true">
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.collection"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.item"/>
+    </service>
+    <service id="api_platform.doctrine.orm.default.collection_data_provider" class="ApiPlatform\Core\Bridge\Doctrine\Orm\CollectionDataProvider" public="false">
+      <tag name="api_platform.collection_data_provider"/>
+      <argument type="service" id="doctrine"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.collection"/>
+    </service>
+    <service id="api_platform.doctrine.orm.default.item_data_provider" class="ApiPlatform\Core\Bridge\Doctrine\Orm\ItemDataProvider" public="false">
+      <tag name="api_platform.item_data_provider"/>
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.item"/>
+    </service>
+    <service id="api_platform.doctrine.orm.default.subresource_data_provider" class="ApiPlatform\Core\Bridge\Doctrine\Orm\SubresourceDataProvider" public="false">
+      <tag name="api_platform.subresource_data_provider"/>
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.collection"/>
+      <argument type="tagged_iterator" tag="api_platform.doctrine.orm.query_extension.item"/>
+    </service>
+    <service id="api_platform.doctrine.orm.search_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2" type="service" id="api_platform.iri_converter"/>
+      <argument key="3" type="service" id="property_accessor"/>
+      <argument key="4" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="6" type="service" id="api_platform.identifiers_extractor.cached" on-invalid="ignore"/>
+      <argument key="7" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.order_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\OrderFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2">order</argument>
+      <argument key="3" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="5" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.range_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\RangeFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="4" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.date_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="4" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.boolean_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="4" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.numeric_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\NumericFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="4" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.exists_filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\ExistsFilter" public="false" abstract="true">
+      <argument key="0" type="service" id="doctrine"/>
+      <argument key="1">null</argument>
+      <argument key="2" type="service" id="monolog.logger" on-invalid="ignore"/>
+      <argument key="4">exists</argument>
+      <argument key="5" type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+    </service>
+    <service id="api_platform.doctrine.orm.metadata.property.metadata_factory" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Metadata\Property\DoctrineOrmPropertyMetadataFactory" public="false">
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.inherited"/>
+    </service>
+    <service id="api_platform.doctrine.orm.query_extension.eager_loading" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\EagerLoadingExtension" public="false">
+      <tag name="api_platform.doctrine.orm.query_extension.item" priority="-8"/>
+      <tag name="api_platform.doctrine.orm.query_extension.collection" priority="-8"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument>30</argument>
+      <argument>true</argument>
+      <argument>null</argument>
+      <argument>null</argument>
+      <argument>false</argument>
+      <argument type="service" id="serializer.mapping.cache_class_metadata_factory"/>
+    </service>
+    <service id="api_platform.doctrine.orm.query_extension.filter" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\FilterExtension" public="false">
+      <tag name="api_platform.doctrine.orm.query_extension.collection" priority="-16"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.filter_locator"/>
+    </service>
+    <service id="api_platform.doctrine.orm.query_extension.filter_eager_loading" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\FilterEagerLoadingExtension" public="false">
+      <tag name="api_platform.doctrine.orm.query_extension.collection" priority="-17"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument>true</argument>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="api_platform.doctrine.orm.query_extension.pagination" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\PaginationExtension" public="false">
+      <tag name="api_platform.doctrine.orm.query_extension.collection" priority="-64"/>
+      <argument type="service" id="doctrine"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.pagination"/>
+    </service>
+    <service id="api_platform.doctrine.orm.query_extension.order" class="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\OrderExtension" public="false">
+      <tag name="api_platform.doctrine.orm.query_extension.collection" priority="-32"/>
+      <argument>ASC</argument>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.http_cache.listener.response.configure" class="ApiPlatform\Core\HttpCache\EventListener\AddHeadersListener">
+      <tag name="kernel.event_listener" event="kernel.response" method="onKernelResponse" priority="-1"/>
+      <tag name="container.hot_path"/>
+      <argument>true</argument>
+      <argument>null</argument>
+      <argument>null</argument>
+      <argument>%api_platform.http_cache.vary%</argument>
+      <argument>null</argument>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.validator" class="ApiPlatform\Core\Bridge\Symfony\Validator\Validator">
+      <argument type="service" id="debug.validator"/>
+      <argument type="service" id="service_container"/>
+    </service>
+    <service id="api_platform.metadata.property.metadata_factory.validator" class="ApiPlatform\Core\Bridge\Symfony\Validator\Metadata\Property\ValidatorPropertyMetadataFactory" public="false">
+      <argument type="service" id="debug.validator"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.yaml"/>
+    </service>
+    <service id="api_platform.listener.view.validate" class="ApiPlatform\Core\Validator\EventListener\ValidateListener">
+      <tag name="kernel.event_listener" event="kernel.view" method="onKernelView" priority="64"/>
+      <argument type="service" id="api_platform.validator"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.listener.view.validate_query_parameters" class="ApiPlatform\Core\Filter\QueryParameterValidateListener" public="false">
+      <tag name="kernel.event_listener" event="kernel.request" method="onKernelRequest" priority="16"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.filter_locator"/>
+    </service>
+    <service id="api_platform.data_collector.request" class="ApiPlatform\Core\Bridge\Symfony\Bundle\DataCollector\RequestDataCollector" public="false">
+      <tag name="data_collector" template="@ApiPlatform/DataCollector/request.html.twig" id="api_platform.data_collector.request" priority="334"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.filter_locator"/>
+      <argument type="service" id="debug.api_platform.collection_data_provider"/>
+      <argument type="service" id="debug.api_platform.item_data_provider"/>
+      <argument type="service" id="debug.api_platform.subresource_data_provider"/>
+      <argument type="service" id="debug.api_platform.data_persister"/>
+    </service>
+    <service id="debug.api_platform.collection_data_provider" class="ApiPlatform\Core\Bridge\Symfony\Bundle\DataProvider\TraceableChainCollectionDataProvider">
+      <argument type="service" id="debug.api_platform.collection_data_provider.inner"/>
+    </service>
+    <service id="debug.api_platform.item_data_provider" class="ApiPlatform\Core\Bridge\Symfony\Bundle\DataProvider\TraceableChainItemDataProvider">
+      <argument type="service" id="debug.api_platform.item_data_provider.inner"/>
+    </service>
+    <service id="debug.api_platform.subresource_data_provider" class="ApiPlatform\Core\Bridge\Symfony\Bundle\DataProvider\TraceableChainSubresourceDataProvider">
+      <argument type="service" id="debug.api_platform.subresource_data_provider.inner"/>
+    </service>
+    <service id="debug.api_platform.data_persister" class="ApiPlatform\Core\Bridge\Symfony\Bundle\DataPersister\TraceableChainDataPersister">
+      <argument type="service" id="debug.api_platform.data_persister.inner"/>
+    </service>
+    <service id="api_platform.security.resource_access_checker" class="ApiPlatform\Core\Security\ResourceAccessChecker" public="false">
+      <argument type="service" id="security.expression_language" on-invalid="null"/>
+      <argument type="service" id="security.authentication.trust_resolver" on-invalid="null"/>
+      <argument type="service" id="security.role_hierarchy" on-invalid="null"/>
+      <argument type="service" id="security.token_storage" on-invalid="null"/>
+      <argument type="service" id="security.authorization_checker" on-invalid="null"/>
+    </service>
+    <service id="api_platform.security.listener.request.deny_access" class="ApiPlatform\Core\Security\EventListener\DenyAccessListener">
+      <tag name="kernel.event_listener" event="kernel.request" method="onSecurity" priority="3"/>
+      <tag name="kernel.event_listener" event="kernel.request" method="onSecurityPostDenormalize" priority="1"/>
+      <tag name="container.hot_path"/>
+      <tag name="container.hot_path"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.security.resource_access_checker"/>
+    </service>
+    <service id="api_platform.security.expression_language_provider" class="ApiPlatform\Core\Security\Core\Authorization\ExpressionLanguageProvider" public="false">
+      <tag name="security.expression_language_provider"/>
+    </service>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\about\AboutController" class="App\Controller\about\AboutController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\about\AboutController" class="App\Controller\about\AboutController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\about\AboutController" class="App\Controller\about\AboutController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\api\ApiController" class="App\Controller\api\ApiController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\api\ApiController" class="App\Controller\api\ApiController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\api\ApiController" class="App\Controller\api\ApiController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\feedbacks\FeedbacksController" class="App\Controller\feedbacks\FeedbacksController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\feedbacks\FeedbacksController" class="App\Controller\feedbacks\FeedbacksController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\feedbacks\FeedbacksController" class="App\Controller\feedbacks\FeedbacksController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -5641,6 +6775,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.g9CqTPp" method="withContext"/>
     </service>
+    <service id=".service_locator.g9CqTPp.App\Controller\api\ApiController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\api\ApiController"/>
+      <argument>App\Controller\api\ApiController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.g9CqTPp" method="withContext"/>
+    </service>
     <service id=".service_locator.g9CqTPp.App\Controller\feedbacks\FeedbacksController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\feedbacks\FeedbacksController"/>
       <argument>App\Controller\feedbacks\FeedbacksController</argument>
@@ -5671,17 +6811,17 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.s2oGJED" method="withContext"/>
     </service>
-    <service id=".service_locator.lwpeR6U" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.K62rNlJ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="routing.loader" type="service" id="routing.loader"/>
       </argument>
     </service>
-    <service id=".service_locator.lwpeR6U.router.default" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.K62rNlJ.router.default" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="router.default"/>
       <argument>router.default</argument>
       <argument type="service" id="service_container"/>
-      <factory service=".service_locator.lwpeR6U" method="withContext"/>
+      <factory service=".service_locator.K62rNlJ" method="withContext"/>
     </service>
     <service id=".service_locator.LHmLVnd" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -5812,6 +6952,40 @@
         </argument>
       </call>
     </service>
+    <service id="api_platform.serializer.context_builder.filter.inner" class="ApiPlatform\Core\Serializer\SerializerContextBuilder" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+    </service>
+    <service id="api_platform.identifiers_extractor.cached.inner" class="ApiPlatform\Core\Api\IdentifiersExtractor" public="false">
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="property_accessor"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="api_platform.hydra.normalizer.partial_collection_view.inner" class="ApiPlatform\Core\Hydra\Serializer\CollectionNormalizer" public="false">
+      <argument type="service" id="api_platform.jsonld.context_builder"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+      <argument type="service" id="api_platform.iri_converter"/>
+    </service>
+    <service id="api_platform.hydra.json_schema.schema_factory.inner" class="ApiPlatform\Core\JsonSchema\SchemaFactory" public="false">
+      <argument type="service" id="api_platform.json_schema.type_factory"/>
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="serializer.name_converter.metadata_aware" on-invalid="ignore"/>
+      <argument type="service" id="api_platform.resource_class_resolver"/>
+    </service>
+    <service id="debug.api_platform.collection_data_provider.inner" class="ApiPlatform\Core\DataProvider\ChainCollectionDataProvider" public="false">
+      <argument type="tagged_iterator" tag="api_platform.collection_data_provider"/>
+    </service>
+    <service id="debug.api_platform.item_data_provider.inner" class="ApiPlatform\Core\DataProvider\ChainItemDataProvider" public="false">
+      <argument type="tagged_iterator" tag="api_platform.item_data_provider"/>
+    </service>
+    <service id="debug.api_platform.subresource_data_provider.inner" class="ApiPlatform\Core\DataProvider\ChainSubresourceDataProvider" public="false">
+      <argument type="tagged_iterator" tag="api_platform.subresource_data_provider"/>
+    </service>
+    <service id="debug.api_platform.data_persister.inner" class="ApiPlatform\Core\DataPersister\ChainDataPersister" public="false">
+      <argument type="tagged_iterator" tag="api_platform.data_persister"/>
+    </service>
     <service id="debug.argument_resolver.request_attribute.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestAttributeValueResolver" public="false"/>
     <service id="debug.argument_resolver.request.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\RequestValueResolver" public="false"/>
     <service id="debug.argument_resolver.session.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\SessionValueResolver" public="false"/>
@@ -5833,6 +7007,43 @@
         <argument type="service" id="monolog.logger.http_client" on-invalid="ignore"/>
       </call>
       <factory class="Symfony\Component\HttpClient\HttpClient" method="create"/>
+    </service>
+    <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.hydra.json_schema.schema_factory"/>
+      <argument type="service" id="api_platform.json_schema.type_factory"/>
+      <argument type="service" id="api_platform.operation_path_resolver.router"/>
+      <argument>null</argument>
+      <argument type="service" id="api_platform.filter_locator"/>
+      <argument>null</argument>
+      <argument>false</argument>
+      <argument>oauth2</argument>
+      <argument>application</argument>
+      <argument>/oauth/v2/token</argument>
+      <argument>/oauth/v2/auth</argument>
+      <argument type="collection"/>
+      <argument type="collection"/>
+      <argument type="service" id="api_platform.subresource_operation_factory.cached"/>
+      <argument>true</argument>
+      <argument>page</argument>
+      <argument>false</argument>
+      <argument>itemsPerPage</argument>
+      <argument>%api_platform.formats%</argument>
+      <argument>false</argument>
+      <argument>pagination</argument>
+      <argument type="collection"/>
+      <argument>%api_platform.swagger.versions%</argument>
+    </service>
+    <service id="api_platform.route_name_resolver.cached.inner" class="ApiPlatform\Core\Bridge\Symfony\Routing\RouteNameResolver" public="false">
+      <argument type="service" id="api_platform.router"/>
+    </service>
+    <service id="api_platform.subresource_operation_factory.cached.inner" class="ApiPlatform\Core\Operation\Factory\SubresourceOperationFactory" public="false">
+      <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.name_collection_factory.cached"/>
+      <argument type="service" id="api_platform.metadata.property.metadata_factory.cached"/>
+      <argument type="service" id="api_platform.path_segment_name_generator.underscore"/>
     </service>
     <service id=".errored..service_locator.beq5mCo.Symfony\Component\HttpFoundation\Response" class="Symfony\Component\HttpFoundation\Response"/>
     <service id=".errored..service_locator.C9JCBPC.Symfony\Component\Config\Loader\LoaderInterface" class="Symfony\Component\Config\Loader\LoaderInterface"/>
@@ -6093,6 +7304,46 @@
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
+    <service id="api_platform.cache.route_name_resolver.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+      <argument>lS2WwrI-H8</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/var/www/portfolio_website/var/cache/dev/pools</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
+    <service id="api_platform.cache.identifiers_extractor.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+      <argument>42r1h3Ic-5</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/var/www/portfolio_website/var/cache/dev/pools</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
+    <service id="api_platform.cache.subresource_operation_factory.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+      <argument>6gxvM8Ge6b</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/var/www/portfolio_website/var/cache/dev/pools</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
+    <service id="api_platform.cache.metadata.resource.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+      <argument>++4oNao5NG</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/var/www/portfolio_website/var/cache/dev/pools</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
+    <service id="api_platform.cache.metadata.property.recorder_inner" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
+      <argument>+quw6Us11C</argument>
+      <argument>0</argument>
+      <argument>%container.build_id%</argument>
+      <argument>/var/www/portfolio_website/var/cache/dev/pools</argument>
+      <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
+    </service>
     <service id=".service_locator.MBcj_p5" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -6245,6 +7496,60 @@
     <service id="Swift_Mailer" alias="swiftmailer.mailer.default" public="false"/>
     <service id="Swift_Transport" alias="swiftmailer.mailer.default.transport.spool" public="false"/>
     <service id="mailer" alias="swiftmailer.mailer.default" public="true"/>
+    <service id="api_platform.serializer" alias="serializer"/>
+    <service id="api_platform.property_accessor" alias="property_accessor" public="false"/>
+    <service id="api_platform.property_info" alias="property_info" public="false"/>
+    <service id="ApiPlatform\Core\Api\ResourceClassResolverInterface" alias="api_platform.resource_class_resolver"/>
+    <service id="ApiPlatform\Core\Api\UrlGeneratorInterface" alias="api_platform.router"/>
+    <service id="ApiPlatform\Core\Api\IriConverterInterface" alias="api_platform.iri_converter"/>
+    <service id="ApiPlatform\Core\Api\OperationAwareFormatsProviderInterface" alias="api_platform.formats_provider">
+      <deprecated package="api-platform/core" version="2.5">The "%alias_id%" alias is deprecated since API Platform 2.5.</deprecated>
+    </service>
+    <service id="ApiPlatform\Core\Serializer\SerializerContextBuilderInterface" alias="api_platform.serializer.context_builder.filter"/>
+    <service id="ApiPlatform\Core\Serializer\Filter\PropertyFilter" alias="api_platform.serializer.property_filter"/>
+    <service id="ApiPlatform\Core\Serializer\Filter\GroupFilter" alias="api_platform.serializer.group_filter"/>
+    <service id="api_platform.operation_path_resolver" alias="api_platform.operation_path_resolver.router" public="false"/>
+    <service id="api_platform.action.get_collection" alias="api_platform.action.placeholder" public="true"/>
+    <service id="api_platform.action.post_collection" alias="api_platform.action.placeholder" public="true"/>
+    <service id="api_platform.action.get_item" alias="api_platform.action.placeholder" public="true"/>
+    <service id="api_platform.action.patch_item" alias="api_platform.action.placeholder" public="true"/>
+    <service id="api_platform.action.put_item" alias="api_platform.action.placeholder" public="true"/>
+    <service id="api_platform.action.delete_item" alias="api_platform.action.placeholder" public="true"/>
+    <service id="api_platform.action.get_subresource" alias="api_platform.action.placeholder" public="true"/>
+    <service id="ApiPlatform\Core\Action\NotFoundAction" alias="api_platform.action.not_found" public="true"/>
+    <service id="ApiPlatform\Core\Api\IdentifiersExtractorInterface" alias="api_platform.identifiers_extractor.cached"/>
+    <service id="ApiPlatform\Core\DataPersister\DataPersisterInterface" alias="debug.api_platform.data_persister"/>
+    <service id="ApiPlatform\Core\DataProvider\ItemDataProviderInterface" alias="debug.api_platform.item_data_provider"/>
+    <service id="ApiPlatform\Core\DataProvider\CollectionDataProviderInterface" alias="debug.api_platform.collection_data_provider"/>
+    <service id="ApiPlatform\Core\DataProvider\SubresourceDataProviderInterface" alias="debug.api_platform.subresource_data_provider"/>
+    <service id="ApiPlatform\Core\DataProvider\Pagination" alias="api_platform.pagination"/>
+    <service id="api_platform.operation_path_resolver.default" alias="api_platform.operation_path_resolver.underscore"/>
+    <service id="api_platform.path_segment_name_generator" alias="api_platform.path_segment_name_generator.underscore"/>
+    <service id="ApiPlatform\Core\Metadata\Resource\Factory\ResourceNameCollectionFactoryInterface" alias="api_platform.metadata.resource.name_collection_factory.cached"/>
+    <service id="ApiPlatform\Core\Metadata\Resource\Factory\ResourceMetadataFactoryInterface" alias="api_platform.metadata.resource.metadata_factory.cached"/>
+    <service id="api_platform.metadata.property.name_collection_factory" alias="api_platform.metadata.property.name_collection_factory.cached"/>
+    <service id="ApiPlatform\Core\Metadata\Property\Factory\PropertyNameCollectionFactoryInterface" alias="api_platform.metadata.property.name_collection_factory.cached"/>
+    <service id="ApiPlatform\Core\Metadata\Property\Factory\PropertyMetadataFactoryInterface" alias="api_platform.metadata.property.metadata_factory.cached"/>
+    <service id="api_platform.metadata.resource.name_collection_factory" alias="api_platform.metadata.resource.name_collection_factory.cached"/>
+    <service id="api_platform.metadata.resource.metadata_factory" alias="api_platform.metadata.resource.metadata_factory.cached"/>
+    <service id="api_platform.metadata.property.metadata_factory" alias="api_platform.metadata.property.metadata_factory.cached"/>
+    <service id="ApiPlatform\Core\JsonSchema\TypeFactoryInterface" alias="api_platform.json_schema.type_factory" public="false"/>
+    <service id="ApiPlatform\Core\JsonSchema\SchemaFactoryInterface" alias="api_platform.hydra.json_schema.schema_factory" public="false"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter" alias="api_platform.doctrine.orm.search_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\OrderFilter" alias="api_platform.doctrine.orm.order_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\RangeFilter" alias="api_platform.doctrine.orm.range_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\DateFilter" alias="api_platform.doctrine.orm.date_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\BooleanFilter" alias="api_platform.doctrine.orm.boolean_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\NumericFilter" alias="api_platform.doctrine.orm.numeric_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\ExistsFilter" alias="api_platform.doctrine.orm.exists_filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\EagerLoadingExtension" alias="api_platform.doctrine.orm.query_extension.eager_loading"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\FilterExtension" alias="api_platform.doctrine.orm.query_extension.filter"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\FilterEagerLoadingExtension" alias="api_platform.doctrine.orm.query_extension.filter_eager_loading"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\PaginationExtension" alias="api_platform.doctrine.orm.query_extension.pagination"/>
+    <service id="ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\OrderExtension" alias="api_platform.doctrine.orm.query_extension.order"/>
+    <service id="ApiPlatform\Core\Validator\ValidatorInterface" alias="api_platform.validator"/>
+    <service id="api_platform.security.expression_language" alias="security.expression_language"/>
+    <service id="ApiPlatform\Core\Security\ResourceAccessCheckerInterface" alias="api_platform.security.resource_access_checker"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.WaGDpDt" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="argument_resolver.controller_locator" alias=".service_locator..sHG4GC"/>
@@ -6261,9 +7566,29 @@
     <service id="Psr\Log\LoggerInterface $doctrineLogger" alias="monolog.logger.doctrine"/>
     <service id="Psr\Log\LoggerInterface $securityLogger" alias="monolog.logger.security"/>
     <service id="Psr\Log\LoggerInterface $debugLogger" alias="monolog.logger.debug"/>
+    <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>
     <service id=".service_locator.A.pnDXl" alias=".1_ServiceLocator~6jOPQUD" public="false"/>
+    <service id=".service_locator.86xOqEA" alias="api_platform.serializer_locator" public="false"/>
+    <service id=".service_locator..jzzP5u" alias="api_platform.filter_locator" public="false"/>
     <service id=".service_locator.AjmrG8B" alias=".service_locator.Xl5XdWY" public="false"/>
     <service id="validator" alias="debug.validator" public="true"/>
+    <service id="api_platform.metadata.property.metadata_factory.property_info.inner" alias="api_platform.metadata.property.metadata_factory.xml" public="false"/>
+    <service id="api_platform.metadata.property.metadata_factory.inherited.inner" alias="api_platform.metadata.property.metadata_factory.property_info" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.annotation.inner" alias="api_platform.metadata.resource.metadata_factory.xml" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.yaml.inner" alias="api_platform.metadata.resource.metadata_factory.annotation" public="false"/>
+    <service id="api_platform.doctrine.orm.metadata.property.metadata_factory.inner" alias="api_platform.metadata.property.metadata_factory.inherited" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.input_output.inner" alias="api_platform.metadata.resource.metadata_factory.yaml" public="false"/>
+    <service id="api_platform.metadata.property.metadata_factory.serializer.inner" alias="api_platform.doctrine.orm.metadata.property.metadata_factory" public="false"/>
+    <service id="api_platform.metadata.subresource.metadata_factory.annotation.inner" alias="api_platform.metadata.property.metadata_factory.serializer" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.php_doc.inner" alias="api_platform.metadata.resource.metadata_factory.input_output" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.short_name.inner" alias="api_platform.metadata.resource.metadata_factory.php_doc" public="false"/>
+    <service id="api_platform.metadata.resource.filter_metadata_factory.annotation.inner" alias="api_platform.metadata.resource.metadata_factory.short_name" public="false"/>
+    <service id="api_platform.metadata.property.metadata_factory.annotation.inner" alias="api_platform.metadata.subresource.metadata_factory.annotation" public="false"/>
+    <service id="api_platform.metadata.property.metadata_factory.yaml.inner" alias="api_platform.metadata.property.metadata_factory.annotation" public="false"/>
+    <service id="api_platform.metadata.property.metadata_factory.validator.inner" alias="api_platform.metadata.property.metadata_factory.yaml" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.operation.inner" alias="api_platform.metadata.resource.filter_metadata_factory.annotation" public="false"/>
+    <service id="api_platform.metadata.property.name_collection_factory.inherited.inner" alias="api_platform.metadata.property.name_collection_factory.property_info" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.formats.inner" alias="api_platform.metadata.resource.metadata_factory.operation" public="false"/>
     <service id="translator.data_collector.inner" alias="translator.default" public="false"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher" public="true"/>
     <service id="controller_resolver" alias="debug.controller_resolver" public="false"/>
@@ -6272,6 +7597,19 @@
     <service id="twig.error_renderer.html.inner" alias="error_handler.error_renderer.html" public="false"/>
     <service id="security.access.decision_manager" alias="debug.security.access.decision_manager" public="false"/>
     <service id="var_dumper.cli_dumper" alias="var_dumper.contextualized_cli_dumper" public="false"/>
+    <service id="api_platform.serializer.context_builder" alias="api_platform.serializer.context_builder.filter" public="false"/>
+    <service id="api_platform.identifiers_extractor" alias="api_platform.identifiers_extractor.cached" public="false"/>
+    <service id="api_platform.metadata.property.name_collection_factory.xml.inner" alias="api_platform.metadata.property.name_collection_factory.inherited" public="false"/>
+    <service id="api_platform.metadata.resource.name_collection_factory.annotation.inner" alias="api_platform.metadata.resource.name_collection_factory.xml" public="false"/>
+    <service id="api_platform.metadata.resource.name_collection_factory.yaml.inner" alias="api_platform.metadata.resource.name_collection_factory.annotation" public="false"/>
+    <service id="api_platform.metadata.property.name_collection_factory.yaml.inner" alias="api_platform.metadata.property.name_collection_factory.xml" public="false"/>
+    <service id="api_platform.hydra.normalizer.collection" alias="api_platform.hydra.normalizer.collection_filters" public="false"/>
+    <service id="api_platform.hydra.normalizer.collection_filters.inner" alias="api_platform.hydra.normalizer.partial_collection_view" public="false"/>
+    <service id="api_platform.json_schema.schema_factory" alias="api_platform.hydra.json_schema.schema_factory" public="false"/>
+    <service id="api_platform.collection_data_provider" alias="debug.api_platform.collection_data_provider"/>
+    <service id="api_platform.item_data_provider" alias="debug.api_platform.item_data_provider"/>
+    <service id="api_platform.subresource_data_provider" alias="debug.api_platform.subresource_data_provider"/>
+    <service id="api_platform.data_persister" alias="debug.api_platform.data_persister" public="false"/>
     <service id="argument_resolver.request_attribute" alias="debug.argument_resolver.request_attribute" public="false"/>
     <service id="argument_resolver.request" alias="debug.argument_resolver.request" public="false"/>
     <service id="argument_resolver.session" alias="debug.argument_resolver.session" public="false"/>
@@ -6281,5 +7619,14 @@
     <service id="argument_resolver.variadic" alias="debug.argument_resolver.variadic" public="false"/>
     <service id="argument_resolver.not_tagged_controller" alias="debug.argument_resolver.not_tagged_controller" public="false"/>
     <service id="http_client" alias=".debug.http_client"/>
+    <service id="api_platform.swagger.normalizer.documentation" alias="api_platform.swagger.normalizer.api_gateway" public="false"/>
+    <service id="api_platform.route_name_resolver" alias="api_platform.route_name_resolver.cached" public="false"/>
+    <service id="api_platform.subresource_operation_factory" alias="api_platform.subresource_operation_factory.cached" public="false"/>
+    <service id="api_platform.metadata.resource.name_collection_factory.cached.inner" alias="api_platform.metadata.resource.name_collection_factory.yaml" public="false"/>
+    <service id="api_platform.metadata.resource.metadata_factory.cached.inner" alias="api_platform.metadata.resource.metadata_factory.formats" public="false"/>
+    <service id="api_platform.metadata.property.name_collection_factory.cached.inner" alias="api_platform.metadata.property.name_collection_factory.yaml" public="false"/>
+    <service id="api_platform.metadata.property.metadata_factory.cached.inner" alias="api_platform.metadata.property.metadata_factory.validator" public="false"/>
+    <service id="console.command.public_alias.api_platform.json_schema.json_schema_generate_command" alias="api_platform.json_schema.json_schema_generate_command" public="true"/>
+    <service id="console.command.public_alias.api_platform.swagger.command.swagger_command" alias="api_platform.swagger.command.swagger_command" public="true"/>
   </services>
 </container>

@@ -27,9 +27,26 @@ class FeedbacksController extends AbstractController
         $form = $this->createForm(FormType::class, $feedback);
 
         $form
-            ->add('Title', TextType::class)
-            ->add('Content', TextType::class)
-            ->add('Author', TextType::class)
+            ->add('Title', TextType::class, [
+                'help' => 'De quoi parle votre commentaire ?',
+                'attr' => [
+                    'placeholder' => 'Mon super commentaire !'
+                ]
+            ])
+
+            ->add('Content', TextType::class, [
+                'help' => 'Quel est votre message ?',
+                'attr' => [
+                    'placeholder' => 'Je pense que le site est ...'
+                ]
+            ])
+
+            ->add('Author', TextType::class, [
+                'help' => 'Qui êtes-vous ?',
+                'attr' => [
+                    'placeholder' => 'Je suis ...'
+                ]
+            ])
             ->add('Submit', SubmitType::class)
             ;
 

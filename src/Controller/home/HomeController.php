@@ -4,6 +4,7 @@ namespace App\Controller\home;
 
 use App\Entity\Newsletter;
 use App\Repository\NewsletterRepository;
+use App\Services\TokenGenerator;
 use Doctrine\ORM\EntityManagerInterface;
 use Swift_Mailer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -18,11 +19,13 @@ class HomeController extends AbstractController
 
     private $flashBag;
     private $mailer;
+    private $token;
 
-    public function __construct(FlashBagInterface $flashBag, \Swift_Mailer $mailer)
+    public function __construct(FlashBagInterface $flashBag, \Swift_Mailer $mailer, TokenGenerator $token)
     {
         $this->flashBag = $flashBag;
         $this->mailer = $mailer;
+        $this->token = $token;
     }
 
     /**
@@ -75,6 +78,22 @@ class HomeController extends AbstractController
 
     /**
      * @Route("/test", name="app.test")
+     */
+    public function test()
+    {
+        $token = $this->token->createToken(16);
+
+        $message = (new \Swift_Message('Hello Email'))
+            ->setFrom('reapexautomaticemail@gmail.com')
+            ->setTo('test@gmail.com')
+            ->setBody("Email de test")
+        ;
+        $this->mailer->send($message);
+        return $this->render('home/home.html.twig');
+    }
+
+    /**
+     * @Route("/newsletter/send/all", name="app.newsletter.send.all")
      * @param NewsletterRepository $newsletterRepository
      * @return RedirectResponse
      */
@@ -91,11 +110,18 @@ class HomeController extends AbstractController
 
     private function sendEmail($email)
     {
+        $token = $this->token->createToken(16);
+
         $message = (new \Swift_Message('Hello Email'))
-            ->setFrom('tr7296228@gmail.com')
+            ->setFrom('reapexautomaticemail@gmail.com')
             ->setTo($email)
             ->setBody(
-                'ceci est un test'
+                $this->renderView(
+                // templates/emails/registration.html.twig
+                    'emails/registration.html.twig',
+                    ['token' => $token]
+                ),
+                'text/html'
             )
         ;
         $this->mailer->send($message);

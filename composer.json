@@ -5,6 +5,7 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-openssl": "*",
         "amphp/http-client": "^4.5",
         "amphp/http-tunnel": "^1.0",
         "composer/package-versions-deprecated": "^1.11",

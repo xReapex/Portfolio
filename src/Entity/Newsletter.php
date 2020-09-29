@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use App\Repository\NewsletterRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass=NewsletterRepository::class)

@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}API{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="centre">
+            <div>
+                <h2>Application Programming Interface</h2>
+                <p>Vous voilà à présent sur la page de mon API, elle sert <c class="text-info">d'exemple</c> et vous ne pourrez récupérer que les feedbacks disponibles sur le site. Je vous met donc à <c class="text-success">disposition</c> les moyens de récupérer ces fameux feedbacks ! Commencez dès maintenant à explorer l'<a href="{{ path('api_entrypoint') }}" class="text-warning">API</a> !</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

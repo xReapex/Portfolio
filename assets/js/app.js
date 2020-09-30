@@ -12,6 +12,7 @@ import $ from 'jquery';
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
+// scroll
 $('a').click(function (){
     var target = $(this.getAttribute('href'));
     if(target.length){
@@ -21,3 +22,8 @@ $('a').click(function (){
         }, 2000);
     }
 });
+
+//Tooltip
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

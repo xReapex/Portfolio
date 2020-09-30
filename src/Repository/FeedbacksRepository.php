@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\Feedbacks;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Doctrine\ORM\Query;
 
 /**
  * @method Feedbacks|null find($id, $lockMode = null, $lockVersion = null)
@@ -47,4 +48,12 @@ class FeedbacksRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function findLastest(): Query
+    {
+        return $this->createQueryBuilder('p')
+            ->setMaxResults(3)
+            ->addOrderBy('p.id', 'DESC')
+            ->getQuery();
+    }
+
 }

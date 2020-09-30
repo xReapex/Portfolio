@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Feedbacks{% endblock %}
+
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
@@ -27,11 +29,18 @@
         </div>
     </div>
 
-    <div class="centre" id="commentaires">
+    <div class="centre container" id="commentaires">
         <div>
-            Test
+            <h2>Commentaires récents :</h2>
         </div>
+        {% for feedback in feedbacks %}
+            <blockquote class="blockquote text-center zoom">
+                <p class="mb-0 ml-2">{{ feedback.content }}</p>
+                <footer class="blockquote-footer">{{ feedback.author }} <cite title="Source Title">{{ feedback.title }}</cite></footer>
+            </blockquote>
+        {% endfor %}
     </div>
+
 
     <a href="#top" type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-link"></i></a>
 {% endblock %}

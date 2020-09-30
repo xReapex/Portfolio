@@ -7,9 +7,9 @@
 /src/.preload.php
 /var/
 /vendor/
-/node_modules
+/node_modules/
 .env
-/var
+/var/log
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

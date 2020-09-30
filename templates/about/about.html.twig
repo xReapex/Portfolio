@@ -6,36 +6,33 @@
 
 <div class="container">
 
-    <center>
-        <h2 style="margin-top: 5%">A propos</h2><br><br>
-
-        <div class="about-gauche zoom">
-            <div class="card border-primary" style="width: 1000px; height: 200px;">
-                <div class="card-header text-info">Présentation générale</div>
-                <div class="card-body">
-                    <h4 class="card-title">Qui suis-je ?</h4>
-                    <p class="card-text">Je m'appelle Thomas ROBERT,<br>J'ai actuellement 19 ans et je vis près de Paris.<br>Je suis autodidacte dans le monde du développement.</p>
-                </div>
-            </div>
+    <div class="centre">
+        <div>
+            <h2>A propos</h2>
+            <p>Bienvenue sur la page qui regroupe toutes les informations utiles sur moi, vous pourrez pas exemple savoir <a href="#qui_suis_je" class="text-info">qui suis-je</a>, quels sont mes objectifs ou encore une liste complète de chaque compétences que je maitrise...</p>
         </div>
-        <div class="about-centre zoom">
-            <div class="card border-primary" style="width: 1000px; height: 200px; margin-top: 5%">
-                <div class="card-header text-success">Compétences</div>
-                <div class="card-body">
-                    <h4 class="card-title">Quelles sont mes compétences ?</h4>
-                    <p class="card-text"><i class="fab fa-symfony"></i> PHP (Symfony 5) • JavaScript (Node.js) <i class="fab fa-node"></i><br><i class="fab fa-java"></i> Java • Python <i class="fab fa-python"></i><br> <i class="fas fa-code"></i> HTML & CSS & TWIG <i class="fas fa-code"></i></p></div>
-            </div>
+    </div>
+    <div class="centre" id="qui_suis_je">
+        <div>
+            <h2>Qui suis-je ?</h2>
+            <p>Pour commencer, je m'appelle Thomas ROBERT, je suis née le 13 novembre 2001 à Champigny-sur-Marne ! Je réside actuellement au Plessis-Trévise (94420), FRANCE, en banlieue EST de Paris.</p>
+            <p>Je possède les diplômes du "Brevet des collèges" ainsi que un "BAC STI2D option SIN" mention "assez bien".</p>
+            <p>Je suis passionné d'informatique et de nouvelles technologies en tout genres. Je ne cesse d'apprendre de moi même de nouvelles technologies de manière autodidacte ainsi que de m'exercer en me faisant des projets personnels ! Quelles sont mes <c class="text-info">compétences</c> ? Rendez vous <a href="#competences" class="text-warning">ici</a> pour le savoir ! </p>
         </div>
-        <div class="about-droit zoom">
-            <div class="card border-primary" style="width: 1000px; height: 200px; margin-top: 5%; margin-bottom: 5%">
-                <div class="card-header text-warning">Mes ambitions</div>
-                <div class="card-body">
-                    <h4 class="card-title">Le développement...</h4>
-                    <p class="card-text">Le développement m'a toujours attiré, je me suis donc intéressé à plusieurs langages de<br> programmation pour approfondir mes connaissances dans ce domaine.<br>Mon objectif serait de devenir développeur dans le domaine du jeu vidéo.</p>
-                </div>
-            </div>
+    </div>
+    <div class="centre" id="competences">
+        <div>
+            <h2>Mes compétences</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML & CSS & Twig</li>
+            </ul>
         </div>
-    </center>
+    </div>
+    <a href="#top" type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-link"></i></a>
 </div>
 
 {% endblock %}

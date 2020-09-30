@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="" />
+    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -248,7 +251,7 @@
       <workItem from="1601280708254" duration="7233000" />
       <workItem from="1601291053145" duration="11640000" />
       <workItem from="1601363596897" duration="15521000" />
-      <workItem from="1601448563173" duration="18273000" />
+      <workItem from="1601448563173" duration="18536000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -383,7 +386,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601474329635</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Update">
+      <created>1601474759474</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1601474759474</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update">
+      <created>1601474811568</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1601474811568</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,13 +453,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599936065920" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1601474329329">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1601474811132">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600794057681" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1601474329329" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1601474811132" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -491,6 +508,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600525657486" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1601474815530">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1601474815530" />
     <state x="611" y="257" width="201" height="279" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601279744545">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

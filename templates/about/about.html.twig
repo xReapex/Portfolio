@@ -24,11 +24,13 @@
         <div>
             <h2>Mes compétences</h2>
             <ul>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>Java</li>
-                <li>HTML & CSS & Twig</li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "javascript"}) }}">JavaScript</a></li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "php"}) }}">PHP</a></li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "python"}) }}">Python</a></li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "java"}) }}">Java</a></li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "html"}) }}">HTML</a></li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "css"}) }}">CSS</a></li>
+                <li><a class="text-warning" href="{{ path('app.skills', {'name': "twig"}) }}">Twig</a></li>
             </ul>
         </div>
     </div>

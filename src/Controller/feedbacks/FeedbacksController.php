@@ -30,7 +30,7 @@ class FeedbacksController extends AbstractController
 
         $form
             ->add('Title', TextType::class, [
-                'help' => 'De quoi parle votre commentaire ?',
+                'help' => 'Quel est l\'objet de votre commentaire ?',
                 'attr' => [
                     'placeholder' => 'Mon super commentaire !'
                 ]

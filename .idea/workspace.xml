@@ -20,34 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/base.0QYuAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/base.0QYuAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/base.0QYuAA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/base.0QYuAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/base.0QYuAA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/base.0QYuAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/portfolio.SAXdQg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/portfolio.SAXdQg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/portfolio.SAXdQg/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/portfolio.SAXdQg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/portfolio.SAXdQg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0a832355-bf8f-4f49-a33b-5ed71ed0b88e/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.preload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/.preload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/feedbacks/FeedbacksController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/feedbacks/FeedbacksController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,6 +252,8 @@
       <workItem from="1601363596897" duration="15521000" />
       <workItem from="1601448563173" duration="19145000" />
       <workItem from="1601829170638" duration="2394000" />
+      <workItem from="1601910344052" duration="403000" />
+      <workItem from="1601914134415" duration="70000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>

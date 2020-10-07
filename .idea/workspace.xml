@@ -21,6 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/vendors~app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/vendors~app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectId.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,6 +266,10 @@
       <workItem from="1601829170638" duration="2394000" />
       <workItem from="1601910344052" duration="403000" />
       <workItem from="1601914134415" duration="70000" />
+      <workItem from="1601995763282" duration="1430000" />
+      <workItem from="1602085934488" duration="11000" />
+      <workItem from="1602086595261" duration="214000" />
+      <workItem from="1602093492733" duration="2691000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>

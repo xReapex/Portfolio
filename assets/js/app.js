@@ -22,8 +22,3 @@ $('a').click(function (){
         }, 2000);
     }
 });
-
-//Tooltip
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-})

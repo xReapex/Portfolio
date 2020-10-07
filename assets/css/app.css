@@ -18,11 +18,14 @@
 
 .zoom:hover {
     transform: scale(1.03);
+}
 
+.imgflou {
+    filter: blur(3px);
 }
 
 .zoom:hover .imgflou {
-    filter: blur(3px)
+    filter: blur(0.0000000001px)
 }
 
 .centre{

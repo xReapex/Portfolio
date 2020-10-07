@@ -24,14 +24,16 @@ class ProjectController extends AbstractController
         $array = $IdManager->getFormationProjectID();
         $rand_formation = array_rand($array, 3);
 
+        //Projet personnels
+        $array1 = $IdManager->getPersonnalProjectID();
+        $rand_perso = array_rand($array1, 3);
+
+        //Projets de formation
         $projet1 = $manager->getProject($array[$rand_formation[0]]);
         $projet2 = $manager->getProject($array[$rand_formation[1]]);
         $projet3 = $manager->getProject($array[$rand_formation[2]]);
 
         //Projet personnels
-        $array1 = $IdManager->getPersonnalProjectID();
-        $rand_perso = array_rand($array1, 3);
-
         $projet_perso1 = $manager->getProject($array1[$rand_perso[0]]);
         $projet_perso2 = $manager->getProject($array1[$rand_perso[1]]);
         $projet_perso3 = $manager->getProject($array1[$rand_perso[2]]);

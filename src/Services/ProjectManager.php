@@ -79,14 +79,11 @@ class ProjectManager
         }
     }
 
-    public function getProject($gitlab_project_id)
+    public function requestGitlab($gitlab_project_id)
     {
-        $object = [];
-        $object['languages'] = $this->getLanguages($gitlab_project_id);
-        $object['description'] = $this->getDescription($gitlab_project_id);
-        $object['web_url'] = $this->getProjectUrl($gitlab_project_id);
-        $object['readme_url'] = $this->getReadme($gitlab_project_id);
-
-        return $object;
+        $res = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray();
+        $res['readme_url'] = $this->getReadme($gitlab_project_id);
+        $res['languages'] = $this->getLanguages($gitlab_project_id);
+        return $res;
     }
 }

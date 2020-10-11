@@ -29,14 +29,14 @@ class ProjectController extends AbstractController
         $rand_perso = array_rand($array1, 3);
 
         //Projets de formation
-        $projet1 = $manager->getProject($array[$rand_formation[0]]);
-        $projet2 = $manager->getProject($array[$rand_formation[1]]);
-        $projet3 = $manager->getProject($array[$rand_formation[2]]);
+        $projet1 = $manager->requestGitlab($array[$rand_formation[0]]);
+        $projet2 = $manager->requestGitlab($array[$rand_formation[1]]);
+        $projet3 = $manager->requestGitlab($array[$rand_formation[2]]);
 
         //Projet personnels
-        $projet_perso1 = $manager->getProject($array1[$rand_perso[0]]);
-        $projet_perso2 = $manager->getProject($array1[$rand_perso[1]]);
-        $projet_perso3 = $manager->getProject($array1[$rand_perso[2]]);
+        $projet_perso1 = $manager->requestGitlab($array1[$rand_perso[0]]);
+        $projet_perso2 = $manager->requestGitlab($array1[$rand_perso[1]]);
+        $projet_perso3 = $manager->requestGitlab($array1[$rand_perso[2]]);
 
         return $this->render('project/project.html.twig', [
             "projet1" => $projet1,

@@ -2,11 +2,21 @@
 
 {% block body %}
 
-<div class="centre">
-    <div>
-        <h2>{% block name %}{% endblock %}</h2>
-        <p>{% block content %}{% endblock %}</p>
+<div class="container">
+    <div class="centre">
+        <div>
+            <h2>{% block name %}{% endblock %}</h2>
+            <p>{% block content %}{% endblock %}</p>
+        </div>
     </div>
+    <div class="centre" id="part2">
+        <div>
+            <h2>{% block name2 %}{% endblock %}</h2>
+            <p>{% block content2 %}{% endblock %}</p>
+        </div>
+    </div>
+    <a href="#top" type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-link"></i></a>
+    <a href="{{ path("app.about", {'_fragment': 'competences'})}}" type="button" class="btn btn-warning btn-circle btn-lg" style="bottom: 100px"><i class="fas fa-list"></i></a>
 </div>
 
 {% endblock %}

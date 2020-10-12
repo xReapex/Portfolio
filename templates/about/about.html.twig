@@ -23,15 +23,21 @@
     <div class="centre" id="competences">
         <div>
             <h2>Mes compétences</h2>
-            <ul>
-                <li><a href="{{ path('app.skills', {'name': "javascript"}) }}">JavaScript</a></li>
-                <li><a href="{{ path('app.skills', {'name': "php"}) }}">PHP</a></li>
-                <li><a href="{{ path('app.skills', {'name': "python"}) }}">Python</a></li>
-                <li><a href="{{ path('app.skills', {'name': "java"}) }}">Java</a></li>
-                <li><a href="{{ path('app.skills', {'name': "html"}) }}">HTML</a></li>
-                <li><a href="{{ path('app.skills', {'name': "css"}) }}">CSS</a></li>
-                <li><a href="{{ path('app.skills', {'name': "twig"}) }}">Twig</a></li>
-            </ul>
+            <p>Parcourez dès à présent les différents langages pour en apprendre plus sur mes capacités dans celles-ci ! Rendez-vous dans le language de votre choix pour en apprendre plus dès maintenant !</p>
+            <br>
+            <center>
+                <div class="card zoom border-primary" style="width: 50%; border-radius: 10px;">
+                    <div class="card-body">
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "javascript"}) }}">JavaScript</a>
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "php"}) }}">PHP</a>
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "java"}) }}">Java</a>
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "python"}) }}">Python</a>
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "html"}) }}">HTML</a>
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "css"}) }}">CSS</a>
+                        <a type="button" class="btn btn-outline-info zoom" href="{{ path('app.skills', {'name': "twig"}) }}">Twig</a>
+                    </div>
+                </div>
+            </center>
         </div>
     </div>
     <a href="#top" type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-link"></i></a>

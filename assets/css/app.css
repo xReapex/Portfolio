@@ -45,6 +45,7 @@
     bottom: 40px;
     right: 40px;
     z-index: 1;
+    border-color: #DDDDDD;
 }
 
 nav {

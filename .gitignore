@@ -8,7 +8,6 @@
 /var/
 /vendor/
 /node_modules/
-.env
 /var/log
 ###< symfony/framework-bundle ###
 

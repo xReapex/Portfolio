@@ -20,9 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1128d0a-bce1-4026-bd7e-472e3b243ffa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1128d0a-bce1-4026-bd7e-472e3b243ffa/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/about/skills/SkillsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/about/skills/SkillsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +190,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -265,6 +273,9 @@
       <workItem from="1602086595261" duration="214000" />
       <workItem from="1602093492733" duration="3452000" />
       <workItem from="1602169972049" duration="801000" />
+      <workItem from="1602486084212" duration="258000" />
+      <workItem from="1602486352938" duration="224000" />
+      <workItem from="1602487108524" duration="1833000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -472,17 +483,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1601484939812" />
-    <state x="552" y="178" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601485206643">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602486576960">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601485206643" />
     <state x="572" y="165" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279474318" />
+    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602486576960" />
     <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
-    <state x="702" y="322" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601484695785">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602486211043">
+      <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601484695785" />
-    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1601290837765" />
+    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1602486211043" />
     <state x="585" y="130" width="412" height="638" key="#com.intellij.ide.util.MemberChooser" timestamp="1601449217498">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

@@ -56,17 +56,6 @@ class ProjectManager
         return $res;
 
     }
-
-    private function getDescription($gitlab_project_id)
-    {
-        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['description'];
-    }
-
-    private function getProjectUrl($gitlab_project_id)
-    {
-        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['web_url'];
-    }
-
     private function getReadme($gitlab_project_id)
     {
         $response = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['readme_url'];
@@ -75,7 +64,7 @@ class ProjectManager
             return '<a class="btn btn-primary disabled"><i class="fab fa-readme"></i> README.md</a>';
         }
         else{
-            return '<a href="'.$response.'" class="btn btn-primary"><i class="fab fa-readme"></i> README.md</a>';
+            return '<a href="'.$response.'" class="btn btn-primary" target="_blank"><i class="fab fa-readme"></i> README.md</a>';
         }
     }
 

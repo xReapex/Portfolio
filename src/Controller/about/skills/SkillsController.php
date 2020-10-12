@@ -38,6 +38,9 @@ class SkillsController extends AbstractController
             case "javascript":
                 $res = $this->render('skills/javascript.html.twig');
                 break;
+            default:
+                $res = $this->redirectToRoute("app.about", ["_fragment" => "competences"]);
+                break;
         }
 
         return $res;

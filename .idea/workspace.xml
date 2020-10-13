@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/api/api.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/api.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/skills/javascript.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills/javascript.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/skills/php.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills/php.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +268,7 @@
       <workItem from="1602486084212" duration="258000" />
       <workItem from="1602486352938" duration="224000" />
       <workItem from="1602487108524" duration="22114000" />
-      <workItem from="1602572795832" duration="3124000" />
+      <workItem from="1602572795832" duration="8249000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -474,7 +473,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602573607259</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Changes base x javascript x php skills">
+      <created>1602576519354</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1602576519354</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add id project checker">
+      <created>1602578773345</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1602578773345</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Ajout option informations">
+      <created>1602580120816</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1602580120816</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +523,10 @@
     <MESSAGE value="Update &amp; Add JavaScript" />
     <MESSAGE value="Update JavaScript Skill" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Changes base x javascript x php skills" />
+    <MESSAGE value="Add id project checker" />
+    <MESSAGE value="Ajout option informations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout option informations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -521,11 +544,11 @@
     <state x="572" y="165" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279474318" />
     <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602486576960" />
     <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
-    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602486211043">
+    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602579179217">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1601484695785" />
-    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1602486211043" />
+    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1602579179217" />
     <state x="585" y="130" width="412" height="638" key="#com.intellij.ide.util.MemberChooser" timestamp="1601449217498">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -539,13 +562,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602510994782" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602573606928">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602580120764">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602573606928" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602580120764" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

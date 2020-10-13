@@ -15,50 +15,17 @@ class ProjectManager
         $this->idManager = $idManager;
     }
 
-    private function getLanguages($gitlab_project_id)
+    public function getLanguages($gitlab_project_id)
     {
-        $languages = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id/languages")->toArray();
-        $res = [];
-        $i = 0;
-
-        foreach ($languages as $language => $pourcentage)
-        {
-            switch (strtolower($language))
-            {
-                case 'html':
-                    $res[$i] = '<span class="badge badge-pill badge-danger"><i class="fab fa-html5"></i> ' .$pourcentage. '%</span>';
-                    break;
-
-                case 'php':
-                    $res[$i] = '<span class="badge badge-pill badge-primary"><i class="fab fa-php"></i> ' .$pourcentage. '%</span>';
-                    break;
-
-                case 'css':
-                    $res[$i] = '<span class="badge badge-pill badge-info"><i class="fab fa-css3-alt"></i> ' .$pourcentage. '%</span>';
-                    break;
-
-                case 'javascript':
-                    $res[$i] = '<span class="badge badge-pill badge-warning"><i class="fab fa-js-square"></i> ' .$pourcentage. '%</span>';
-                    break;
-
-                case 'python':
-                    $res[$i] = '<span class="badge badge-pill badge-primary"><i class="fab fa-python"></i> ' .$pourcentage. '%</span>';
-                    break;
-
-                case 'tsql':
-                    $res[$i] = '<span class="badge badge-pill badge-light"><i class="fas fa-database"></i> ' .$pourcentage. '%</span>';
-                    break;
-
-                case 'java':
-                    $res[$i] = '<span class="badge badge-pill badge-success"><i class="fab fa-java"></i> ' .$pourcentage. '%</span>';
-                    break;
-            }
-            $i++;
-        }
-        return $res;
-
+        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id/languages")->toArray();
     }
+
     private function getReadme($gitlab_project_id)
+    {
+        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['readme_url'];
+    }
+
+    private function getReadmeEmbed($gitlab_project_id)
     {
         $response = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['readme_url'];
         if ($response == null)
@@ -70,12 +37,16 @@ class ProjectManager
         }
     }
 
-    public function requestGitlab($gitlab_project_id)
+    public function getProject($gitlab_project_id)
     {
         $res = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray();
-        $res['readme_url'] = $this->getReadme($gitlab_project_id);
-        //$res['languages'] = $this->getLanguages($gitlab_project_id);
+        $res['readme_url'] = $this->getReadmeEmbed($gitlab_project_id);
         return $res;
+    }
+
+    public function requestGitlab($gitlab_project_id)
+    {
+        return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray();
     }
 
     public function isIdExists($gitlab_project_id)

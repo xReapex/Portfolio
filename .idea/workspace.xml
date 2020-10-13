@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/skills/php.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills/php.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +266,8 @@
       <workItem from="1602169972049" duration="801000" />
       <workItem from="1602486084212" duration="258000" />
       <workItem from="1602486352938" duration="224000" />
-      <workItem from="1602487108524" duration="21637000" />
+      <workItem from="1602487108524" duration="22114000" />
+      <workItem from="1602572795832" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -456,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602501167295</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Update">
+      <created>1602511730510</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1602511730511</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,10 +491,10 @@
     <MESSAGE value="Ajouts effets nav-item" />
     <MESSAGE value="Add API" />
     <MESSAGE value="Inverse blur effect" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Update &amp; Add JavaScript" />
     <MESSAGE value="Update JavaScript Skill" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update JavaScript Skill" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -521,13 +530,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602510994782" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602501167239">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602511730448">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602501167239" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602511730448" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

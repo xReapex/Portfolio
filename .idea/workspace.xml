@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/api/api.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/api.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/skills/javascript.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills/javascript.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/skills/php.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/skills/php.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +269,7 @@
       <workItem from="1602486084212" duration="258000" />
       <workItem from="1602486352938" duration="224000" />
       <workItem from="1602487108524" duration="22114000" />
-      <workItem from="1602572795832" duration="577000" />
+      <workItem from="1602572795832" duration="3124000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -465,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602511730511</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Update">
+      <created>1602573607259</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1602573607259</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,13 +539,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602510994782" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602511730448">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602573606928">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602511730448" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602573606928" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

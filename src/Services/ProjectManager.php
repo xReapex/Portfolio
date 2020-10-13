@@ -7,10 +7,12 @@ use Symfony\Component\HttpClient\HttpClient;
 class ProjectManager
 {
     private $http;
+    private $idManager;
 
-    public function __construct()
+    public function __construct(ProjectId $idManager)
     {
         $this->http = HttpClient::create();
+        $this->idManager = $idManager;
     }
 
     private function getLanguages($gitlab_project_id)
@@ -72,7 +74,27 @@ class ProjectManager
     {
         $res = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray();
         $res['readme_url'] = $this->getReadme($gitlab_project_id);
-        $res['languages'] = $this->getLanguages($gitlab_project_id);
+        //$res['languages'] = $this->getLanguages($gitlab_project_id);
         return $res;
+    }
+
+    public function isIdExists($gitlab_project_id)
+    {
+        $formation = $this->idManager->getFormationProjectID();
+        $perso = $this->idManager->getPersonnalProjectID();
+
+        if (in_array($gitlab_project_id, $formation))
+        {
+            return true;
+        }
+        else{
+            if (in_array($gitlab_project_id, $perso))
+            {
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
     }
 }

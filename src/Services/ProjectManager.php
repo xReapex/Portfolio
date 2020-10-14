@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
+use phpDocumentor\Reflection\Types\Array_;
 use Symfony\Component\HttpClient\HttpClient;
 
 class ProjectManager
@@ -67,5 +69,27 @@ class ProjectManager
                 return false;
             }
         }
+    }
+
+    public function createChart($gitlab_id_project)
+    {
+
+        $languages = $this->getLanguages($gitlab_id_project);
+
+        $table = [];
+        array_push($table, [' ', ' ', ['role' => 'style']]);
+        foreach ($languages as $pourcentage => $value){
+            array_push($table, [$pourcentage, $value, "#222"]);
+        }
+
+        $pieChart = new PieChart();
+        $pieChart->getData()->setArrayToDataTable($table);
+        $pieChart->getOptions()->setHeight(375);
+        $pieChart->getOptions()->setWidth(675);
+        $pieChart->getOptions()->getBackgroundColor()->setFill("#222");
+        $pieChart->getOptions()->setIs3D(true);
+        $pieChart->getOptions()->getLegend()->setPosition('none');
+
+        return $pieChart;
     }
 }

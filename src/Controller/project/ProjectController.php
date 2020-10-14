@@ -6,6 +6,7 @@ use App\Services\ProjectId;
 use App\Services\ProjectManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -52,6 +53,7 @@ class ProjectController extends AbstractController
      * @Route("/projets/{id}", name="app.project.id")
      * @param $id
      * @param ProjectManager $manager
+     * @return RedirectResponse|Response
      */
     public function showProjectId($id ,ProjectManager $manager)
     {
@@ -61,11 +63,16 @@ class ProjectController extends AbstractController
         {
             $project = $manager->requestGitlab($id);
             $project['languages'] = $manager->getLanguages($id);
+            $chart = $manager->createChart($id);
 
             return $this->render('project/project_id.html.twig', [
                 "id" => $id,
-                "project" => $project
+                "project" => $project,
+                'piechart' => $chart
             ]);
+        }
+        else{
+            return $this->redirectToRoute('app.project');
         }
 
     }

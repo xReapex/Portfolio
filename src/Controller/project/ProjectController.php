@@ -15,18 +15,17 @@ class ProjectController extends AbstractController
     /**
      * @Route("/projets", name="app.project")
      * @param ProjectManager $manager
-     * @param ProjectId $IdManager
      * @return Response
      */
-    public function showProjects(ProjectManager $manager, ProjectId $IdManager)
+    public function showProjects(ProjectManager $manager)
     {
 
         //Projets de formation
-        $array = $IdManager->getFormationProjectID();
+        $array = ProjectId::PROJET_FORMATION_GIT_LAB_IDS;
         $rand_formation = array_rand($array, 3);
 
         //Projet personnels
-        $array1 = $IdManager->getPersonnalProjectID();
+        $array1 = ProjectId::PROJET_PERSONNEL_GIT_LAB_IDS;
         $rand_perso = array_rand($array1, 3);
 
         //Projets de formation
@@ -55,11 +54,10 @@ class ProjectController extends AbstractController
      * @param ProjectManager $manager
      * @return RedirectResponse|Response
      */
-    public function showProjectId($id ,ProjectManager $manager)
+    public function showProjectsetEmailId($id ,ProjectManager $manager)
     {
-        $res = $manager->isIdExists($id);
 
-        if ($res)
+        if ($manager->isIdExists($id))
         {
             $project = $manager->requestGitlab($id);
             $project['languages'] = $manager->getLanguages($id);
@@ -71,9 +69,9 @@ class ProjectController extends AbstractController
                 'piechart' => $chart
             ]);
         }
-        else{
+
+
             return $this->redirectToRoute('app.project');
-        }
 
     }
 }

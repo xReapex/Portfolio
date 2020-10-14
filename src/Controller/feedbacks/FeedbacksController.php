@@ -3,6 +3,7 @@
 namespace App\Controller\feedbacks;
 
 use App\Entity\Feedbacks;
+use App\Form\FeedBacksType;
 use App\Repository\FeedbacksRepository;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -26,44 +27,19 @@ class FeedbacksController extends AbstractController
     public function showFeedbacks(Request $request, FeedbacksRepository $feedbacksRepository)
     {
         $feedback = new Feedbacks();
-        $form = $this->createForm(FormType::class, $feedback);
+        $form = $this->createForm(FeedBacksType::class, $feedback);
+        $form->handleRequest($request);
 
-        $form
-            ->add('Title', TextType::class, [
-                'help' => 'Quel est l\'objet de votre commentaire ?',
-                'attr' => [
-                    'placeholder' => 'Mon super commentaire !'
-                ]
-            ])
+        if ($form->isSubmitted() && $form->isValid()) {
 
-            ->add('Content', TextType::class, [
-                'help' => 'Quel est votre message ?',
-                'attr' => [
-                    'placeholder' => 'Je pense que le site est ...'
-                ]
-            ])
-
-            ->add('Author', TextType::class, [
-                'help' => 'Qui êtes-vous ?',
-                'attr' => [
-                    'placeholder' => 'Je suis ...'
-                ]
-            ])
-            ->add('Submit', SubmitType::class)
-            ;
-
-        if ($request->isMethod('POST')) {
-            $form->handleRequest($request);
-
-            if ($form->isValid()) {
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($feedback);
                 $em->flush();
-                $feedback = $feedback->setDate(new \DateTime("now"));
-                $em->persist($feedback);
-                $em->flush();
+
+                $this->addFlash('success', 'Feedback is created by success');
+
                 return $this->redirectToRoute('app.feedbacks.home', ["_fragment" => "created"]);
-            }
+
         }
 
         $feedbacks = $feedbacksRepository->findLastest()->getResult();

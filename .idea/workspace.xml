@@ -19,7 +19,41 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="" />
+    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml.tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/base.0QYuAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/base.0QYuAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/base.0QYuAA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/base.0QYuAA/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/base.0QYuAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/base.0QYuAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20200930170728.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.preload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/about/AboutController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/about/skills/SkillsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/api/ApiController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/feedbacks/FeedbacksController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/home/HomeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Feedbacks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Newsletter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/FeedbacksRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/NewsletterRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectId.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/TokenGenerator.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,7 +219,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -265,7 +299,7 @@
       <workItem from="1602486352938" duration="224000" />
       <workItem from="1602487108524" duration="22114000" />
       <workItem from="1602572795832" duration="15415000" />
-      <workItem from="1602658788992" duration="14624000" />
+      <workItem from="1602658788992" duration="20548000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -568,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602675197992</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Stable version before login">
+      <created>1602675660732</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1602675660732</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +652,8 @@
     <MESSAGE value="Update php skill" />
     <MESSAGE value="Update border color about skills list" />
     <MESSAGE value="Update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
+    <MESSAGE value="Stable version before login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stable version before login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -622,12 +664,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1601484939812" />
-    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602486576960">
+    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602676876257">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601485206643" />
     <state x="572" y="165" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279474318" />
-    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602486576960" />
+    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602676876257" />
     <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
     <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602579179217">
       <screen x="67" y="27" width="1299" height="741" />
@@ -647,13 +689,17 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602667807668" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602675197941">
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602680274891">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602680274891" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602675660681">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602675197941" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602675660681" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -691,13 +737,13 @@
     </state>
     <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600242528645" />
     <state x="813" y="117" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697379861" />
-    <state x="344" y="38" key="SettingsEditor" timestamp="1601281490213">
+    <state x="344" y="38" key="SettingsEditor" timestamp="1602679991071">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599987558692" />
     <state x="461" y="355" key="SettingsEditor/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259164113" />
     <state x="344" y="38" key="SettingsEditor/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601280691930" />
-    <state x="344" y="38" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1601281490213" />
+    <state x="344" y="38" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1602679991071" />
     <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1600525657486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -726,5 +772,9 @@
       <screen x="0" y="196" width="1920" height="1004" />
     </state>
     <state x="651" y="207" width="618" height="783" key="find.popup/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600344058587" />
+    <state x="380" y="175" key="run.anything.popup" timestamp="1602680846028">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1602680846028" />
   </component>
 </project>

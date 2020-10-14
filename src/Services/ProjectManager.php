@@ -53,22 +53,7 @@ class ProjectManager
 
     public function isIdExists($gitlab_project_id)
     {
-        $formation = $this->idManager->getFormationProjectID();
-        $perso = $this->idManager->getPersonnalProjectID();
-
-        if (in_array($gitlab_project_id, $formation))
-        {
-            return true;
-        }
-        else{
-            if (in_array($gitlab_project_id, $perso))
-            {
-                return true;
-            }
-            else{
-                return false;
-            }
-        }
+        return (in_array($gitlab_project_id, ProjectId::PROJET_PERSONNEL_GIT_LAB_IDS) || in_array($gitlab_project_id, ProjectId::PROJET_FORMATION_GIT_LAB_IDS));
     }
 
     public function createChart($gitlab_id_project)

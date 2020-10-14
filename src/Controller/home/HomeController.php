@@ -6,10 +6,8 @@ use App\Entity\Newsletter;
 use App\Repository\NewsletterRepository;
 use App\Services\TokenGenerator;
 use Doctrine\ORM\EntityManagerInterface;
-use Swift_Mailer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
@@ -17,13 +15,12 @@ use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
 class HomeController extends AbstractController
 {
 
-    private $flashBag;
+
     private $mailer;
     private $token;
 
-    public function __construct(FlashBagInterface $flashBag, \Swift_Mailer $mailer, TokenGenerator $token)
+    public function __construct(\Swift_Mailer $mailer, TokenGenerator $token)
     {
-        $this->flashBag = $flashBag;
         $this->mailer = $mailer;
         $this->token = $token;
     }
@@ -55,14 +52,14 @@ class HomeController extends AbstractController
     public function addEmail(Request $request, EntityManagerInterface $manager, NewsletterRepository $newsletterRepository)
     {
         // Requete
-        $email = $request->request->get('newsletter_email');
+        $email = $request->get('newsletter_email');
 
         if ($newsletterRepository->findOneBy(["email" => $email])){
 
-            $this->flashBag->add('newsletter_error', "Une erreur est survenue, l'adresse email choisie est déja utilisée ! Veuillez en sélectionner une autre.");
+            $this->addFlash('newsletter_error', "Une erreur est survenue, l'adresse email choisie est déja utilisée ! Veuillez en sélectionner une autre.");
             return $this->redirectToRoute('app.home');
 
-        }else{
+        }
             // On créée l'objet
             $new_mail = new Newsletter();
             $new_mail->setEmail($email);
@@ -71,9 +68,9 @@ class HomeController extends AbstractController
             $manager->persist($new_mail);
             $manager->flush();
 
-            $this->flashBag->add('newsletter_success', "Votre adresse mail a correctement été ajoutée et sera utilisée pour la newsletter !");
+            $this->addFlash('newsletter_success', "Votre adresse mail a correctement été ajoutée et sera utilisée pour la newsletter !");
+
             return $this->redirectToRoute('app.home');
-        }
     }
 
     /**

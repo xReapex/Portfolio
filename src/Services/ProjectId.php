@@ -4,14 +4,18 @@ namespace App\Services;
 
 final class ProjectId
 {
+
+    public const  PROJET_FORMATION_GIT_LAB_IDS = [19105266, 19108592, 19676897, 17026977, 19872619/*, 21604288*/];
+    public const  PROJET_PERSONNEL_GIT_LAB_IDS = [16447594, 20142148, 20577993, 20694394];
+
     public function getFormationProjectID()
     {
-        return [19105266, 19108592, 19676897, 17026977, 19872619/*, 21604288*/];
+        return self::PROJET_GIT_LAB_IDS;
 
     }
 
     public function getPersonnalProjectID()
     {
-        return [16447594, 20142148, 20577993, 20694394];
+        return self::PROJET_PERSONNEL_GIT_LAB_IDS;
     }
 }

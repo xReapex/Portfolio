@@ -6,6 +6,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
+            {% if is_granted('ROLE_USER') %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item underline-link">
                     <a class="nav-link" href="{{ path('app.about') }}"><i class="fas fa-address-card"></i> A propos</a>
@@ -17,11 +18,33 @@
                     <a class="nav-link" href="{{ path('app.feedbacks.home') }}"><i class="fas fa-comments"></i> Feedbacks</a>
                 </li>
             </ul>
+            {% endif %}
             <ul class="navbar-nav ml-auto">
+            {% if is_granted('ROLE_DEVELOPPER') %}
+
                 <li class="nav-item underline-link nav-item-right">
                     <a class="nav-link" href="{{ path('app.api') }}"><i class="fas fa-server"></i> API</a>
                 </li>
+
+            {% endif %}
+            {% if is_granted('ROLE_USER') %}
+
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-language" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i> Profil</a>
+                    <div style="border-radius: 10px;" class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdown-language">
+                        <a style="border-radius: 10px;" class="dropdown-item disabled text-white" href="#"><i class="fa fa-address-card" aria-hidden="true"></i> Pseudo : {{ app.user.username }}</a>
+                        <div class="dropdown-divider"></div>
+                        <a style="border-radius: 10px;" class="dropdown-item disabled text-white" href="#"><i class="fas fa-at"></i> E-mail : {{ app.user.email }}</a>
+                        <div class="dropdown-divider"></div>
+                        <a style="border-radius: 10px;" class="dropdown-item disabled text-white" href="#"><i class="fas fa-user-tag"></i> Role : {{ app.user.roles[0] | slice(5) | lower}}</a>
+                        <div class="dropdown-divider"></div>
+                        <a style="border-radius: 10px;" class="dropdown-item zoom text-danger" href="{{path('app_logout')}}"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+                    </div>
+                </li>
+
+            {% endif %}
             </ul>
+
         </div>
     </nav>
 </header>

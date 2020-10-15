@@ -20,6 +20,14 @@
             <p>Je suis passionné d'informatique et de nouvelles technologies en tout genres. Je ne cesse d'apprendre de moi même de nouvelles technologies de manière autodidacte ainsi que de m'exercer en me faisant des projets personnels ! Quelles sont mes <c class="text-info">compétences</c> ? Rendez vous <a href="#competences" class="text-warning">ici</a> pour le savoir ! </p>
         </div>
     </div>
+    <div class="centre"></div>
+    <div>
+        <div id="div_chart"></div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            {{ gc_draw(timeline, 'div_chart') }}
+        </script>
+    </div>
     <div class="centre" id="competences">
         <div>
             <h2>Mes compétences</h2>

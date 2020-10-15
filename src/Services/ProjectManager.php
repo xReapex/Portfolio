@@ -74,7 +74,7 @@ class ProjectManager
         $pieChart->getOptions()->setWidth(675);
         $pieChart->getOptions()->getBackgroundColor()->setFill("#222");
         $pieChart->getOptions()->setIs3D(true);
-        $pieChart->getOptions()->getLegend()->setPosition('none');
+        $pieChart->getOptions()->getLegend()->getTextStyle()->setColor("white");
 
         return $pieChart;
     }

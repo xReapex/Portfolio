@@ -36,10 +36,7 @@ class FeedbacksController extends AbstractController
                 $em->persist($feedback);
                 $em->flush();
 
-                $this->addFlash('success', 'Feedback is created by success');
-
                 return $this->redirectToRoute('app.feedbacks.home', ["_fragment" => "created"]);
-
         }
 
         $feedbacks = $feedbacksRepository->findLastest()->getResult();

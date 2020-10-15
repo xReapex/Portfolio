@@ -70,3 +70,6 @@ nav a{
     width: 100%;
     transition: width .3s;
 }
+.navbar .dropdown-item:hover {
+    background-color: transparent;
+}

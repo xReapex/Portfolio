@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="Create Login">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,42 +268,7 @@
       <workItem from="1602487108524" duration="22114000" />
       <workItem from="1602572795832" duration="15415000" />
       <workItem from="1602658788992" duration="23015000" />
-      <workItem from="1602745917209" duration="14017000" />
-    </task>
-    <task id="LOCAL-00012" summary="Update">
-      <created>1601364546039</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1601364546039</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Update">
-      <created>1601369553737</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1601369553737</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update">
-      <created>1601369568801</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1601369568801</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add API">
-      <created>1601382887383</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1601382887383</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Update">
-      <created>1601383220485</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1601383220485</updated>
+      <workItem from="1602745917209" duration="16704000" />
     </task>
     <task id="LOCAL-00017" summary="Update">
       <created>1601458978926</created>
@@ -615,7 +578,42 @@
       <option name="project" value="LOCAL" />
       <updated>1602761035306</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Stable authenticator">
+      <created>1602762659627</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1602762659627</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Create Register Form">
+      <created>1602764601598</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1602764601598</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Remove unused lines">
+      <created>1602764636178</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1602764636178</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Update SecurityController.php">
+      <created>1602764710854</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1602764710854</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Add login + perms">
+      <created>1602764750350</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1602764750351</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -634,11 +632,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add project_id.html.twig" />
-    <MESSAGE value="Update project.html.twig" />
-    <MESSAGE value="Generate project id page" />
-    <MESSAGE value="Chart generator w/projectId" />
-    <MESSAGE value="add project_id.html.twig" />
     <MESSAGE value="Add Title" />
     <MESSAGE value="Update interface" />
     <MESSAGE value="Update php skill" />
@@ -659,7 +652,12 @@
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Add security" />
     <MESSAGE value="Update security.yaml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update security.yaml" />
+    <MESSAGE value="Stable authenticator" />
+    <MESSAGE value="Create Register Form" />
+    <MESSAGE value="Remove unused lines" />
+    <MESSAGE value="Update SecurityController.php" />
+    <MESSAGE value="Add login + perms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add login + perms" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -695,17 +693,17 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602667807668" />
-    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602748285445">
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602764494005">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602748285445" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602761035263">
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602764494005" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602764750268">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602761035263" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602764750268" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

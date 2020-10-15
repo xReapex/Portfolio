@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/about/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/about/AboutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,28 +269,7 @@
       <workItem from="1602487108524" duration="22114000" />
       <workItem from="1602572795832" duration="15415000" />
       <workItem from="1602658788992" duration="23015000" />
-      <workItem from="1602745917209" duration="5042000" />
-    </task>
-    <task id="LOCAL-00005" summary="Update">
-      <created>1600352290846</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1600352290846</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Add effects">
-      <created>1600427517427</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1600427517427</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Ajout Python">
-      <created>1600430737190</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1600430737190</updated>
+      <workItem from="1602745917209" duration="9324000" />
     </task>
     <task id="LOCAL-00008" summary="Remove commentaires">
       <created>1600430762290</created>
@@ -616,7 +593,28 @@
       <option name="project" value="LOCAL" />
       <updated>1602749728510</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Reverse change no timeline">
+      <created>1602751009806</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1602751009806</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Change text">
+      <created>1602753347900</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1602753347900</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add project title on card">
+      <created>1602753891618</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1602753891618</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -635,9 +633,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update &amp; Add JavaScript" />
-    <MESSAGE value="Update JavaScript Skill" />
-    <MESSAGE value="Changes base x javascript x php skills" />
     <MESSAGE value="Add id project checker" />
     <MESSAGE value="Ajout option informations" />
     <MESSAGE value="Optimisation + envoie objet pour id de projet" />
@@ -660,7 +655,10 @@
     <MESSAGE value="Add method timeline chart" />
     <MESSAGE value="Remove id parameter in project id vue" />
     <MESSAGE value="Replace ID by Name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replace ID by Name" />
+    <MESSAGE value="Reverse change no timeline" />
+    <MESSAGE value="Change text" />
+    <MESSAGE value="Add project title on card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add project title on card" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -700,13 +698,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602748285445" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602749728464">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602753891550">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602749728464" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602753891550" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

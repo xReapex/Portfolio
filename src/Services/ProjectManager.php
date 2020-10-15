@@ -3,6 +3,8 @@
 namespace App\Services;
 
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
+use CMEN\GoogleChartsBundle\GoogleCharts\Charts\Timeline;
+use DateTime;
 use phpDocumentor\Reflection\Types\Array_;
 use Symfony\Component\HttpClient\HttpClient;
 
@@ -58,7 +60,6 @@ class ProjectManager
 
     public function createChart($gitlab_id_project)
     {
-
         $languages = $this->getLanguages($gitlab_id_project);
 
         $table = [];
@@ -76,5 +77,26 @@ class ProjectManager
         $pieChart->getOptions()->getLegend()->setPosition('none');
 
         return $pieChart;
+    }
+
+    public function getParcoursTimeline()
+    {
+        $timeline = new Timeline();
+        $timeline->getData()->setArrayToDataTable(
+            [
+                [ 'Parcours', 'George Washington', new DateTime('1789-03-30'), new DateTime('1797-02-04') ],
+                [ 'Parcours', 'John Adams', new DateTime('1797-02-04'), new DateTime('1801-02-04') ],
+                [ 'Parcours', 'Thomas Jefferson', new DateTime('1801-02-04'), new DateTime('1809-02-04') ]
+            ],
+            true
+        );
+        $timeline->getOptions()->getTimeline()->setGroupByRowLabel(1);
+        $timeline->getOptions()->getTimeline()->getRowLabelStyle()->setFontName('Helvetica');
+        $timeline->getOptions()->getTimeline()->getRowLabelStyle()->setFontSize(24);
+        $timeline->getOptions()->getTimeline()->getRowLabelStyle()->setColor('#222222');
+        $timeline->getOptions()->getTimeline()->getBarLabelStyle()->setFontSize(14);
+        $timeline->getOptions()->setColors(['#3498db', '#603913', '#c69c6e']);
+
+        return $timeline;
     }
 }

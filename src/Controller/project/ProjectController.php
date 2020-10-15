@@ -63,7 +63,6 @@ class ProjectController extends AbstractController
             $chart = $manager->createChart($id);
 
             return $this->render('project/project_id.html.twig', [
-                "id" => $id,
                 "project" => $project,
                 'piechart' => $chart
             ]);

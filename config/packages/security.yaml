@@ -24,7 +24,7 @@ security:
         # target: app_any_route
       remember_me:
         secret: '%kernel.secret%'
-        lifetime: 60
+        lifetime: 120
         path: /login
       guard:
           authenticators:
@@ -41,3 +41,8 @@ security:
   # Note: Only the *first* access control that matches will be used
   access_control:
     - { path: ^/home , roles: ROLE_USER }
+
+  role_hierarchy:
+      ROLE_DEVELOPPER: ROLE_USER
+      ROLE_ADMIN: [ROLE_DEVELOPPER, ROLE_USER]
+      ROLE_SUPER_ADMIN: [ROLE_ADMIN, ROLE_DEVELOPPER]

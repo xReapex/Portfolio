@@ -20,10 +20,6 @@ class AboutController extends AbstractController
      */
     public function showAbout(ProjectManager $manager): Response
     {
-        $timeline = $manager->getParcoursTimeline();
-        return $this->render('about/about.html.twig',
-        [
-            "timeline" => $timeline
-        ]);
+        return $this->render('about/about.html.twig');
     }
 }

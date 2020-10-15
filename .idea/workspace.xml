@@ -20,17 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201014120305.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201014135006.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201014135103.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/about/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/about/AboutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,35 +271,7 @@
       <workItem from="1602487108524" duration="22114000" />
       <workItem from="1602572795832" duration="15415000" />
       <workItem from="1602658788992" duration="23015000" />
-      <workItem from="1602745917209" duration="340000" />
-    </task>
-    <task id="LOCAL-00001" summary="Update">
-      <created>1600004883347</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1600004883347</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Update">
-      <created>1600259933524</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1600259933525</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Webpack">
-      <created>1600266278783</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1600266278783</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update">
-      <created>1600350720678</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1600350720678</updated>
+      <workItem from="1602745917209" duration="5042000" />
     </task>
     <task id="LOCAL-00005" summary="Update">
       <created>1600352290846</created>
@@ -609,7 +574,49 @@
       <option name="project" value="LOCAL" />
       <updated>1602683627392</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Update">
+      <created>1602746282661</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1602746282661</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add timeline in about">
+      <created>1602749197487</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1602749197487</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Remove unused import">
+      <created>1602749241016</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1602749241017</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add method timeline chart">
+      <created>1602749270351</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1602749270351</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Remove id parameter in project id vue">
+      <created>1602749446139</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1602749446139</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Replace ID by Name">
+      <created>1602749728509</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1602749728510</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,14 +635,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout Python" />
-    <MESSAGE value="Remove commentaires" />
-    <MESSAGE value="Ajouts effets nav-item" />
-    <MESSAGE value="Add API" />
-    <MESSAGE value="Inverse blur effect" />
     <MESSAGE value="Update &amp; Add JavaScript" />
     <MESSAGE value="Update JavaScript Skill" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Changes base x javascript x php skills" />
     <MESSAGE value="Add id project checker" />
     <MESSAGE value="Ajout option informations" />
@@ -653,7 +654,13 @@
     <MESSAGE value="Stable version before login" />
     <MESSAGE value="Optimisation" />
     <MESSAGE value="Stable without Security" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stable without Security" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Add timeline in about" />
+    <MESSAGE value="Remove unused import" />
+    <MESSAGE value="Add method timeline chart" />
+    <MESSAGE value="Remove id parameter in project id vue" />
+    <MESSAGE value="Replace ID by Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replace ID by Name" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -689,17 +696,17 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602667807668" />
-    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602680274891">
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602748285445">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602680274891" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602683627323">
+    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602748285445" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602749728464">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602683627323" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602749728464" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -776,5 +783,9 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1602680846028" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602748171209">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1602748171209" />
   </component>
 </project>

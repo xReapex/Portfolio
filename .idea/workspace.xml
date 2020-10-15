@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/25dcac69-0a00-4717-a1cf-f7a4fa180526/storage_v2/_src_/database/portfolio.SAXdQg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201014120305.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201014135006.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201014135103.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/about/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/about/AboutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +277,8 @@
       <workItem from="1602486352938" duration="224000" />
       <workItem from="1602487108524" duration="22114000" />
       <workItem from="1602572795832" duration="15415000" />
-      <workItem from="1602658788992" duration="21581000" />
+      <workItem from="1602658788992" duration="23015000" />
+      <workItem from="1602745917209" duration="340000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1600004883347</created>
@@ -592,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602681916243</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Stable without Security">
+      <created>1602683627392</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1602683627392</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +628,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add effects" />
     <MESSAGE value="Ajout Python" />
     <MESSAGE value="Remove commentaires" />
     <MESSAGE value="Ajouts effets nav-item" />
@@ -636,7 +652,8 @@
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Stable version before login" />
     <MESSAGE value="Optimisation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimisation" />
+    <MESSAGE value="Stable without Security" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stable without Security" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -676,13 +693,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602680274891" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602681916197">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602683627323">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602681916197" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602683627323" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

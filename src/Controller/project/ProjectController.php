@@ -54,7 +54,7 @@ class ProjectController extends AbstractController
      * @param ProjectManager $manager
      * @return RedirectResponse|Response
      */
-    public function showProjectsetEmailId($id ,ProjectManager $manager)
+    public function showProjectId($id ,ProjectManager $manager)
     {
 
         if ($manager->isIdExists($id))
@@ -69,9 +69,6 @@ class ProjectController extends AbstractController
                 'piechart' => $chart
             ]);
         }
-
-
-            return $this->redirectToRoute('app.project');
-
+        return $this->redirectToRoute('app.project');
     }
 }

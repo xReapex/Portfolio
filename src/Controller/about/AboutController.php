@@ -14,7 +14,7 @@ class AboutController extends AbstractController
 {
     /**
      *@Route("/about", name="app.about")
-     * @return Response
+     *@return Response
      */
     public function showAbout(): Response
     {

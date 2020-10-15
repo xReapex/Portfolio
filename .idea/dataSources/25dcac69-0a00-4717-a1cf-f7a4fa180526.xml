@@ -1417,7 +1417,7 @@ true posixrules
     <database id="3" parent="1" name="portfolio">
       <ObjectId>16911</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1284</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1292</IntrospectionStateNumber>
     </database>
     <database id="4" parent="1" name="postgres">
       <ObjectId>13063</ObjectId>
@@ -1465,7 +1465,7 @@ true posixrules
       <Comment>standard public schema</Comment>
       <StateNumber>351</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>1285</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1293</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <access-method id="14" parent="3" name="btree">
@@ -1540,130 +1540,196 @@ true posixrules
       <StateNumber>1077</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="27" parent="13" name="doctrine_migration_versions">
+    <sequence id="27" parent="13" name="user_id_seq">
+      <ObjectId>16955</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1288</StateNumber>
+      <DataType>bigint|0s</DataType>
+    </sequence>
+    <table id="28" parent="13" name="doctrine_migration_versions">
       <ObjectId>16912</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1068</StateNumber>
     </table>
-    <table id="28" parent="13" name="feedbacks">
+    <table id="29" parent="13" name="feedbacks">
       <ObjectId>16927</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1113</StateNumber>
     </table>
-    <table id="29" parent="13" name="newsletter">
+    <table id="30" parent="13" name="newsletter">
       <ObjectId>16920</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1077</StateNumber>
     </table>
-    <column id="30" parent="27" name="version">
+    <table id="31" parent="13" name="user">
+      <ObjectId>16957</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>1291</StateNumber>
+    </table>
+    <column id="32" parent="28" name="version">
       <Position>1</Position>
       <DataType>varchar(191)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1068</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="31" parent="27" name="executed_at">
+    <column id="33" parent="28" name="executed_at">
       <Position>2</Position>
       <DataType>timestamp(0)|0s</DataType>
       <StateNumber>1068</StateNumber>
       <DefaultExpression>NULL::timestamp without time zone</DefaultExpression>
       <TypeId>1114</TypeId>
     </column>
-    <column id="32" parent="27" name="execution_time">
+    <column id="34" parent="28" name="execution_time">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>1068</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="33" parent="27" name="doctrine_migration_versions_pkey">
+    <index id="35" parent="28" name="doctrine_migration_versions_pkey">
       <ObjectId>16916</ObjectId>
       <StateNumber>1068</StateNumber>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="34" parent="27" name="doctrine_migration_versions_pkey">
+    <key id="36" parent="28" name="doctrine_migration_versions_pkey">
       <ObjectId>16917</ObjectId>
       <StateNumber>1068</StateNumber>
       <ColNames>version</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>doctrine_migration_versions_pkey</UnderlyingIndexName>
     </key>
-    <column id="35" parent="28" name="id">
+    <column id="37" parent="29" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1094</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="36" parent="28" name="title">
+    <column id="38" parent="29" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1094</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="37" parent="28" name="content">
+    <column id="39" parent="29" name="content">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1094</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="38" parent="28" name="author">
+    <column id="40" parent="29" name="author">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <StateNumber>1094</StateNumber>
       <DefaultExpression>NULL::character varying</DefaultExpression>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="28" name="date">
+    <column id="41" parent="29" name="date">
       <Position>7</Position>
       <DataType>date|0s</DataType>
       <StateNumber>1113</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <index id="40" parent="28" name="feedbacks_pkey">
+    <index id="42" parent="29" name="feedbacks_pkey">
       <ObjectId>16934</ObjectId>
       <StateNumber>1094</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="41" parent="28" name="feedbacks_pkey">
+    <key id="43" parent="29" name="feedbacks_pkey">
       <ObjectId>16935</ObjectId>
       <StateNumber>1094</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>feedbacks_pkey</UnderlyingIndexName>
     </key>
-    <column id="42" parent="29" name="id">
+    <column id="44" parent="30" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1077</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="43" parent="29" name="email">
+    <column id="45" parent="30" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1077</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="44" parent="29" name="newsletter_pkey">
+    <index id="46" parent="30" name="newsletter_pkey">
       <ObjectId>16923</ObjectId>
       <StateNumber>1077</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="45" parent="29" name="newsletter_pkey">
+    <key id="47" parent="30" name="newsletter_pkey">
       <ObjectId>16924</ObjectId>
       <StateNumber>1077</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>newsletter_pkey</UnderlyingIndexName>
+    </key>
+    <column id="48" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1288</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="49" parent="31" name="username">
+      <Position>2</Position>
+      <DataType>varchar(180)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1288</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="50" parent="31" name="roles">
+      <Position>3</Position>
+      <DataType>json|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1288</StateNumber>
+      <TypeId>114</TypeId>
+    </column>
+    <column id="51" parent="31" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1288</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="31" name="email">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1291</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="53" parent="31" name="user_pkey">
+      <ObjectId>16963</ObjectId>
+      <StateNumber>1288</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="54" parent="31" name="uniq_8d93d649f85e0677">
+      <ObjectId>16965</ObjectId>
+      <StateNumber>1288</StateNumber>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="31" name="user_pkey">
+      <ObjectId>16964</ObjectId>
+      <StateNumber>1288</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>user_pkey</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

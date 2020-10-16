@@ -28,7 +28,7 @@
     <div class="container">
         <div class="centre">
             <div>
-                <h2>Bienvenue</h2>
+                <h2>Bienvenue <c class="text-warning">{{ app.user.username }}</c></h2>
                 <p>Bienvenue sur mon site ! Vous pouvez y retrouver plein d'informations sympathiques sur moi et découvrir quel type de développeur je suis ! N'hésitez pas à explorer les différents onglets... Dans le cas où mon profil vous intéresse, vous pouvez renseigner votre adresse <a href="#newsletter" class="text-info">e-mail</a> pour recevoir des nouveautées de ma part !</p>
             </div>
         </div>
@@ -40,7 +40,7 @@
             <div class="form-group">
                 <label for="email">Newsletter</label>
             <form method="post" action="{{ path('app.newsletter.add') }}" class="form-inline my-2 my-lg-0">
-                <input id="email" name="newsletter_email" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "30" style="border-radius: 10px;" class="form-control mr-sm-2" type="email" placeholder="Entrez votre email">
+                <input id="email" name="newsletter_email" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="15" maxlength = "30" style="border-radius: 10px;" class="form-control mr-sm-2" type="email" placeholder="Entrez votre email">
                 <button style="border-radius: 10px;" class="btn btn-primary my-2 my-sm-0" aria-describedby="emailHelp" type="submit"><i class="fas fa-search"></i> Envoyer</button>
                 <small id="emailHelp" class="form-text text-muted">Je vous promets de ne jamais vous spamer.</small>
             </form>

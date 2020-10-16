@@ -28,14 +28,16 @@ class FeedBacksType extends AbstractType
                 'help' => 'Quel est l\'objet de votre commentaire ?',
                 'attr' => [
                     'placeholder' => 'Mon super commentaire !'
-                ]
+                ],
+                'label' => "Titre"
             ])
 
             ->add('Content', TextType::class, [
                 'help' => 'Quel est votre message ?',
                 'attr' => [
                     'placeholder' => 'Je pense que le site est ...'
-                ]
+                ],
+                'label' => "Message"
             ])
 
             ->add('Author', TextType::class, [
@@ -43,9 +45,12 @@ class FeedBacksType extends AbstractType
                 'attr' => [
                     'placeholder' => $user
                 ],
-                'disabled' => 1
+                'disabled' => 1,
+                'label' => "Auteur"
             ])
-            ->add('Submit', SubmitType::class)
+            ->add('Submit', SubmitType::class, [
+                'label' => "Envoyer"
+            ])
         ;
     }
 

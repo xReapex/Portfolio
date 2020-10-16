@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/FeedBacksType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/FeedBacksType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201016070751.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201016073524.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201016075343.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201016075911.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,63 +276,7 @@
       <workItem from="1602833937682" duration="264000" />
       <workItem from="1602834211858" duration="49000" />
       <workItem from="1602834263057" duration="2474000" />
-      <workItem from="1602836747592" duration="2363000" />
-    </task>
-    <task id="LOCAL-00026" summary="Update &amp; Add JavaScript">
-      <created>1602500499384</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1602500499384</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Update JavaScript Skill">
-      <created>1602501167295</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1602501167295</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Update">
-      <created>1602511730510</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1602511730511</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Update">
-      <created>1602573607259</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1602573607259</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Changes base x javascript x php skills">
-      <created>1602576519354</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1602576519354</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Add id project checker">
-      <created>1602578773345</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1602578773345</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Ajout option informations">
-      <created>1602580120816</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1602580120816</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Optimisation + envoie objet pour id de projet">
-      <created>1602581738170</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1602581738170</updated>
+      <workItem from="1602836747592" duration="10916000" />
     </task>
     <task id="LOCAL-00034" summary="Add project_id.html.twig">
       <created>1602581769213</created>
@@ -619,7 +565,63 @@
       <option name="project" value="LOCAL" />
       <updated>1602837612779</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Update forms">
+      <created>1602839153344</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1602839153344</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Add username on home">
+      <created>1602841424655</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1602841424655</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Update perms on API">
+      <created>1602841464709</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1602841464709</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Create settings route">
+      <created>1602849330877</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1602849330877</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Add settings route on navbar">
+      <created>1602854882529</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1602854882530</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Add login template title">
+      <created>1602855064439</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1602855064439</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Add Settings template">
+      <created>1602855439826</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1602855439827</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Constraint form feedbacks lenght">
+      <created>1602857417234</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1602857417234</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -638,14 +640,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Remove unused import" />
-    <MESSAGE value="Add method timeline chart" />
-    <MESSAGE value="Remove id parameter in project id vue" />
-    <MESSAGE value="Replace ID by Name" />
-    <MESSAGE value="Reverse change no timeline" />
-    <MESSAGE value="Change text" />
-    <MESSAGE value="Add project title on card" />
-    <MESSAGE value="Add legends on chart" />
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Add security" />
     <MESSAGE value="Update security.yaml" />
@@ -663,7 +657,15 @@
     <MESSAGE value="Change feedbacks view" />
     <MESSAGE value="Update workspace" />
     <MESSAGE value="Adding French label on feedbacks form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding French label on feedbacks form" />
+    <MESSAGE value="Update forms" />
+    <MESSAGE value="Add username on home" />
+    <MESSAGE value="Update perms on API" />
+    <MESSAGE value="Create settings route" />
+    <MESSAGE value="Add settings route on navbar" />
+    <MESSAGE value="Add login template title" />
+    <MESSAGE value="Add Settings template" />
+    <MESSAGE value="Constraint form feedbacks lenght" />
+    <option name="LAST_COMMIT_MESSAGE" value="Constraint form feedbacks lenght" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -703,13 +705,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602836375074" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602837612723">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602857417189">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602837612723" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602857417189" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

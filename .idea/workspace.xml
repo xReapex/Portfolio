@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201016070751.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201016073524.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201016075343.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201016075911.php" beforeDir="false" />
-    </list>
+    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,14 +270,7 @@
       <workItem from="1602833937682" duration="264000" />
       <workItem from="1602834211858" duration="49000" />
       <workItem from="1602834263057" duration="2474000" />
-      <workItem from="1602836747592" duration="10916000" />
-    </task>
-    <task id="LOCAL-00034" summary="Add project_id.html.twig">
-      <created>1602581769213</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1602581769213</updated>
+      <workItem from="1602836747592" duration="11403000" />
     </task>
     <task id="LOCAL-00035" summary="Update project.html.twig">
       <created>1602668037726</created>
@@ -621,7 +608,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602857417234</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Update">
+      <created>1602857737059</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1602857737059</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +634,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Add security" />
     <MESSAGE value="Update security.yaml" />
     <MESSAGE value="Stable authenticator" />
@@ -665,7 +658,8 @@
     <MESSAGE value="Add login template title" />
     <MESSAGE value="Add Settings template" />
     <MESSAGE value="Constraint form feedbacks lenght" />
-    <option name="LAST_COMMIT_MESSAGE" value="Constraint form feedbacks lenght" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -705,13 +699,13 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602836375074" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602857417189">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1602857737001">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602857417189" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1602857737001" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

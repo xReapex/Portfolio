@@ -6,6 +6,7 @@ use App\Repository\FeedbacksRepository;
 use Doctrine\ORM\Mapping as ORM;
 use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ApiResource(
@@ -25,11 +26,25 @@ class Feedbacks
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Length(
+     *     min="8",
+     *     max="25",
+     *     allowEmptyString = false,
+     *     minMessage = "Le titre doit être au minimum de {{ limit }} caractères de long",
+     *     maxMessage = "Le titre doit être au maximum de {{ limit }} caractères de long",
+     * )
      */
     private $title;
 
     /**
      * @ORM\Column(type="text")
+     * @Assert\Length(
+     *     min="8",
+     *     max="25",
+     *     allowEmptyString = false,
+     *     minMessage = "Le message doit être au minimum de {{ limit }} caractères de long",
+     *     maxMessage = "Le message doit être au maximum de {{ limit }} caractères de long",
+     * )
      */
     private $content;
 
@@ -45,7 +60,7 @@ class Feedbacks
 
     public function __construct()
     {
-        $this->date = new \DateTime("now");
+        $this->date = new \DateTime();
     }
 
     public function getId(): ?int

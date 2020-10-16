@@ -14,6 +14,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Security;
 
 class FeedbacksController extends AbstractController
 {
@@ -24,10 +25,14 @@ class FeedbacksController extends AbstractController
      * @param FeedbacksRepository $feedbacksRepository
      * @return RedirectResponse|Response
      */
-    public function showFeedbacks(Request $request, FeedbacksRepository $feedbacksRepository)
+    public function showFeedbacks(Request $request, FeedbacksRepository $feedbacksRepository, Security $security)
     {
         $feedback = new Feedbacks();
         $form = $this->createForm(FeedBacksType::class, $feedback);
+
+        $user = $security->getUser()->getUsername();
+        $feedback->setAuthor($user);
+
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {

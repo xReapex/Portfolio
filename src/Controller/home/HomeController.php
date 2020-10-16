@@ -42,6 +42,14 @@ class HomeController extends AbstractController
     }
 
     /**
+     * @Route("/parametres", name="app.settings")
+     */
+    public function showParametre()
+    {
+        return $this->render('home/settings.html.twig');
+    }
+
+    /**
      * @Route("/newsletter/add", name="app.newsletter.add")
      * @param Request $request
      * @param EntityManagerInterface $manager

@@ -36,7 +36,7 @@
         {% for feedback in feedbacks %}
             <blockquote class="blockquote text-center zoom">
                 <p class="mb-0 ml-2">{{ feedback.content }}</p>
-                <footer class="blockquote-footer">{{ feedback.author }} <cite title="Source Title">{{ feedback.title }}</cite></footer>
+                <footer class="blockquote-footer">"{{ feedback.title }}", <cite title="Source Title">{{ feedback.author }}</cite></footer>
             </blockquote>
         {% endfor %}
     </div>

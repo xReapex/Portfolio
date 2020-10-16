@@ -48,9 +48,7 @@ class FeedBacksType extends AbstractType
                 'disabled' => 1,
                 'label' => "Auteur"
             ])
-            ->add('Submit', SubmitType::class, [
-                'label' => "Envoyer"
-            ])
+            ->add('Envoyer', SubmitType::class)
         ;
     }
 

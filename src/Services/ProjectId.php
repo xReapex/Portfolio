@@ -10,7 +10,7 @@ final class ProjectId
 
     public function getFormationProjectID()
     {
-        return self::PROJET_GIT_LAB_IDS;
+        return self::PROJET_FORMATION_GIT_LAB_IDS;
 
     }
 

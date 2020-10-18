@@ -4,10 +4,12 @@ namespace App\Controller\home;
 
 use App\Entity\Newsletter;
 use App\Repository\NewsletterRepository;
+use App\Services\EmailManager;
 use App\Services\TokenGenerator;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
@@ -82,53 +84,15 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/test", name="app.test")
-     */
-    public function test()
-    {
-        $token = $this->token->createToken(16);
-
-        $message = (new \Swift_Message('Hello Email'))
-            ->setFrom('reapexautomaticemail@gmail.com')
-            ->setTo('test@gmail.com')
-            ->setBody("Email de test")
-        ;
-        $this->mailer->send($message);
-        return $this->render('home/home.html.twig');
-    }
-
-    /**
      * @Route("/newsletter/send/all", name="app.newsletter.send.all")
-     * @param NewsletterRepository $newsletterRepository
+     * @param EmailManager $emailManager
      * @return RedirectResponse
      */
-    public function sendNewsletter(NewsletterRepository $newsletterRepository)
+    public function sendNewsletter(EmailManager $emailManager)
     {
-        $emails = $newsletterRepository->findAll();
-
-        foreach ($emails as $email)
-        {
-            $this->sendEmail($email->getEmail());
-        }
+        $emailManager->sendAllEmails();
         return $this->redirectToRoute('app.home');
     }
 
-    private function sendEmail($email)
-    {
-        $token = $this->token->createToken(16);
 
-        $message = (new \Swift_Message('Hello Email'))
-            ->setFrom('reapexautomaticemail@gmail.com')
-            ->setTo($email)
-            ->setBody(
-                $this->renderView(
-                // templates/emails/registration.html.twig
-                    'emails/registration.html.twig',
-                    ['token' => $token]
-                ),
-                'text/html'
-            )
-        ;
-        $this->mailer->send($message);
-    }
 }

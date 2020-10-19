@@ -25,6 +25,13 @@ class User implements UserInterface
 
     /**
      * @ORM\Column(type="string", length=180, unique=true)
+     * @Assert\Length(
+     *     min="6",
+     *     max="25",
+     *     allowEmptyString = false,
+     *     minMessage = "Minimum {{ limit }} caractères de long",
+     *     maxMessage = "Maximum {{ limit }} caractères de long",
+     * )
      */
     private $username;
 
@@ -36,6 +43,13 @@ class User implements UserInterface
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
+     * @Assert\Length(
+     *     min="6",
+     *     max="25",
+     *     allowEmptyString = false,
+     *     minMessage = "Minimum {{ limit }} caractères de long pour le mot de passe",
+     *     maxMessage = "Maximum {{ limit }} caractères de long pour le mot de passe",
+     * )
      */
     private $password;
 

@@ -6,5 +6,5 @@
 <p><code>{{ email }}</code></p>
 
 <p>
-    <a href="{{ path('') }}">Click here to activate your account</a>
+    <a href="{{ path('app.confirm.registration', {'token': token}) }}">Cliquez ici pour activer votre compte !</a>
 </p>

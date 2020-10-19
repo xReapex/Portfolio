@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegisterType;
+use App\Services\TokenGenerator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -50,7 +51,7 @@ class SecurityController extends AbstractController
      * @return RedirectResponse|Response
      * @Route("/register", name="app.register")
      */
-    public function createUser(Request $request, UserPasswordEncoderInterface $encoder)
+    public function createUser(Request $request, UserPasswordEncoderInterface $encoder, TokenGenerator $tokenGenerator)
     {
         if ($this->getUser()) {
             return $this->redirectToRoute('app.home');
@@ -65,9 +66,14 @@ class SecurityController extends AbstractController
 
             if ($form->isValid()) {
                 $hash = $encoder->encodePassword($user, $user->getPassword());
-
                 $user->setPassword($hash);
                 $user->setRoles(["ROLE_USER"]);
+
+                // Utilisateur non-vérifié
+                $user->setIsVerified(0);
+
+                // Création du token
+                $user->setToken($tokenGenerator->createToken(16));
 
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($user);

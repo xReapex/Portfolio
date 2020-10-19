@@ -1,14 +1,25 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Inscription{% endblock %}
+
 {% form_theme form 'bootstrap_4_layout.html.twig' %}
 
 {% block body %}
-
     <div class="container">
-        <div class="centre">
-            <div>
-                <h3 class="mb-3">Création</h3>
-                {{ form(form) }}
+        <div style="width: 50%; float: left">
+            <div class="centre">
+                <div>
+                    <h2 class="mb-3">Création</h2>
+                    <p>Vous souhaitez vous <c class="text-warning">inscrire</c> pour découvrir mon portfolio ? Rien de plus simple... Commencez par renseigner un <c class="text-warning">pseudonyme</c>, votre <c class="text-warning">email</c> et un <c class="text-warning">mot de passe</c>. Une fois inscrit, <c class="text-success">validez</c> votre email et commencez à parcourir.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="width: 50%; float: right">
+            <div class="centre">
+                <div>
+                    {{ form(form) }}
+                </div>
             </div>
         </div>
     </div>

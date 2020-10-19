@@ -67,11 +67,11 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
             throw new InvalidCsrfTokenException();
         }
 
-        $user = $this->entityManager->getRepository(User::class)->findOneBy(['username' => $credentials['username']]);
+        $user = $this->entityManager->getRepository(User::class)->findOneBy(['username' => $credentials['username'], 'is_verified' => true]);
 
         if (!$user) {
             // fail authentication with a custom error
-            throw new CustomUserMessageAuthenticationException('Combo pseudo / mot de passe introuvable.');
+            throw new CustomUserMessageAuthenticationException("Identifiants invalides ou email non confirmé. Veuillez réessayez.");
         }
 
         return $user;

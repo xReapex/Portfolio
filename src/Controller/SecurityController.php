@@ -7,15 +7,13 @@ use App\Form\RegisterType;
 use App\Services\EmailManager;
 use App\Services\TokenManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Twig\Token;
 
 class SecurityController extends AbstractController
 {
@@ -95,6 +93,27 @@ class SecurityController extends AbstractController
 
     /**
      * @Route("/confirm/{token}", name="app.confirm.registration")
+     * @param $token
+     * @param TokenManager $tokenManager
+     * @return RedirectResponse
      */
+    public function confirmEmail($token, TokenManager $tokenManager)
+    {
+        $user = $tokenManager->findToken($token);
+        if($user)
+        {
+            $user->setIsVerified(1);
 
+            $manager = $this->getDoctrine()->getManager();
+            $manager->persist($user);
+            $manager->flush();
+
+            // Flash Message Success
+            $this->addFlash('success', 'Votre email a bien été confirmé !');
+
+            return $this->redirectToRoute('app_login');
+        }
+
+        return $this->redirectToRoute('app_login');
+    }
 }

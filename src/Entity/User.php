@@ -45,6 +45,16 @@ class User implements UserInterface
      */
     private $email;
 
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $is_verified;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $token;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -126,6 +136,30 @@ class User implements UserInterface
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getIsVerified(): ?bool
+    {
+        return $this->is_verified;
+    }
+
+    public function setIsVerified(bool $is_verified): self
+    {
+        $this->is_verified = $is_verified;
+
+        return $this;
+    }
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(string $token): self
+    {
+        $this->token = $token;
 
         return $this;
     }

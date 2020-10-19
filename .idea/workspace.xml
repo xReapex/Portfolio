@@ -27,13 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/about/AboutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/about/AboutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/home/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ProjectId.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +195,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -784,13 +779,13 @@
     <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600242528645" />
     <state x="588" y="90" width="272" height="446" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602761076842" />
     <state x="813" y="117" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697379861" />
-    <state x="344" y="38" key="SettingsEditor" timestamp="1602836738227">
+    <state x="344" y="38" key="SettingsEditor" timestamp="1603090427617">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599987558692" />
     <state x="461" y="355" key="SettingsEditor/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259164113" />
     <state x="344" y="38" key="SettingsEditor/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601280691930" />
-    <state x="344" y="38" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1602836738227" />
+    <state x="344" y="38" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1603090427617" />
     <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1600525657486">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

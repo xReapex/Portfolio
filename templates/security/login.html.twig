@@ -3,40 +3,57 @@
 {% block title %}Se connecter{% endblock %}
 
 {% block body %}
-        <div class="container centre">
-            <form method="post">
-                {% if error %}
-                    <div class="alert alert-danger" style="width: 300px; border-radius: 10px;"><button type="button" class="close" data-dismiss="alert">&times;</button>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-                {% endif %}
+        <div class="container">
 
-                {% if app.user %}
-                    <div class="mb-3">
-                        You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+            <div style="width: 50%; float: left">
+                <div class="centre">
+                    <div>
+                        <h3 class="mb-3">Connexion</h3>
+                        <p><c class="text-warning">Connectez-vous</c> dès a présent pour commencer à visiter le site pleinement !<br>Pas encore de <c class="text-warning">compte</c> créée ? Créez en un dès maintenant !<br>N'ayez crainte, ici toutes <c class="text-success">vos données sont à l'abris</c>.</p>
                     </div>
-                {% endif %}
-
-                <h3 class="mb-3">Connexion</h3>
-                <label for="inputUsername">Pseudo</label>
-                <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus>
-                <label for="inputPassword">Mot de passe</label>
-                <input type="password" name="password" id="inputPassword" class="form-control" required>
-
-                <input type="hidden" name="_csrf_token"
-                       value="{{ csrf_token('authenticate') }}"
-                >
-
-                <div class="checkbox" style="margin-top: 6px">
-                    <label>
-                        <input type="checkbox" name="_remember_me"> Se rappeler de moi
-                    </label>
                 </div>
+            </div>
 
-                <button class="btn btn-primary" type="submit">
-                    Se connecter
-                </button>
-                <a type="button" class="btn btn-warning" href="{{ path('app.register') }}">
-                    S'enregistrer
-                </a>
-            </form>
+            <div style="width: 50%; float: left">
+                <div class="centre">
+                    <div>
+                        <form method="post">
+                            {% if error %}
+                                <div class="alert alert-danger" style="width: 300px; border-radius: 10px;"><button type="button" class="close" data-dismiss="alert">&times;</button>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                            {% endif %}
+
+                            {% if app.user %}
+                                <div class="mb-3">
+                                    You are logged in as {{ app.user.username }}, <a href="{{ path('app_logout') }}">Logout</a>
+                                </div>
+                            {% endif %}
+
+                            <label for="inputUsername">Pseudo</label>
+                            <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus>
+                            <label for="inputPassword">Mot de passe</label>
+                            <input type="password" name="password" id="inputPassword" class="form-control" required>
+
+                            <input type="hidden" name="_csrf_token"
+                                   value="{{ csrf_token('authenticate') }}"
+                            >
+
+                            <div class="checkbox" style="margin-top: 6px">
+                                <label>
+                                    <input type="checkbox" name="_remember_me"> Se rappeler de moi
+                                </label>
+                            </div>
+
+                            <button class="btn btn-primary" type="submit">
+                                Se connecter
+                            </button>
+                            <a type="button" class="btn btn-warning" href="{{ path('app.register') }}">
+                                S'enregistrer
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
 {% endblock %}

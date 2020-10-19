@@ -27,9 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Feedbacks.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,27 +281,6 @@
       <workItem from="1602834263057" duration="2474000" />
       <workItem from="1602836747592" duration="11403000" />
       <workItem from="1603038990286" duration="1435000" />
-    </task>
-    <task id="LOCAL-00051" summary="Add method timeline chart">
-      <created>1602749270351</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1602749270351</updated>
-    </task>
-    <task id="LOCAL-00052" summary="Remove id parameter in project id vue">
-      <created>1602749446139</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1602749446139</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Replace ID by Name">
-      <created>1602749728509</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1602749728510</updated>
     </task>
     <task id="LOCAL-00054" summary="Reverse change no timeline">
       <created>1602751009806</created>
@@ -627,7 +604,28 @@
       <option name="project" value="LOCAL" />
       <updated>1603115367713</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="Update User class lenght properties">
+      <created>1603116695456</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1603116695456</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Check 2 times password">
+      <created>1603116720234</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1603116720235</updated>
+    </task>
+    <task id="LOCAL-00102" summary="Minor update">
+      <created>1603116753030</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1603116753030</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -663,9 +661,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding French label on feedbacks form" />
-    <MESSAGE value="Update forms" />
-    <MESSAGE value="Add username on home" />
     <MESSAGE value="Update perms on API" />
     <MESSAGE value="Create settings route" />
     <MESSAGE value="Add settings route on navbar" />
@@ -688,7 +683,10 @@
     <MESSAGE value="update design login" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Update autentication forms design" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update autentication forms design" />
+    <MESSAGE value="Update User class lenght properties" />
+    <MESSAGE value="Check 2 times password" />
+    <MESSAGE value="Minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -730,13 +728,13 @@
     </state>
     <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602836375074" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603115367668">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603116752981">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603115367668" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603116752981" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

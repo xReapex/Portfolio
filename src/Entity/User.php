@@ -29,8 +29,8 @@ class User implements UserInterface
      *     min="6",
      *     max="25",
      *     allowEmptyString = false,
-     *     minMessage = "Minimum {{ limit }} caractères de long",
-     *     maxMessage = "Maximum {{ limit }} caractères de long",
+     *     minMessage = "Minimum {{ limit }} caractères de long pour le pseudo",
+     *     maxMessage = "Maximum {{ limit }} caractères de long pour le pseudo",
      * )
      */
     private $username;

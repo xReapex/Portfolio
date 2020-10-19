@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class TokenGenerator
+class TokenManager
 {
     public function createToken($length)
     {

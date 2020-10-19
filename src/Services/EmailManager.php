@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Entity\User;
 use App\Repository\NewsletterRepository;
 use Twig\Environment;
 
@@ -13,7 +14,7 @@ class EmailManager
     private $mailer;
     private $twig;
 
-    public function __construct(TokenGenerator $tokenGenerator, NewsletterRepository $newsletterRepository, \Swift_Mailer $mailer, Environment $twig)
+    public function __construct(TokenManager $tokenGenerator, NewsletterRepository $newsletterRepository, \Swift_Mailer $mailer, Environment $twig)
     {
         $this->tokenGenerator = $tokenGenerator;
         $this->newsletterRepository = $newsletterRepository;
@@ -36,21 +37,29 @@ class EmailManager
         $message = (new \Swift_Message('Hello Email'))
             ->setFrom('reapexautomaticemail@gmail.com')
             ->setTo($email)
-            ->setBody("toast")
+            ->setBody(
+                $this->twig->render(
+                    "emails/email_template.html.twig"
+                )
+            )
         ;
         $this->mailer->send($message);
     }
 
-    public function sendRegistrationEmail($email, $token)
+    public function sendRegistrationEmail(User $user)
     {
         $message = (new \Swift_Message('Email de confirmation !'))
             ->setFrom('reapexautomaticemail@gmail.com')
-            ->setTo($email)
+            ->setTo($user->getEmail())
             ->setBody(
                 $this->twig->render(
                 // templates/emails/registration.html.twig
                     'emails/registration.html.twig',
-                    ['token' => $token]
+                    [
+                        'token' => $user->getToken(),
+                        'username' => $user->getUsername(),
+                        'email' => $user->getEmail(),
+                    ]
                 ),
                 'text/html'
             )

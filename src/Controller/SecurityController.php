@@ -4,7 +4,8 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegisterType;
-use App\Services\TokenGenerator;
+use App\Services\EmailManager;
+use App\Services\TokenManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -48,10 +49,11 @@ class SecurityController extends AbstractController
     /**
      * @param Request $request
      * @param UserPasswordEncoderInterface $encoder
+     * @param TokenManager $tokenGenerator
      * @return RedirectResponse|Response
      * @Route("/register", name="app.register")
      */
-    public function createUser(Request $request, UserPasswordEncoderInterface $encoder, TokenGenerator $tokenGenerator)
+    public function createUser(Request $request, UserPasswordEncoderInterface $encoder, TokenManager $tokenGenerator, EmailManager $email)
     {
         if ($this->getUser()) {
             return $this->redirectToRoute('app.home');
@@ -73,7 +75,10 @@ class SecurityController extends AbstractController
                 $user->setIsVerified(0);
 
                 // Création du token
-                $user->setToken($tokenGenerator->createToken(16));
+                $token = $user->setToken($tokenGenerator->createToken(16));
+
+                // Envoie confirmation email
+                $email->sendRegistrationEmail($user);
 
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($user);
@@ -86,7 +91,10 @@ class SecurityController extends AbstractController
         return $this->render('security/register.html.twig', array(
             'form' => $form->createView()
         ));
-
     }
+
+    /**
+     * @Route("/confirm/{token}", name="app.confirm.registration")
+     */
 
 }

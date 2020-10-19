@@ -5,7 +5,7 @@ namespace App\Controller\home;
 use App\Entity\Newsletter;
 use App\Repository\NewsletterRepository;
 use App\Services\EmailManager;
-use App\Services\TokenGenerator;
+use App\Services\TokenManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -21,7 +21,7 @@ class HomeController extends AbstractController
     private $mailer;
     private $token;
 
-    public function __construct(\Swift_Mailer $mailer, TokenGenerator $token)
+    public function __construct(\Swift_Mailer $mailer, TokenManager $token)
     {
         $this->mailer = $mailer;
         $this->token = $token;

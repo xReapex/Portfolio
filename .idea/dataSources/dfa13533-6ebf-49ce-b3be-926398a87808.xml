@@ -1563,6 +1563,7 @@ true posixrules
     </table>
     <table id="31" parent="13" name="user">
       <ObjectId>16992</ObjectId>
+      <Outdated>1</Outdated>
       <Owner>postgres</Owner>
       <StateNumber>1304</StateNumber>
     </table>

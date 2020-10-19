@@ -38,7 +38,7 @@
                         <div class="dropdown-divider"></div>
                         <a style="border-radius: 10px;" class="dropdown-item disabled text-white" href="#"><i class="fas fa-user-tag"></i> Role : {{ app.user.roles[0] | slice(5) | lower}}</a>
                         <div class="dropdown-divider"></div>
-                        <a style="border-radius: 10px;" class="dropdown-item zoom text-white" href="{{ path('app.settings') }}"><i class="fas fa-user-cog"></i> Paramètres</a>
+                        <a style="border-radius: 10px;" class="dropdown-item zoom text-warning" href="{{ path('app.settings') }}"><i class="fas fa-user-cog"></i> Paramètres</a>
                         <div class="dropdown-divider"></div>
                         <a style="border-radius: 10px;" class="dropdown-item zoom text-danger" href="{{path('app_logout')}}"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
                     </div>

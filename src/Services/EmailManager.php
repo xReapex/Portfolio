@@ -30,7 +30,6 @@ class EmailManager
 
     public function sendEmail($email)
     {
-        $token = $this->tokenGenerator->createToken(16);
 
         $message = (new \Swift_Message('Hello Email'))
             ->setFrom('reapexautomaticemail@gmail.com')

@@ -3,6 +3,8 @@
 namespace App\Controller\home;
 
 use App\Entity\Newsletter;
+use App\Entity\User;
+use App\Form\RegisterType;
 use App\Repository\NewsletterRepository;
 use App\Services\EmailManager;
 use App\Services\TokenManager;
@@ -41,14 +43,6 @@ class HomeController extends AbstractController
     public function showHome()
     {
         return $this->render('home/home.html.twig');
-    }
-
-    /**
-     * @Route("/parametres", name="app.settings")
-     */
-    public function showParametre()
-    {
-        return $this->render('home/settings.html.twig');
     }
 
     /**

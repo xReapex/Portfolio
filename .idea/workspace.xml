@@ -26,8 +26,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dfa13533-6ebf-49ce-b3be-926398a87808/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,15 +199,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="C:\wamp64\www\portfolio_website\public\img" />
       <recent name="C:\wamp64\www\portfolio\public\img" />
       <recent name="C:\wamp64\www\portfolio\public" />
-      <recent name="C:\wamp64\www\portfolio\img" />
-      <recent name="C:\wamp64\www\portfolio\src\Controller\home" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
   <component name="RunManager">
@@ -281,14 +282,9 @@
       <workItem from="1602834263057" duration="2474000" />
       <workItem from="1602836747592" duration="11403000" />
       <workItem from="1603038990286" duration="1435000" />
-      <workItem from="1603698541262" duration="402000" />
-    </task>
-    <task id="LOCAL-00054" summary="Reverse change no timeline">
-      <created>1602751009806</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1602751009806</updated>
+      <workItem from="1603698541262" duration="985000" />
+      <workItem from="1603700106720" duration="530000" />
+      <workItem from="1603700668446" duration="5544000" />
     </task>
     <task id="LOCAL-00055" summary="Change text">
       <created>1602753347900</created>
@@ -626,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603116753030</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Minor update">
+      <created>1603699113919</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1603699113919</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,13 +732,13 @@
     </state>
     <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602836375074" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603116752981">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603699113622">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603116752981" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603699113622" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -811,11 +814,11 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="438" y="105" width="353" height="566" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/67.27.1299.741@67.27.1299.741" timestamp="1601302905800" />
-    <state x="565" y="139" width="588" height="578" key="find.popup" timestamp="1603107984658">
+    <state x="565" y="139" width="588" height="578" key="find.popup" timestamp="1603699050100">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="651" y="207" width="618" height="783" key="find.popup/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600344058587" />
-    <state x="565" y="139" width="588" height="578" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1603107984658" />
+    <state x="565" y="139" width="588" height="578" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1603699050100" />
     <state x="380" y="175" key="run.anything.popup" timestamp="1602680846028">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

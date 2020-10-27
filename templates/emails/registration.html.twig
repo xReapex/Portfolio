@@ -1,9 +1,8 @@
 <h1>Merci de votre inscription {{ username }}!</h1>
 
 <p>
-    Vous vous êtes inscrit sous le pseudo de {{ username }} avec l'email suivant:
+    Vous vous êtes inscrit sous le pseudo de {{ username }} avec l'email suivant: <code>{{ email }}</code>
 </p>
-<p><code>{{ email }}</code></p>
 
 <p>
     <a href="{{ path('app.confirm.registration', {'token': token}) }}">Cliquez ici pour activer votre compte !</a>

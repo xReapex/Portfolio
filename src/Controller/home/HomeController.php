@@ -6,6 +6,7 @@ use App\Entity\Newsletter;
 use App\Entity\User;
 use App\Form\RegisterType;
 use App\Repository\NewsletterRepository;
+use App\Repository\UserRepository;
 use App\Services\EmailManager;
 use App\Services\TokenManager;
 use Doctrine\ORM\EntityManagerInterface;
@@ -15,6 +16,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\Flash\FlashBagInterface;
+use Symfony\Component\Security\Core\Security;
 
 class HomeController extends AbstractController
 {
@@ -60,7 +62,7 @@ class HomeController extends AbstractController
 
         if ($newsletterRepository->findOneBy(["email" => $email])){
 
-            $this->addFlash('newsletter_error', "Une erreur est survenue, l'adresse email choisie est déja utilisée ! Veuillez en sélectionner une autre.");
+            $this->addFlash('newsletter_error', "Une erreur est survenue, l'adresse email choisie est déja utilisée !");
             return $this->redirectToRoute('app.home');
 
         }
@@ -86,6 +88,29 @@ class HomeController extends AbstractController
     {
         $emailManager->sendAllEmails();
         return $this->redirectToRoute('app.home');
+    }
+
+    /**
+     * @Route("/unsubscribe", name="app.unsubscribe")
+     * @param EmailManager $manager
+     * @param UserRepository $userRepository
+     * @return Response
+     */
+    public function unsubscribe(EmailManager $manager, UserRepository $userRepository)
+    {
+        // getUser object
+        $email = $userRepository->findOneBy([
+            'username' => $this->getUser()->getUsername()
+        ]);
+
+        //unsubscribe
+        $manager->unsubscribe($email->getEmail());
+
+        // add flash
+        $this->addFlash('unsubscribe', "Votre adresse email a correctement été retirée de la newsletter.");
+
+        // render view
+        return $this->render('home/home.html.twig');
     }
 
 

@@ -3,7 +3,11 @@
 namespace App\Services;
 
 use App\Entity\User;
+use App\Repository\FeedbacksRepository;
 use App\Repository\NewsletterRepository;
+use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Twig\Environment;
 
 class EmailManager
@@ -13,13 +17,15 @@ class EmailManager
     private $newsletterRepository;
     private $mailer;
     private $twig;
+    private $manager;
 
-    public function __construct(TokenManager $tokenGenerator, NewsletterRepository $newsletterRepository, \Swift_Mailer $mailer, Environment $twig)
+    public function __construct(TokenManager $tokenGenerator, NewsletterRepository $newsletterRepository, \Swift_Mailer $mailer, Environment $twig, EntityManagerInterface $manager)
     {
         $this->tokenGenerator = $tokenGenerator;
         $this->newsletterRepository = $newsletterRepository;
         $this->mailer = $mailer;
         $this->twig = $twig;
+        $this->manager = $manager;
     }
 
     public function sendAllEmails()
@@ -65,6 +71,15 @@ class EmailManager
             )
         ;
         $this->mailer->send($message);
+    }
+
+    public function unsubscribe($email)
+    {
+        $record = $this->newsletterRepository->findOneBy([
+            'email' => $email
+        ]);
+        $this->manager->remove($record);
+        $this->manager->flush();
     }
 
 }

@@ -37,7 +37,7 @@ class ProjectController extends AbstractController
         $projet_perso2 = $manager->getProject($array1[$rand_perso[1]]);
         $projet_perso3 = $manager->getProject($array1[$rand_perso[2]]);
 
-        return $this->render('project/project.html.twig', [
+        $res = $this->render('project/project.html.twig', [
             "projet1" => $projet1,
             "projet2" => $projet2,
             "projet3" => $projet3,
@@ -45,6 +45,7 @@ class ProjectController extends AbstractController
             "projet5" => $projet_perso2,
             "projet6" => $projet_perso3
         ]);
+        return $res->setMaxAge(3600);
     }
 
     /**

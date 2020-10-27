@@ -47,6 +47,7 @@ class SecurityController extends AbstractController
      * @param Request $request
      * @param UserPasswordEncoderInterface $encoder
      * @param TokenManager $tokenGenerator
+     * @param EmailManager $email
      * @return RedirectResponse|Response
      * @Route("/register", name="app.register")
      */

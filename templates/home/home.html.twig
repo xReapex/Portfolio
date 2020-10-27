@@ -40,7 +40,7 @@
             <div class="form-group">
                 <label for="email">Newsletter</label>
             <form method="post" action="{{ path('app.newsletter.add') }}" class="form-inline my-2 my-lg-0">
-                <input id="email" name="newsletter_email" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" minlength="15" maxlength = "30" style="border-radius: 10px;" class="form-control mr-sm-2" type="email" placeholder="Entrez votre email">
+                <input id="email" name="newsletter_email" style="border-radius: 10px;" class="form-control mr-sm-2" type="email" placeholder="{{ app.user.email }}" value="{{ app.user.email }}" readonly="">
                 <button style="border-radius: 10px;" class="btn btn-primary my-2 my-sm-0" aria-describedby="emailHelp" type="submit"><i class="fas fa-search"></i> Envoyer</button>
                 <small id="emailHelp" class="form-text text-muted">Je vous promets de ne jamais vous spamer.</small>
             </form>

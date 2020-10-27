@@ -27,7 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,6 +288,9 @@
       <workItem from="1603714758841" duration="523000" />
       <workItem from="1603715984662" duration="2033000" />
       <workItem from="1603720153478" duration="4299000" />
+      <workItem from="1603786347368" duration="370000" />
+      <workItem from="1603787240619" duration="3000" />
+      <workItem from="1603787290771" duration="1338000" />
     </task>
     <task id="LOCAL-00059" summary="Add security">
       <created>1602760862398</created>

@@ -26,8 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +107,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
@@ -292,14 +294,7 @@
       <workItem from="1603786347368" duration="370000" />
       <workItem from="1603787240619" duration="3000" />
       <workItem from="1603787290771" duration="17716000" />
-      <workItem from="1603871024563" duration="7886000" />
-    </task>
-    <task id="LOCAL-00070" summary="Add constraint username &amp; email">
-      <created>1602835343916</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1602835343917</updated>
+      <workItem from="1603871024563" duration="11718000" />
     </task>
     <task id="LOCAL-00071" summary="Default pseudo on feedback form and submit">
       <created>1602836989760</created>
@@ -637,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603874450774</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Update project vue to load faster (+7s -&gt; -4s)">
+      <created>1603880239496</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1603880239496</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +675,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sendEmail, sendAllEmails, sendRegistrationEmail" />
     <MESSAGE value="Update email confirmation" />
     <MESSAGE value="Add email confirmation" />
     <MESSAGE value="Add findToken method" />
@@ -698,7 +699,8 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Stable v" />
     <MESSAGE value="SKills update in Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="SKills update in Service" />
+    <MESSAGE value="Update project vue to load faster (+7s -&gt; -4s)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project vue to load faster (+7s -&gt; -4s)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -740,13 +742,13 @@
     </state>
     <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1603790313023" />
-    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603874450707">
+    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603880239441">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603874450707" />
+    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603880239441" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -780,6 +782,10 @@
     </state>
     <state width="1874" height="327" key="GridCell.Tab.0.right/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
     <state width="1802" height="209" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028102" />
+    <state x="299" y="133" width="824" height="526" key="IDE.errors.dialog" timestamp="1603890987456">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="299" y="133" width="824" height="526" key="IDE.errors.dialog/67.27.1299.741@67.27.1299.741" timestamp="1603890987456" />
     <state x="487" y="116" width="449" height="561" key="NewPhpClassDialog" timestamp="1603092994361">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

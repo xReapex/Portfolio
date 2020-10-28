@@ -9,7 +9,8 @@
 /vendor/
 /node_modules/
 /var/log
-/public/local/
+/public/build
+/public/local
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

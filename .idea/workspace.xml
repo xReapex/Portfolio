@@ -291,14 +291,7 @@
       <workItem from="1603786347368" duration="370000" />
       <workItem from="1603787240619" duration="3000" />
       <workItem from="1603787290771" duration="17716000" />
-      <workItem from="1603871024563" duration="12781000" />
-    </task>
-    <task id="LOCAL-00072" summary="Change feedbacks view">
-      <created>1602837041869</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1602837041869</updated>
+      <workItem from="1603871024563" duration="14832000" />
     </task>
     <task id="LOCAL-00073" summary="Update workspace">
       <created>1602837063751</created>
@@ -636,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603891557182</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Citation bootstrap v4 -&gt; v5">
+      <created>1603892578167</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1603892578167</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +672,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add email confirmation" />
     <MESSAGE value="Add findToken method" />
     <MESSAGE value="Update registration email template" />
     <MESSAGE value="Env update" />
@@ -697,7 +696,8 @@
     <MESSAGE value="SKills update in Service" />
     <MESSAGE value="Update project vue to load faster (+7s -&gt; -4s)" />
     <MESSAGE value="Bootstrap 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bootstrap 5" />
+    <MESSAGE value="Citation bootstrap v4 -&gt; v5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Citation bootstrap v4 -&gt; v5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -739,13 +739,13 @@
     </state>
     <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1603790313023" />
-    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603891557113">
+    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603892578119">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603891557113" />
+    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603892578119" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

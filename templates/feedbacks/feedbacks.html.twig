@@ -38,10 +38,14 @@
             <h2>Commentaires récents :</h2>
         </div>
         {% for feedback in feedbacks %}
-            <blockquote class="blockquote text-center zoom">
-                <p class="mb-0 ml-2">{{ feedback.content }}</p>
-                <footer class="blockquote-footer">"{{ feedback.title }}", <cite title="Source Title">{{ feedback.author }}</cite></footer>
-            </blockquote>
+            <figure class="text-center">
+                <blockquote class="blockquote text-center zoom">
+                    <p class="mb-0 ml-2">{{ feedback.content }}</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    {{ feedback.title }} <cite title="Source Title">{{ feedback.author }}</cite>
+                </figcaption>
+            </figure>
         {% endfor %}
     </div>
     <a href="#top" type="button" class="btn btn-primary btn-circle btn-lg"><i class="fas fa-link"></i></a>

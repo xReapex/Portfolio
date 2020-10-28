@@ -17,6 +17,11 @@ class SkillsController extends AbstractController
      */
     public function showLanguage($name, SkillsManager $manager)
     {
-        return $this->render($manager->showSkill($name));
+        if ($manager->isTemplateExistsBySkill($name))
+        {
+            return $this->render("skills/$name.html.twig");
+        }
+
+        return $this->redirectToRoute("app.about", ["_fragment" => "competences"]);
     }
 }

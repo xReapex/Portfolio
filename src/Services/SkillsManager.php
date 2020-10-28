@@ -14,19 +14,9 @@ class SkillsManager
         $this->twig = $twig;
     }
 
-    public function showSkill($name)
+    public function isTemplateExistsBySkill($name)
     {
         $name = strtolower($name);
-
-        if (1 === $this->isTemplateExistsBySkill($name))
-        {
-            return "skills/$name.html.twig";
-        }
-        return "about/about.html.twig";
-    }
-
-    private function isTemplateExistsBySkill($name)
-    {
         if ($this->twig->getLoader()->exists("skills/$name.html.twig"))
         {
             return 1;

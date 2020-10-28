@@ -26,7 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/emails/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emails/registration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,21 +290,8 @@
       <workItem from="1603720153478" duration="4299000" />
       <workItem from="1603786347368" duration="370000" />
       <workItem from="1603787240619" duration="3000" />
-      <workItem from="1603787290771" duration="17386000" />
-    </task>
-    <task id="LOCAL-00066" summary="Security stable version">
-      <created>1602765341512</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1602765341513</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Adding role to access navbar">
-      <created>1602770110514</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1602770110514</updated>
+      <workItem from="1603787290771" duration="17716000" />
+      <workItem from="1603871024563" duration="1074000" />
     </task>
     <task id="LOCAL-00068" summary="1min to 2min remember password">
       <created>1602770192041</created>
@@ -634,7 +622,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603811193500</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="update design registration.html.twig">
+      <created>1603811713163</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1603811713163</updated>
+    </task>
+    <task id="LOCAL-00116" summary="workspace.xml">
+      <created>1603811741278</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1603811741278</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +672,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add is_verified &amp; token properties to User" />
     <MESSAGE value="Update EmailManager.php" />
     <MESSAGE value="Creating User w/token &amp; non-verified" />
     <MESSAGE value="sendEmail, sendAllEmails, sendRegistrationEmail" />
@@ -683,7 +684,6 @@
     <MESSAGE value="Update authentication system" />
     <MESSAGE value="UP to date" />
     <MESSAGE value="update design login" />
-    <MESSAGE value="workspace.xml" />
     <MESSAGE value="Update autentication forms design" />
     <MESSAGE value="Update User class lenght properties" />
     <MESSAGE value="Check 2 times password" />
@@ -695,7 +695,9 @@
     <MESSAGE value="Add project to cache" />
     <MESSAGE value="Minor change" />
     <MESSAGE value="Add unsubscribe newsletter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add unsubscribe newsletter" />
+    <MESSAGE value="update design registration.html.twig" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -737,13 +739,13 @@
     </state>
     <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1603790313023" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603811193449">
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603811741242">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603811193449" />
+    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603811741242" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

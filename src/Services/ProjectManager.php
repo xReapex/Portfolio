@@ -3,9 +3,6 @@
 namespace App\Services;
 
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
-use CMEN\GoogleChartsBundle\GoogleCharts\Charts\Timeline;
-use DateTime;
-use phpDocumentor\Reflection\Types\Array_;
 use Symfony\Component\HttpClient\HttpClient;
 
 class ProjectManager
@@ -29,22 +26,16 @@ class ProjectManager
         return $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['readme_url'];
     }
 
-    private function getReadmeEmbed($gitlab_project_id)
-    {
-        $response = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray()['readme_url'];
-        if ($response == null)
-        {
-            return '<a class="btn btn-primary disabled"><i class="fab fa-readme"></i> README.md</a>';
-        }
-        else{
-            return '<a href="'.$response.'" class="btn btn-primary" target="_blank"><i class="fab fa-readme"></i> README.md</a>';
-        }
-    }
-
     public function getProject($gitlab_project_id)
     {
         $res = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray();
-        $res['readme_url'] = $this->getReadmeEmbed($gitlab_project_id);
+        if ($res['readme_url'])
+        {
+            $res['readme_url'] = '<a class="btn btn-primary disabled"><i class="fab fa-readme"></i> README.md</a>';
+        }
+        else{
+            $res['readme_url'] = '<a href="'.$res['readme_url'].'" class="btn btn-primary" target="_blank"><i class="fab fa-readme"></i> README.md</a>';
+        }
         return $res;
     }
 

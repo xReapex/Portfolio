@@ -27,8 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/about/skills/SkillsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/about/skills/SkillsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/SkillsManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/SkillsManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,6 +190,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -292,14 +292,7 @@
       <workItem from="1603786347368" duration="370000" />
       <workItem from="1603787240619" duration="3000" />
       <workItem from="1603787290771" duration="17716000" />
-      <workItem from="1603871024563" duration="2877000" />
-    </task>
-    <task id="LOCAL-00069" summary="Dropdown item hover color">
-      <created>1602770794489</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1602770794489</updated>
+      <workItem from="1603871024563" duration="7886000" />
     </task>
     <task id="LOCAL-00070" summary="Add constraint username &amp; email">
       <created>1602835343916</created>
@@ -637,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603872512330</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="SKills update in Service">
+      <created>1603874450774</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1603874450774</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +673,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Creating User w/token &amp; non-verified" />
     <MESSAGE value="sendEmail, sendAllEmails, sendRegistrationEmail" />
     <MESSAGE value="Update email confirmation" />
     <MESSAGE value="Add email confirmation" />
@@ -698,7 +697,8 @@
     <MESSAGE value="update design registration.html.twig" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Stable v" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stable v" />
+    <MESSAGE value="SKills update in Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="SKills update in Service" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -740,13 +740,13 @@
     </state>
     <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
     <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1603790313023" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603872512032">
+    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603874450707">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
     <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
     <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="135" y="36" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603872512032" />
+    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603874450707" />
     <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

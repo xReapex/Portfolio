@@ -21,12 +21,15 @@
             {% endif %}
             <ul class="navbar-nav ml-auto">
             {% if is_granted('ROLE_DEVELOPPER') %}
-
                 <li class="nav-item underline-link nav-item-right">
                     <a class="nav-link" href="{{ path('app.api') }}"><i class="fas fa-server"></i> API</a>
                 </li>
-
             {% endif %}
+                {% if is_granted('ROLE_ADMIN') %}
+                    <li class="nav-item underline-link nav-item-right">
+                        <a class="nav-link" href="{{ path('app.admin') }}"><i class="fas fa-hammer"></i> Admin</a>
+                    </li>
+                {% endif %}
             {% if is_granted('ROLE_USER') %}
 
                 <li class="nav-item underline-link dropdown ">

@@ -38,8 +38,8 @@ class Feedbacks
     /**
      * @ORM\Column(type="text")
      * @Assert\Length(
-     *     min="8",
-     *     max="25",
+     *     min="10",
+     *     max="45",
      *     allowEmptyString = false,
      *     minMessage = "Le message doit être au minimum de {{ limit }} caractères de long",
      *     maxMessage = "Le message doit être au maximum de {{ limit }} caractères de long",

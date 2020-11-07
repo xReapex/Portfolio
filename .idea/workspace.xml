@@ -186,15 +186,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\portfolio_website\src\Controller\admin" />
       <recent name="C:\wamp64\www\portfolio_website\public\local" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="C:\wamp64\www\portfolio_website\public\img" />
-      <recent name="C:\wamp64\www\portfolio\public\img" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
   <component name="RunManager">

@@ -42,6 +42,7 @@ security:
   access_control:
     - { path: ^/register , roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/login , roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/confirm, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/ , roles: ROLE_USER }
     - { path: ^/api , roles: ROLE_DEVELOPPER }
     - { path: ^/admin, roles: ROLE_ADMIN }

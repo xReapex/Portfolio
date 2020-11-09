@@ -22,3 +22,70 @@ $('a').click(function (){
         }, 2000);
     }
 });
+
+// ScrollReveal
+
+const sr = ScrollReveal();
+
+// Title
+sr.reveal('h2', {
+    origin: 'left',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+
+// Nav-item //
+// Main item
+
+sr.reveal('.nav-item', {
+    interval: 500,
+    origin: 'top',
+    distance: '10px',
+})
+
+
+// Paragraph
+sr.reveal('p', {
+    origin: 'right',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+
+// Button to top
+sr.reveal('.btn-circle', {
+    origin: 'bottom',
+    delay: 200,
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+
+// Newsletter
+sr.reveal('#newsletter1', {
+    origin: 'top',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+sr.reveal('#email', {
+    origin: 'left',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+sr.reveal('#newsletter2', {
+    origin: 'right',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+sr.reveal('#emailHelp', {
+    origin: 'bottom',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+// End Newsletter
+

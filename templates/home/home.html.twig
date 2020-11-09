@@ -4,12 +4,6 @@
 
 {% block body %}
 
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
-
     <center>
         {% for message in app.flashes('newsletter_error') %}
             <div class="alert alert-dismissible alert-danger mt-3" style="width: 500px; border-radius: 10px; position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0;">
@@ -44,10 +38,10 @@
         <div class="centre">
             <a id="newsletter"></a>
             <div class="form-group">
-                <label for="email">Newsletter</label>
+                <label for="email" id="newsletter1">Newsletter</label>
             <form method="post" action="{{ path('app.newsletter.add') }}" class="form-inline my-2 my-lg-0">
                 <input id="email" name="newsletter_email" style="border-radius: 10px;" class="form-control mr-sm-2" type="email" placeholder="{{ app.user.email }}" value="{{ app.user.email }}" readonly="">
-                <button style="border-radius: 10px;" class="btn btn-primary my-2 my-sm-0" aria-describedby="emailHelp" type="submit"><i class="fas fa-search"></i> Envoyer</button>
+                <button id="newsletter2" style="border-radius: 10px;" class="btn btn-primary my-2 my-sm-0" aria-describedby="emailHelp" type="submit"><i class="fas fa-search"></i> Envoyer</button>
                 <small id="emailHelp" class="form-text text-muted">Je vous promets de ne jamais vous spamer.</small>
             </form>
             </div>

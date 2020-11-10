@@ -13,9 +13,9 @@
                 <br><br>
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <p>“Le silence est l'expression la plus parfaite du mépris.”</p>
+                        <p id="feedback1">“Le silence est l'expression la plus parfaite du mépris.”</p>
                     </blockquote>
-                    <figcaption class="blockquote-footer">
+                    <figcaption class="blockquote-footer" id="feedback2">
                         George Bernard Shaw, <cite title="Source Title">Scénariste</cite>
                     </figcaption>
                 </figure>
@@ -38,7 +38,7 @@
             <h2>Commentaires récents :</h2>
         </div>
         {% for feedback in feedbacks %}
-            <figure class="text-center">
+            <figure class="text-center feedbacks-title">
                 <blockquote class="blockquote text-center zoom">
                     <p class="mb-0 ml-2">{{ feedback.content }}</p>
                 </blockquote>

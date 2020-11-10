@@ -35,6 +35,28 @@ sr.reveal('h2', {
     duration: 2000
 })
 
+// Feedbacks
+sr.reveal('#feedback2', {
+    duration: 4000,
+    origin: 'bottom',
+    distance: '10px',
+    reset: true
+})
+
+sr.reveal('#form', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '50px',
+    reset: true,
+})
+
+sr.reveal('.feedbacks-title', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '50px',
+    reset: true,
+})
+
 // Nav-item //
 // Main item
 
@@ -43,7 +65,6 @@ sr.reveal('.nav-item', {
     origin: 'top',
     distance: '10px',
 })
-
 
 // Paragraph
 sr.reveal('p', {

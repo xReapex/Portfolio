@@ -7,7 +7,6 @@
 /src/.preload.php
 /var/
 /vendor/
-/node_modules/
 /var/log
 /public/build
 /public/local

@@ -45,28 +45,29 @@ sr.reveal('#feedback2', {
 
 // Form //
 sr.reveal('#feedback-title', {
-    duration: 2000,
-    origin: 'top',
-    distance: '50px',
-    reset: true,
-})
-sr.reveal('#feedback-content', {
-    duration: 2000,
-    origin: 'right',
-    distance: '50px',
-    reset: true,
-})
-sr.reveal('#feedback-author', {
+    delay: 500,
     duration: 2000,
     origin: 'left',
     distance: '50px',
-    reset: true,
+    reset: false,
+})
+sr.reveal('#feedback-content', {
+    delay: 700,
+    duration: 2000,
+    origin: 'right',
+    distance: '50px',
+})
+sr.reveal('#feedback-author', {
+    delay: 900,
+    duration: 2000,
+    origin: 'left',
+    distance: '50px',
 })
 sr.reveal('#feedback-submit', {
+    delay: 1100,
     duration: 2000,
-    origin: 'bottom',
+    origin: 'right',
     distance: '50px',
-    reset: true,
 })
 
 
@@ -74,7 +75,6 @@ sr.reveal('.feedbacks-title', {
     duration: 2000,
     origin: 'bottom',
     distance: '50px',
-    reset: true,
 })
 
 // Nav-item //

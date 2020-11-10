@@ -6,9 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,13 +292,7 @@
       <workItem from="1604910066434" duration="7492000" />
       <workItem from="1604942777172" duration="64000" />
       <workItem from="1604947695711" duration="4670000" />
-    </task>
-    <task id="LOCAL-00083" summary="Update">
-      <created>1602857737059</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1602857737059</updated>
+      <workItem from="1605014034063" duration="1803000" />
     </task>
     <task id="LOCAL-00084" summary="Add is_verified &amp; token properties to User">
       <created>1603090704078</created>
@@ -636,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604929955786</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="Test">
+      <created>1605014160454</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1605014160454</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +673,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update User class lenght properties" />
     <MESSAGE value="Check 2 times password" />
     <MESSAGE value="Minor update" />
     <MESSAGE value="Update routes security" />
@@ -697,7 +697,8 @@
     <MESSAGE value="Pagination" />
     <MESSAGE value="Pagination update" />
     <MESSAGE value="Add effects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add effects" />
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -822,9 +823,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599996117910" />
-    <state x="438" y="105" width="353" height="566" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1601302905800">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="548" y="109" width="353" height="566" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605014173468">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="548" y="109" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605014173468" />
     <state x="438" y="105" width="353" height="566" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/67.27.1299.741@67.27.1299.741" timestamp="1601302905800" />
     <state x="330" y="259" width="1418" height="813" key="dock-window-1" timestamp="1604930375959">
       <screen x="0" y="0" width="1920" height="1040" />

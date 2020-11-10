@@ -43,12 +43,32 @@ sr.reveal('#feedback2', {
     reset: true
 })
 
-sr.reveal('#form', {
+// Form //
+sr.reveal('#feedback-title', {
+    duration: 2000,
+    origin: 'top',
+    distance: '50px',
+    reset: true,
+})
+sr.reveal('#feedback-content', {
+    duration: 2000,
+    origin: 'right',
+    distance: '50px',
+    reset: true,
+})
+sr.reveal('#feedback-author', {
+    duration: 2000,
+    origin: 'left',
+    distance: '50px',
+    reset: true,
+})
+sr.reveal('#feedback-submit', {
     duration: 2000,
     origin: 'bottom',
     distance: '50px',
     reset: true,
 })
+
 
 sr.reveal('.feedbacks-title', {
     duration: 2000,

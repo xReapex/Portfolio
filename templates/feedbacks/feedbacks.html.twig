@@ -22,7 +22,24 @@
             </div>
         </div>
         <div class="centre" id="form">
-            {{ form(form) }}
+            <div>
+                {{ form_start(form) }}
+                {{ form_errors(form) }}
+                <div id="feedback-title">
+                    {{ form_row(form.Title) }}
+                </div>
+                <div id="feedback-content">
+                    {{ form_row(form.Content) }}
+                </div>
+                <div id="feedback-author">
+                    {{ form_row(form.Author) }}
+                </div>
+                <div id="feedback-submit">
+                    {{ form_row(form.Envoyer) }}
+                </div>
+
+                {{ form_end(form) }}
+            </div>
         </div>
     </div>
 

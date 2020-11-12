@@ -8,8 +8,12 @@
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/project/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,14 +296,13 @@
       <workItem from="1604910066434" duration="7492000" />
       <workItem from="1604942777172" duration="64000" />
       <workItem from="1604947695711" duration="4670000" />
-      <workItem from="1605014034063" duration="4521000" />
-    </task>
-    <task id="LOCAL-00085" summary="Update EmailManager.php">
-      <created>1603091333037</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1603091333037</updated>
+      <workItem from="1605014034063" duration="5279000" />
+      <workItem from="1605104124582" duration="420000" />
+      <workItem from="1605122377665" duration="806000" />
+      <workItem from="1605178898718" duration="436000" />
+      <workItem from="1605186087671" duration="1569000" />
+      <workItem from="1605197594844" duration="3000" />
+      <workItem from="1605198587409" duration="1904000" />
     </task>
     <task id="LOCAL-00086" summary="Creating User w/token &amp; non-verified">
       <created>1603091382118</created>
@@ -637,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605016262579</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="Update reveals">
+      <created>1605021545600</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1605021545601</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -673,7 +683,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor update" />
     <MESSAGE value="Update routes security" />
     <MESSAGE value="Underlink dropdown" />
     <MESSAGE value="Readonly newsletter form" />
@@ -698,7 +707,8 @@
     <MESSAGE value="Add effects" />
     <MESSAGE value="Test" />
     <MESSAGE value="Feedback form reveals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feedback form reveals" />
+    <MESSAGE value="Update reveals" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update reveals" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">

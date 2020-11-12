@@ -45,7 +45,7 @@ class ProjectController extends AbstractController
             "projet5" => $projet_perso2,
             "projet6" => $projet_perso3
         ]);
-        return $res->setMaxAge(3600);
+        return $res;
     }
 
     /**

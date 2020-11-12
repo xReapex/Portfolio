@@ -27,25 +27,25 @@
                                 </div>
                             {% endif %}
 
-                            <label for="inputUsername">Pseudo</label>
-                            <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus>
-                            <label for="inputPassword">Mot de passe</label>
-                            <input type="password" name="password" id="inputPassword" class="form-control" required>
+                            <label for="inputUsername" class="login-left">Pseudo</label>
+                            <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control login-left" required autofocus>
+                            <label for="inputPassword" class="login-right">Mot de passe</label>
+                            <input type="password" name="password" id="inputPassword" class="form-control login-right" required>
 
                             <input type="hidden" name="_csrf_token"
                                    value="{{ csrf_token('authenticate') }}"
                             >
 
                             <div class="checkbox" style="margin-top: 6px">
-                                <label>
-                                    <input type="checkbox" name="_remember_me"> Se rappeler de moi
+                                <label class="login-left">
+                                    <input type="checkbox" name="_remember_me" class="login-left"> Se rappeler de moi
                                 </label>
                             </div>
 
-                            <button class="btn btn-primary" type="submit">
+                            <button class="btn btn-primary login-button" type="submit">
                                 Se connecter
                             </button>
-                            <a type="button" class="btn btn-warning" href="{{ path('app.register') }}">
+                            <a type="button" class="btn btn-warning login-button" href="{{ path('app.register') }}">
                                 S'enregistrer
                             </a>
                         </form>

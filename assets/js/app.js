@@ -70,20 +70,24 @@ sr.reveal('#feedback-submit', {
     distance: '50px',
 })
 
-
 sr.reveal('.feedbacks-title', {
     duration: 2000,
     origin: 'bottom',
     distance: '50px',
 })
 
-// Nav-item //
-// Main item
+sr.reveal('.feedback-source', {
+    duration: 2000,
+    origin: "bottom",
+    distance: '50px'
+})
 
+// Nav-item //
 sr.reveal('.nav-item', {
     interval: 500,
     origin: 'top',
     distance: '10px',
+    reset: false
 })
 
 // Paragraph
@@ -130,3 +134,23 @@ sr.reveal('#emailHelp', {
 })
 // End Newsletter
 
+// Login
+sr.reveal('.login-left', {
+    origin: 'left',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+sr.reveal('.login-right', {
+    origin: 'right',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+sr.reveal('.login-button', {
+    origin: 'right',
+    distance: '40px',
+    reset: true,
+    duration: 2000,
+    interval: 700
+})

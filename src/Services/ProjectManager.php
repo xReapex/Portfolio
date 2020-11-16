@@ -29,7 +29,7 @@ class ProjectManager
     public function getProject($gitlab_project_id)
     {
         $res = $this->http->request('GET', "https://gitlab.com/api/v4/projects/$gitlab_project_id")->toArray();
-        if ($res['readme_url'])
+        if (!$res['readme_url'])
         {
             $res['readme_url'] = '<a class="btn btn-primary disabled"><i class="fab fa-readme"></i> README.md</a>';
         }

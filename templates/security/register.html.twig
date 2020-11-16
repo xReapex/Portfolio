@@ -18,7 +18,28 @@
         <div style="width: 50%; float: right">
             <div class="centre">
                 <div>
-                    {{ form(form) }}
+                    {{ form_start(form) }}
+                    <div id="register-top">
+                        {{ form_errors(form) }}
+                    </div>
+
+                    <div id="register-left">
+                        {{ form_row(form.Username) }}
+                    </div>
+                    <div id="register-left">
+                        {{ form_row(form.Email) }}
+                    </div>
+                    <div id="register-right">
+                        {{ form_row(form.password) }}
+                    </div>
+                    <div id="register-conditions">
+                        {{ form_row(form.AccepterLesConditions) }}
+                    </div>
+                    <div id="register-submit">
+                        {{ form_row(form.Envoyer) }}
+                    </div>
+
+                    {{ form_end(form) }}
                 </div>
             </div>
         </div>

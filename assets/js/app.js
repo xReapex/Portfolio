@@ -154,3 +154,37 @@ sr.reveal('.login-button', {
     duration: 2000,
     interval: 700
 })
+
+// Register form
+sr.reveal('#register-left', {
+    origin: 'left',
+    distance: '50px',
+    reset: true,
+    duration: 2000,
+})
+sr.reveal('#register-right', {
+    origin: 'right',
+    distance: '50px',
+    reset: true,
+    duration: 2000,
+})
+sr.reveal('#register-top', {
+    origin: 'top',
+    distance: '50px',
+    reset: true,
+    duration: 2000,
+})
+
+sr.reveal('#register-conditions', {
+    origin: 'left',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})
+
+sr.reveal('#register-submit', {
+    origin: 'right',
+    distance: '50px',
+    reset: true,
+    duration: 2000
+})

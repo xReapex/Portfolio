@@ -81,7 +81,7 @@ class SecurityController extends AbstractController
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($user);
                 $em->flush();
-
+                $this->addFlash('register_success', 'Votre inscription est validée, vérifier votre adresse email avant de continuer.');
                 return $this->redirectToRoute('app_login');
             }
         }

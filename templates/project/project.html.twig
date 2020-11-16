@@ -21,8 +21,8 @@
 
         <div class="row">
             <div class="zoom col-sm-4">
-                <div class="card border-primary" style="width: 18rem; height: 430px">
-                    <img src="{{ asset('img/img2.png') }}" class="card-img-top imgflou" alt="...">
+                <div class="card border-primary" style="width: 18rem; height: 100%">
+                    <img src="{{ projet1['avatar_url'] }}" class="card-img-top imgflou" alt="...">
                     <div class="card-body">
                         <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> {{ projet1["name"] }}</h7>
                         <h6 class="card-text">{{ projet1['description'] }} <a class="text-info" href="{{ path('app.project.id', {'id': projet1['id']})  }}"><i class="fas fa-info-circle"></i></a></h6>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="zoom col-sm-4">
-                <div class="card border-primary" style="width: 18rem; height: 430px">
-                    <img src="{{ asset('img/19872619.png') }}" class="card-img-top imgflou" alt="...">
+                <div class="card border-primary" style="width: 18rem; height: 100%">
+                    <img src="{{ projet2['avatar_url'] }}" class="card-img-top imgflou" alt="...">
                     <div class="card-body">
                         <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> {{ projet2["name"] }}</h7>
                         <h6 class="card-text">{{ projet2['description'] }} <a class="text-info" href="{{ path('app.project.id', {'id': projet2['id']})  }}"><i class="fas fa-info-circle"></i></a></h6>
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <div class=" zoom col-sm-4">
-                <div class="card border-primary" style="width: 18rem; height: 430px">
-                    <img src="{{ asset('img/img2.png') }}" class="card-img-top imgflou" alt="...">
+                <div class="card border-primary" style="width: 18rem; height: 100%">
+                    <img src="{{ projet3['avatar_url'] }}" class="card-img-top imgflou" alt="...">
                     <div class="card-body">
                         <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> {{ projet3["name"] }}</h7>
                         <h6 class="card-text">{{ projet3['description'] }} <a class="text-info" href="{{ path('app.project.id', {'id': projet3['id']})  }}"><i class="fas fa-info-circle"></i></a></h6>
@@ -62,15 +62,14 @@
         <a id="projet-perso">
             <div style="height: 25vh"></div>
             <center><h1 >Projets personnels</h1></center><br><br>
-            <p style="margin-bottom: 5%">Je vous présente ici 3 projets qui m'ont permis d'expériementer des technologies, ces projets sont choisis aléatoirement parmit plein de projet ! N'hésitez donc pas à raffraichir la page et à consulter les informations supplémentaire de chaque projet. Visiter les projets de formation <a class="text-warning" href="#projet-formation">ici</a> !</p>
+            <p style="margin-bottom: 5%">Je vous présente ici 3 projets qui m'ont permi d'expérimenter des technologies, ces projets sont choisis aléatoirement parmit plein de projets ! N'hésitez donc pas à raffraichir la page et à consulter les informations supplémentaire de chaque projet. Visiter les projets de formation <a class="text-warning" href="#projet-formation">ici</a> !</p>
 
         </a>
 
         <div class="row">
             <div class="zoom col-sm-4">
-                <div class="card border-primary" style="width: 18rem; height: 430px">
-                    <img src="{{ asset('img/img2.png') }}" class="card-img-top imgflou" alt="...">
-                    <div class="card-body">
+                <div class="card border-primary" style="width: 18rem; height: 100%">
+                    <img src="{{ projet4['avatar_url'] }}" class="card-img-top imgflou" alt="...">                    <div class="card-body">
                         <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> {{ projet4["name"] }}</h7>
                         <h6 class="card-text">{{ projet4['description'] }} <a class="text-info" href="{{ path('app.project.id', {'id': projet4['id']})  }}"><i class="fas fa-info-circle"></i></a></h6>
                         {{ projet4['readme_url'] | raw }}
@@ -79,9 +78,8 @@
                 </div>
             </div>
             <div class="zoom col-sm-4">
-                <div class="card border-primary" style="width: 18rem; height: 430px">
-                    <img src="{{ asset('img/19872619.png') }}" class="card-img-top imgflou" alt="...">
-                    <div class="card-body">
+                <div class="card border-primary" style="width: 18rem; height: 100%">
+                    <img src="{{ projet5['avatar_url'] }}" class="card-img-top imgflou" alt="...">                    <div class="card-body">
                         <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> {{ projet5["name"] }}</h7>
                         <h6 class="card-text">{{ projet5['description'] }} <a class="text-info" href="{{ path('app.project.id', {'id': projet5['id']})  }}"><i class="fas fa-info-circle"></i></a></h6>
                         {{ projet5['readme_url'] | raw }}
@@ -90,9 +88,8 @@
                 </div>
             </div>
             <div class=" zoom col-sm-4">
-                <div class="card border-primary" style="width: 18rem; height: 430px">
-                    <img src="{{ asset('img/img2.png') }}" class="card-img-top imgflou" alt="...">
-                    <div class="card-body">
+                <div class="card border-primary" style="width: 18rem; height: 100%">
+                    <img src="{{ projet6['avatar_url'] }}" class="card-img-top imgflou" alt="...">                    <div class="card-body">
                         <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> {{ projet6["name"] }}</h7>
                         <h6 class="card-text">{{ projet6['description'] }} <a class="text-info" href="{{ path('app.project.id', {'id': projet6['id']})  }}"><i class="fas fa-info-circle"></i></a></h6>
                         {{ projet6['readme_url'] | raw }}

@@ -7,16 +7,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/19105266.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/19872619.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/img2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ProjectManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ProjectManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/api/api.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/api.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,14 +308,10 @@
       <workItem from="1605284492553" duration="1531000" />
       <workItem from="1605512924675" duration="7000" />
       <workItem from="1605513173460" duration="110000" />
-      <workItem from="1605513292145" duration="7639000" />
-    </task>
-    <task id="LOCAL-00087" summary="sendEmail, sendAllEmails, sendRegistrationEmail">
-      <created>1603093568689</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1603093568689</updated>
+      <workItem from="1605513292145" duration="9230000" />
+      <workItem from="1605533158277" duration="2211000" />
+      <workItem from="1605707328125" duration="540000" />
+      <workItem from="1605725925901" duration="676000" />
     </task>
     <task id="LOCAL-00088" summary="Update email confirmation">
       <created>1603094976156</created>
@@ -656,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605201880178</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Fix bugs - add reveals - add project image">
+      <created>1605523496160</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1605523496160</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +692,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Underlink dropdown" />
     <MESSAGE value="Readonly newsletter form" />
     <MESSAGE value="Improve skills perfomances" />
     <MESSAGE value="Add project to cache" />
@@ -717,7 +716,8 @@
     <MESSAGE value="Feedback form reveals" />
     <MESSAGE value="Update reveals" />
     <MESSAGE value="Update design and reveals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update design and reveals" />
+    <MESSAGE value="Fix bugs - add reveals - add project image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs - add reveals - add project image" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -826,9 +826,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600525657486" />
-    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1602672126324">
-      <screen x="67" y="27" width="1299" height="741" />
+    <state x="361" y="147" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605523498556">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="361" y="147" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605523498556" />
     <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1602672126324" />
     <state x="611" y="257" width="201" height="279" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601279744545">
       <screen x="67" y="27" width="1299" height="741" />
@@ -851,10 +852,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="330" y="259" width="1418" height="813" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604930375959" />
-    <state x="736" y="157" width="870" height="812" key="find.popup" timestamp="1604771232179">
+    <state x="736" y="157" width="870" height="812" key="find.popup" timestamp="1605536237761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="736" y="157" width="870" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604771232179" />
+    <state x="736" y="157" width="870" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605536237761" />
     <state x="651" y="207" width="618" height="783" key="find.popup/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600344058587" />
     <state x="565" y="139" width="588" height="578" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1603699050100" />
     <state x="380" y="175" key="run.anything.popup" timestamp="1602680846028">

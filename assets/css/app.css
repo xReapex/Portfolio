@@ -21,7 +21,7 @@
 }
 
 .imgflou {
-    filter: blur(3px);
+    filter: blur(15px);
 }
 
 .zoom:hover .imgflou {

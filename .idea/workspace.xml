@@ -6,14 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/api/api.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/api/api.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/_edit_user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/_edit_user.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,8 +161,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/vendor/twig/string-extra" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
-      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hQEHlGYc7TEjD4sPvpm6nkekyp" />
@@ -187,15 +186,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\portfolio_website\templates\pagination" />
+      <recent name="$PROJECT_DIR$/public/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\portfolio_website\config\packages" />
       <recent name="C:\wamp64\www\portfolio_website\src\Controller\admin" />
       <recent name="C:\wamp64\www\portfolio_website\public\local" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/assets" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
   <component name="RunManager">
@@ -312,13 +312,11 @@
       <workItem from="1605533158277" duration="2211000" />
       <workItem from="1605707328125" duration="540000" />
       <workItem from="1605725925901" duration="676000" />
-    </task>
-    <task id="LOCAL-00088" summary="Update email confirmation">
-      <created>1603094976156</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1603094976156</updated>
+      <workItem from="1605801503764" duration="1132000" />
+      <workItem from="1605807439327" duration="6708000" />
+      <workItem from="1605859349548" duration="461000" />
+      <workItem from="1605869334684" duration="1108000" />
+      <workItem from="1605880794248" duration="306000" />
     </task>
     <task id="LOCAL-00089" summary="Add email confirmation">
       <created>1603097565877</created>
@@ -656,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605523496160</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="Update">
+      <created>1605801593923</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1605801593923</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +712,6 @@
     <MESSAGE value="Citation bootstrap v4 -&gt; v5 recents feedbacks" />
     <MESSAGE value="Add Timeline" />
     <MESSAGE value="Finale timeline" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Email confirmation bugs correction" />
     <MESSAGE value="Pagination" />
     <MESSAGE value="Pagination update" />
@@ -717,7 +721,8 @@
     <MESSAGE value="Update reveals" />
     <MESSAGE value="Update design and reveals" />
     <MESSAGE value="Fix bugs - add reveals - add project image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bugs - add reveals - add project image" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -735,10 +740,10 @@
     <state x="572" y="165" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279474318" />
     <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602833996191" />
     <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
-    <state x="702" y="322" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604413981571">
+    <state x="702" y="322" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605816077749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604413981571" />
+    <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605816077749" />
     <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1602579179217" />
     <state x="585" y="130" width="412" height="638" key="#com.intellij.ide.util.MemberChooser" timestamp="1601449217498">
       <screen x="67" y="27" width="1299" height="741" />
@@ -774,10 +779,10 @@
       <screen x="0" y="196" width="1920" height="1004" />
     </state>
     <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600249031908" />
-    <state x="743" y="167" width="374" height="358" key="FileChooserDialogImpl" timestamp="1604649233901">
+    <state x="743" y="167" width="374" height="358" key="FileChooserDialogImpl" timestamp="1605859809408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604649233901" />
+    <state x="743" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605859809408" />
     <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600412370803" />
     <state x="570" y="146" width="374" height="358" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1603715281398" />
     <state width="1802" height="209" key="GridCell.Tab.0.bottom" timestamp="1600695028102">
@@ -852,10 +857,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="330" y="259" width="1418" height="813" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604930375959" />
-    <state x="736" y="157" width="870" height="812" key="find.popup" timestamp="1605536237761">
+    <state x="736" y="157" width="870" height="812" key="find.popup" timestamp="1605815051323">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="736" y="157" width="870" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605536237761" />
+    <state x="736" y="157" width="870" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605815051323" />
     <state x="651" y="207" width="618" height="783" key="find.popup/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600344058587" />
     <state x="565" y="139" width="588" height="578" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1603699050100" />
     <state x="380" y="175" key="run.anything.popup" timestamp="1602680846028">

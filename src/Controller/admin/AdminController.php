@@ -74,11 +74,12 @@ class AdminController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $encoded = $encoder->encodePassword($user, $form->get('Password')->getData());
+            $encoded = $encoder->encodePassword($user, $form->get('password')->getData());
             $user->setPassword($encoded);
 
             $manager->flush();
 
+            $this->addFlash('success', "L'utilisateur a bien été mis à jour.");
             return $this->redirectToRoute('app.admin');
         }
 

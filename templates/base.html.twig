@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Thomas Robert - {% block title %}{% endblock %}</title>
-
-        {{ encore_entry_link_tags('app') }}
         <link rel="stylesheet" href="{{ asset('local/bootstrap-5.0.0/css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('local/bootstrap.min.css') }}"> <!--Bootswatch-->
         <link href="https://fonts.googleapis.com/css2?family=Kufam&display=swap" rel="stylesheet">
         <link href="{{ asset('local/fontawesome/css/all.css') }}" rel="stylesheet">
+        {{ encore_entry_link_tags('app') }}
 
         {% block stylesheets %}{% endblock %}
 

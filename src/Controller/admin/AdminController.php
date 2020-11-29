@@ -57,6 +57,8 @@ class AdminController extends AbstractController
         $entityManager->remove($user);
         $entityManager->flush();
 
+        $this->addFlash("remove", "L'utilisateur a bien été supprimé.");
+
         return $this->redirectToRoute('app.admin');
     }
 

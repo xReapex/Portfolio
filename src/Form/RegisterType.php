@@ -19,7 +19,8 @@ class RegisterType extends AbstractType
     {
         $builder
             ->add('Username', TextType::class, [
-                'label' => "Pseudo"
+                'label' => "Pseudo",
+                'attr' => ['class' => 'text-lowercase'],
             ])
             ->add('Email', EmailType::class)
             ->add('password', RepeatedType::class, [
@@ -34,6 +35,7 @@ class RegisterType extends AbstractType
                 'mapped' => false,
                 'required' => true,
                 'invalid_message' => 'Vous devez accepter les conditions pour continuer.',
+                'label_attr' => ['class' => 'switch-custom'],
             ))
             ->add('Envoyer', SubmitType::class);
     }

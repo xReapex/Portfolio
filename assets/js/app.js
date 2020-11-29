@@ -188,3 +188,9 @@ sr.reveal('#register-submit', {
     reset: true,
     duration: 2000
 })
+
+//admin
+sr.reveal('.admin-card', {
+    duration: 2000,
+    interval: 500
+})

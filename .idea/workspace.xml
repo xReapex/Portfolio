@@ -8,11 +8,20 @@
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/_edit_user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/_edit_user.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pagination/filtration.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pagination/sliding.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pagination/sortable_link.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +132,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
@@ -149,7 +157,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/intl" />
       <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
-      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
@@ -163,6 +170,8 @@
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hQEHlGYc7TEjD4sPvpm6nkekyp" />
@@ -316,14 +325,15 @@
       <workItem from="1605807439327" duration="6708000" />
       <workItem from="1605859349548" duration="461000" />
       <workItem from="1605869334684" duration="1108000" />
-      <workItem from="1605880794248" duration="306000" />
-    </task>
-    <task id="LOCAL-00089" summary="Add email confirmation">
-      <created>1603097565877</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1603097565877</updated>
+      <workItem from="1605880794248" duration="3969000" />
+      <workItem from="1606051046509" duration="722000" />
+      <workItem from="1606060058784" duration="1533000" />
+      <workItem from="1606475401575" duration="186000" />
+      <workItem from="1606475623284" duration="1247000" />
+      <workItem from="1606486327865" duration="2026000" />
+      <workItem from="1606668387543" duration="1506000" />
+      <workItem from="1606669911920" duration="1089000" />
+      <workItem from="1606672186119" duration="299000" />
     </task>
     <task id="LOCAL-00090" summary="Add findToken method">
       <created>1603097587861</created>
@@ -661,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605801593923</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="Add pagination">
+      <created>1605881375163</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1605881375163</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,7 +714,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Readonly newsletter form" />
     <MESSAGE value="Improve skills perfomances" />
     <MESSAGE value="Add project to cache" />
     <MESSAGE value="Minor change" />
@@ -722,7 +738,8 @@
     <MESSAGE value="Update design and reveals" />
     <MESSAGE value="Fix bugs - add reveals - add project image" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Add pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pagination" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">

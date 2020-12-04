@@ -1,32 +1,35 @@
-<div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
-    <div class="card border-info zoom admin-card" style="width: 18rem; margin: 14px; margin-left: 5px; border-radius: 10px;">
+<div class="card-deck">
+    <div class="card border-info zoom admin-card" style="width: 10rem; margin: 10px; margin-left: 5px; border-radius: 10px;">
         <div class="card-body">
             <center>
                 <h7 class="card-title"><i class="fas fa-id-card-alt"></i> {{ user.id }}
                     {% if user.roles == ["ROLE_USER"] %}
-                        <span class="badge badge-pill badge-warning">User</span>
+                        <span class="badge badge-pill badge-warning admin-card-button-right-role">User</span>
                     {% elseif user.roles == ["ROLE_ADMIN", "ROLE_USER"] %}
-                        <span class="badge badge-pill badge-primary">Admin</span>
+                        <span class="badge badge-pill badge-primary admin-card-button-right-role">Admin</span>
                     {% else %}
-                        <span class="badge badge-pill badge-danger">Super</span>
+                        <span class="badge badge-pill badge-danger admin-card-button-right-role">Super</span>
                     {% endif %}
                 </h7>
             </center>
             <br>
 
-            <p class="card-text">
-                <b>Pseudo</b> : {{ user.username }}
-                <br>
-                <b>Email</b> : {{ user.email }}
-            </p>
+            <center>
+                <p class="card-text mb-3 admin-card-text">
+                    <b>Pseudo</b> : {{ user.username }}
+                    <br>
+                    <b>Email</b> : {{ user.email }}
+                </p>
+            </center>
+
 
             <center>
-                <a href="{{ path('app.user.delete', {'id': user.id}) }}" onclick="return confirm('Supprimer cette utilisateur est irréversible, êtes vous sûr ?')"><button type="button" class="btn btn-danger" style="border-radius: 10px;"><i class="fas fa-user-times"></i></button></a>
-                <a href="{{ path('app.user.edit', {'id': user.id}) }}"><button type="button" class="btn btn-success" style="border-radius: 10px;"><i class="fas fa-user-edit"></i></button></a>
+                <a href="{{ path('app.user.delete', {'id': user.id}) }}" onclick="return confirm('Supprimer cette utilisateur est irréversible, êtes vous sûr ?')"><button type="button" class="btn btn-danger admin-card-button-left" style="border-radius: 10px;"><i class="fas fa-user-times"></i></button></a>
+                <a href="{{ path('app.user.edit', {'id': user.id}) }}"><button type="button" class="btn btn-success admin-card-button-bottom" style="border-radius: 10px;"><i class="fas fa-user-edit"></i></button></a>
                 {% if app.user.id == user.id %}
-                    <button type="button" class="btn btn-info disabled" style="border-radius: 10px;"><i class="fas fa-user-tag"></i></button>
+                    <button type="button" class="btn btn-info disabled admin-card-button-right" style="border-radius: 10px;"><i class="fas fa-user-tag"></i></button>
                 {% else %}
-                    <a href="{{ path('app.user.changerole', {'id': user.id}) }}"><button type="button" class="btn btn-info" style="border-radius: 10px;"><i class="fas fa-user-tag"></i></button></a>
+                    <a href="{{ path('app.user.changerole', {'id': user.id}) }}"><button type="button" class="btn btn-info admin-card-button-right" style="border-radius: 10px;"><i class="fas fa-user-tag"></i></button></a>
                 {% endif %}
             </center>
         </div>

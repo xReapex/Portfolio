@@ -194,3 +194,38 @@ sr.reveal('.admin-card', {
     duration: 2000,
     interval: 500
 })
+
+//admin
+sr.reveal('.admin-card-text', {
+    duration: 2000,
+    distance: '15px',
+    origin: 'top',
+    interval: 500
+})
+
+// admin buttons :
+sr.reveal('.admin-card-button-left', {
+    duration: 2000,
+    distance: '20px',
+    origin: 'left',
+    interval: 500
+})
+sr.reveal('.admin-card-button-right', {
+    duration: 2000,
+    distance: '20px',
+    origin: 'right',
+    interval: 500
+})
+sr.reveal('.admin-card-button-bottom', {
+    duration: 2000,
+    distance: '20px',
+    origin: 'bottom',
+    interval: 500
+})
+
+sr.reveal('.admin-card-button-right-role', {
+    duration: 2000,
+    distance: '20px',
+    origin: 'right',
+    interval: 500
+})

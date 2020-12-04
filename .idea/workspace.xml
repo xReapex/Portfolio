@@ -6,22 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3eea7514-b40d-425c-a80b-ba599b647791.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3eea7514-b40d-425c-a80b-ba599b647791.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pagination/filtration.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pagination/sliding.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pagination/sortable_link.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,14 +325,16 @@
       <workItem from="1606486327865" duration="2026000" />
       <workItem from="1606668387543" duration="1506000" />
       <workItem from="1606669911920" duration="1089000" />
-      <workItem from="1606672186119" duration="299000" />
-    </task>
-    <task id="LOCAL-00090" summary="Add findToken method">
-      <created>1603097587861</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1603097587861</updated>
+      <workItem from="1606672186119" duration="826000" />
+      <workItem from="1606808014464" duration="173000" />
+      <workItem from="1606810856893" duration="1179000" />
+      <workItem from="1606827401431" duration="2886000" />
+      <workItem from="1606901328748" duration="23000" />
+      <workItem from="1606903218283" duration="2904000" />
+      <workItem from="1606931811625" duration="13000" />
+      <workItem from="1606932451844" duration="137000" />
+      <workItem from="1607067492562" duration="1935000" />
+      <workItem from="1607085943033" duration="1195000" />
     </task>
     <task id="LOCAL-00091" summary="Update registration email template">
       <created>1603098340555</created>
@@ -678,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605881375163</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="Update admin panel">
+      <created>1606672719232</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1606672719233</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,7 +715,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Improve skills perfomances" />
     <MESSAGE value="Add project to cache" />
     <MESSAGE value="Minor change" />
     <MESSAGE value="Add unsubscribe newsletter" />
@@ -739,7 +739,8 @@
     <MESSAGE value="Fix bugs - add reveals - add project image" />
     <MESSAGE value="Update" />
     <MESSAGE value="Add pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pagination" />
+    <MESSAGE value="Update admin panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update admin panel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
@@ -750,10 +751,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1601484939812" />
-    <state x="552" y="178" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604412743282">
+    <state x="552" y="178" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606932472721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604412743282" />
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606932472721" />
     <state x="572" y="165" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279474318" />
     <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602833996191" />
     <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
@@ -796,10 +797,10 @@
       <screen x="0" y="196" width="1920" height="1004" />
     </state>
     <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600249031908" />
-    <state x="743" y="167" width="374" height="358" key="FileChooserDialogImpl" timestamp="1605859809408">
+    <state x="743" y="167" width="374" height="358" key="FileChooserDialogImpl" timestamp="1607069427265">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605859809408" />
+    <state x="743" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607069427265" />
     <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600412370803" />
     <state x="570" y="146" width="374" height="358" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1603715281398" />
     <state width="1802" height="209" key="GridCell.Tab.0.bottom" timestamp="1600695028102">

@@ -116,6 +116,6 @@ class AdminController extends AbstractController
             $entityManager->flush();
             $this->addFlash('success', 'Le role de l\'utilisateur ' .$user->getId(). ' a été changé en "User"');
         }
-        return $this->redirectToRoute('app.admin', ["_fragment" => "gestion"]);
+        return $this->redirectToRoute('app.admin');
     }
 }

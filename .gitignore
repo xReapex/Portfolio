@@ -11,6 +11,7 @@
 /var/log
 /public/build
 /public/local
+.env
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

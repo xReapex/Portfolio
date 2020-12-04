@@ -6,14 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3eea7514-b40d-425c-a80b-ba599b647791.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3eea7514-b40d-425c-a80b-ba599b647791.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedbacks/feedbacks.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -334,14 +331,8 @@
       <workItem from="1606931811625" duration="13000" />
       <workItem from="1606932451844" duration="137000" />
       <workItem from="1607067492562" duration="1935000" />
-      <workItem from="1607085943033" duration="1195000" />
-    </task>
-    <task id="LOCAL-00091" summary="Update registration email template">
-      <created>1603098340555</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1603098340555</updated>
+      <workItem from="1607085943033" duration="2763000" />
+      <workItem from="1607089386614" duration="818000" />
     </task>
     <task id="LOCAL-00092" summary="Env update">
       <created>1603098373485</created>
@@ -679,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606672719233</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="Add veille + fix">
+      <created>1607087430368</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1607087430369</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -715,7 +713,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add project to cache" />
     <MESSAGE value="Minor change" />
     <MESSAGE value="Add unsubscribe newsletter" />
     <MESSAGE value="update design registration.html.twig" />
@@ -740,7 +737,8 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Add pagination" />
     <MESSAGE value="Update admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update admin panel" />
+    <MESSAGE value="Add veille + fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add veille + fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">

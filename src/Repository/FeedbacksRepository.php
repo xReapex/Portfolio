@@ -56,4 +56,21 @@ class FeedbacksRepository extends ServiceEntityRepository
             ->getQuery();
     }
 
+    public function countAllFeedbacks()
+    {
+        $queryBuilder = $this->createQueryBuilder('a');
+        $queryBuilder->select('COUNT(a.id) as value');
+
+        return $queryBuilder->getQuery()->getOneOrNullResult();
+    }
+
+    public function getAllFeedbackByMonth($month)
+    {
+        $qb = $this->createQueryBuilder('p')
+            ->select("COUNT(MONTH(p.date)) as value")
+            ->where("MONTH(p.date) = $month");
+
+        return $qb->getQuery()->getOneOrNullResult();
+    }
+
 }

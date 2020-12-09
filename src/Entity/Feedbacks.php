@@ -27,7 +27,7 @@ class Feedbacks
      * @ORM\Column(type="string", length=255)
      * @Assert\Length(
      *     min="8",
-     *     max="25",
+     *     max="50",
      *     allowEmptyString = false,
      *     minMessage = "Le titre doit être au minimum de {{ limit }} caractères de long",
      *     maxMessage = "Le titre doit être au maximum de {{ limit }} caractères de long",
@@ -39,7 +39,7 @@ class Feedbacks
      * @ORM\Column(type="text")
      * @Assert\Length(
      *     min="10",
-     *     max="45",
+     *     max="255",
      *     allowEmptyString = false,
      *     minMessage = "Le message doit être au minimum de {{ limit }} caractères de long",
      *     maxMessage = "Le message doit être au maximum de {{ limit }} caractères de long",

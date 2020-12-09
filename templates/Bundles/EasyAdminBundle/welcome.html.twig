@@ -1,0 +1,42 @@
+{# @var ea \EasyCorp\Bundle\EasyAdminBundle\Context\AdminContext #}
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block page_title 'Administration' %}
+
+{% block page_content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 alert-info">
+                <span class="display-3">{{ usersCount['value'] }}</span> Utilisateurs
+            </div>
+            <div class="col-4 alert-success">
+                <span class="display-3">{{ feedbacksCount['value'] }}</span> Feedbacks
+            </div>
+            <div class="col-4 alert-warning" style="align-items: center">
+                <span class="display-3">{{ newsletterCount['value'] }}</span> Utilisateurs de la newsletter
+            </div>
+        </div>
+        <hr>
+        Toast
+        <hr>
+        <div class="row">
+            <div class="col-4" id="div_chart"></div>
+            <div class="col-4" id="div_chart2"></div>
+            <div class="col-4" id="div_chart3"></div>
+        </div>
+
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            {{ gc_draw(chart, 'div_chart') }}
+        </script>
+        <script type="text/javascript">
+            {{ gc_draw(chart2, 'div_chart2') }}
+        </script>
+        <script type="text/javascript">
+            {{ gc_draw(chart3, 'div_chart3') }}
+        </script>
+    </div>
+
+{% endblock %}

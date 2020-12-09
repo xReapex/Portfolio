@@ -58,6 +58,9 @@
             "src/Entity/.gitignore"
         ]
     },
+    "beberlei/doctrineextensions": {
+        "version": "v1.3.0"
+    },
     "cmen/google-charts-bundle": {
         "version": "3.2.1"
     },
@@ -143,6 +146,15 @@
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
+    "easycorp/easyadmin-bundle": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "b131e6cbfe1b898a508987851963fff485986285"
+        }
+    },
     "egulias/email-validator": {
         "version": "2.1.20"
     },
@@ -153,10 +165,10 @@
         "version": "v1.1.2"
     },
     "knplabs/knp-components": {
-        "version": "v2.4.2"
+        "version": "v3.0.0"
     },
     "knplabs/knp-paginator-bundle": {
-        "version": "v5.3.0"
+        "version": "v5.4.1"
     },
     "laminas/laminas-code": {
         "version": "3.4.1"
@@ -450,6 +462,9 @@
     "symfony/polyfill-php80": {
         "version": "v1.18.1"
     },
+    "symfony/polyfill-uuid": {
+        "version": "v1.20.0"
+    },
     "symfony/process": {
         "version": "v5.1.5"
     },
@@ -567,6 +582,9 @@
     },
     "symfony/twig-pack": {
         "version": "v1.0.0"
+    },
+    "symfony/uid": {
+        "version": "v5.1.9"
     },
     "symfony/validator": {
         "version": "4.3",

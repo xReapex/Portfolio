@@ -6,11 +6,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Feedbacks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Newsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Newsletter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/FeedbacksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/FeedbacksRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/NewsletterRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/NewsletterRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/_edit_user.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,14 +50,12 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
@@ -157,10 +172,16 @@
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/vendor/twig/string-extra" />
       <path value="$PROJECT_DIR$/vendor/twig/extra-bundle" />
-      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
-      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/beberlei/doctrineextensions" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hQEHlGYc7TEjD4sPvpm6nkekyp" />
@@ -176,7 +197,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projet-test" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -185,6 +206,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\portfolio_website\templates\Bundles\EasyAdminBundle" />
       <recent name="C:\wamp64\www\portfolio_website\templates\pagination" />
       <recent name="$PROJECT_DIR$/public/img" />
     </key>
@@ -332,14 +354,14 @@
       <workItem from="1606932451844" duration="137000" />
       <workItem from="1607067492562" duration="1935000" />
       <workItem from="1607085943033" duration="2763000" />
-      <workItem from="1607089386614" duration="818000" />
-    </task>
-    <task id="LOCAL-00092" summary="Env update">
-      <created>1603098373485</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1603098373485</updated>
+      <workItem from="1607089386614" duration="1040000" />
+      <workItem from="1607357559842" duration="12486000" />
+      <workItem from="1607417894215" duration="1731000" />
+      <workItem from="1607422411327" duration="81000" />
+      <workItem from="1607422500531" duration="35000" />
+      <workItem from="1607422544407" duration="12236000" />
+      <workItem from="1607444549755" duration="8482000" />
+      <workItem from="1607504426062" duration="10704000" />
     </task>
     <task id="LOCAL-00093" summary="Update registration.html.twig">
       <created>1603098425100</created>
@@ -677,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607087430369</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="fix">
+      <created>1607090222382</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1607090222383</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,7 +742,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor change" />
     <MESSAGE value="Add unsubscribe newsletter" />
     <MESSAGE value="update design registration.html.twig" />
     <MESSAGE value="workspace.xml" />
@@ -738,158 +766,7 @@
     <MESSAGE value="Add pagination" />
     <MESSAGE value="Update admin panel" />
     <MESSAGE value="Add veille + fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add veille + fix" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy" timestamp="1601279178725">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="539" y="133" width="481" height="566" key="#HTTP_Proxy/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279178725" />
-    <state x="711" y="344" key="#Notifications" timestamp="1601484939812">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="711" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1601484939812" />
-    <state x="552" y="178" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606932472721">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606932472721" />
-    <state x="572" y="165" width="699" height="488" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279474318" />
-    <state x="459" y="205" width="673" height="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1602833996191" />
-    <state x="603" y="207" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697228807" />
-    <state x="702" y="322" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605816077749">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="702" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605816077749" />
-    <state x="542" y="256" width="688" height="396" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1602579179217" />
-    <state x="585" y="130" width="412" height="638" key="#com.intellij.ide.util.MemberChooser" timestamp="1601449217498">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600010184065" />
-    <state x="585" y="130" width="412" height="638" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1601449217498" />
-    <state x="514" y="192" width="494" height="489" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603094925439">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="661" y="232" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599936065920" />
-    <state x="514" y="192" width="494" height="489" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1603094925439" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602667807668">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602667807668" />
-    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603790313023">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="565" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603040203652" />
-    <state x="449" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/67.27.1299.741@67.27.1299.741" timestamp="1603790313023" />
-    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2" timestamp="1603977075119">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602096238105" />
-    <state x="585" y="281" width="912" height="904" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600352290753" />
-    <state x="2336" y="234" width="912" height="692" key="CommitChangelistDialog2/1920.169.1366.768/0.196.1920.1004@1920.169.1366.768" timestamp="1600430781209" />
-    <state x="229" y="62" width="912" height="676" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1603977075119" />
-    <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey" timestamp="1601283941171">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="450" y="311" width="523" height="171" key="ComposerInitDialogKey/67.27.1299.741@67.27.1299.741" timestamp="1601283941171" />
-    <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog" timestamp="1600249031908">
-      <screen x="0" y="196" width="1920" height="1004" />
-    </state>
-    <state x="100" y="98" width="1720" height="1002" key="DiffContextDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600249031908" />
-    <state x="743" y="167" width="374" height="358" key="FileChooserDialogImpl" timestamp="1607069427265">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="743" y="167" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607069427265" />
-    <state x="743" y="357" width="424" height="484" key="FileChooserDialogImpl/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600412370803" />
-    <state x="570" y="146" width="374" height="358" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1603715281398" />
-    <state width="1802" height="209" key="GridCell.Tab.0.bottom" timestamp="1600695028102">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1874" height="327" key="GridCell.Tab.0.bottom/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1802" height="209" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028102" />
-    <state width="1802" height="209" key="GridCell.Tab.0.center" timestamp="1600695028101">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1874" height="327" key="GridCell.Tab.0.center/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1802" height="209" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028101" />
-    <state width="1802" height="209" key="GridCell.Tab.0.left" timestamp="1600695028099">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1874" height="327" key="GridCell.Tab.0.left/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1802" height="209" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028099" />
-    <state width="1802" height="209" key="GridCell.Tab.0.right" timestamp="1600695028102">
-      <screen x="72" y="27" width="1848" height="1053" />
-    </state>
-    <state width="1874" height="327" key="GridCell.Tab.0.right/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259170054" />
-    <state width="1802" height="209" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600695028102" />
-    <state x="299" y="133" width="824" height="526" key="IDE.errors.dialog" timestamp="1603890987456">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="299" y="133" width="824" height="526" key="IDE.errors.dialog/67.27.1299.741@67.27.1299.741" timestamp="1603890987456" />
-    <state x="487" y="116" width="449" height="561" key="NewPhpClassDialog" timestamp="1603092994361">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="487" y="116" width="449" height="561" key="NewPhpClassDialog/67.27.1299.741@67.27.1299.741" timestamp="1603092994361" />
-    <state x="770" y="88" width="272" height="446" key="RollbackChangesDialog" timestamp="1603034828841">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="770" y="88" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603034828841" />
-    <state x="770" y="282" width="369" height="633" key="RollbackChangesDialog/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600242528645" />
-    <state x="588" y="90" width="272" height="446" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1602761076842" />
-    <state x="813" y="117" key="RollbackChangesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1600697379861" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1605513283944">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605513283944" />
-    <state x="461" y="355" key="SettingsEditor/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600259164113" />
-    <state x="344" y="38" key="SettingsEditor/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601280691930" />
-    <state x="344" y="38" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1603090427617" />
-    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1600525657486">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1600525657486" />
-    <state x="361" y="147" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605523498556">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="361" y="147" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605523498556" />
-    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1602672126324" />
-    <state x="611" y="257" width="201" height="279" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601279744545">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="611" y="257" width="201" height="279" key="com.intellij.database.actions.DdlActions$CreateObject$1/1920.169.1366.768/67.27.1299.741@67.27.1299.741" timestamp="1601279744545" />
-    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1600527298075">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="790" y="407" width="340" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1920.1040@0.0.1920.1040" timestamp="1600527298075" />
-    <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599996117910">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="818" y="258" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599996117910" />
-    <state x="548" y="109" width="353" height="566" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1605014173468">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="548" y="109" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605014173468" />
-    <state x="438" y="105" width="353" height="566" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/67.27.1299.741@67.27.1299.741" timestamp="1601302905800" />
-    <state x="330" y="259" width="1418" height="813" key="dock-window-1" timestamp="1604930375959">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="330" y="259" width="1418" height="813" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604930375959" />
-    <state x="736" y="157" width="870" height="812" key="find.popup" timestamp="1605815051323">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="736" y="157" width="870" height="812" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605815051323" />
-    <state x="651" y="207" width="618" height="783" key="find.popup/1920.169.1366.768/0.196.1920.1004@0.196.1920.1004" timestamp="1600344058587" />
-    <state x="565" y="139" width="588" height="578" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1603699050100" />
-    <state x="380" y="175" key="run.anything.popup" timestamp="1602680846028">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1602680846028" />
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1602748171209">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1602748171209" />
-    <state x="441" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602760867695">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="441" y="310" width="540" height="172" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.1299.741@67.27.1299.741" timestamp="1602760867695" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

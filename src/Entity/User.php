@@ -45,7 +45,7 @@ class User implements UserInterface
      * @ORM\Column(type="string")
      * @Assert\Length(
      *     min="6",
-     *     max="25",
+     *     max="100",
      *     allowEmptyString = false,
      *     minMessage = "Minimum {{ limit }} caractères de long pour le mot de passe",
      *     maxMessage = "Maximum {{ limit }} caractères de long pour le mot de passe",
@@ -68,6 +68,16 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $token;
+
+    /**
+     * @ORM\Column(type="date")
+     */
+    private $date;
+
+    public function __construct()
+    {
+        $this->date = new \DateTime();
+    }
 
     public function getId(): ?int
     {
@@ -174,6 +184,18 @@ class User implements UserInterface
     public function setToken(string $token): self
     {
         $this->token = $token;
+
+        return $this;
+    }
+
+    public function getDate(): ?\DateTimeInterface
+    {
+        return $this->date;
+    }
+
+    public function setDate(\DateTimeInterface $date): self
+    {
+        $this->date = $date;
 
         return $this;
     }

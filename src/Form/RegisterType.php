@@ -31,7 +31,8 @@ class RegisterType extends AbstractType
                 'first_options'  => ['label' => 'Mot de passe'],
                 'second_options' => ['label' => 'Répéter le mot de passe'],
             ])
-            ->add('AccepterLesConditions', CheckboxType::class, array(
+            ->add('conditions', CheckboxType::class, array(
+                'label' => "Accepter le RGPD",
                 'mapped' => false,
                 'required' => true,
                 'invalid_message' => 'Vous devez accepter les conditions pour continuer.',

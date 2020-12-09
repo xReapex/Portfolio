@@ -5,7 +5,9 @@ namespace App\Services;
 use App\Repository\FeedbacksRepository;
 use App\Repository\NewsletterRepository;
 use App\Repository\UserRepository;
+use CMEN\GoogleChartsBundle\GoogleCharts\Charts\Material\ColumnChart;
 use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
+use DoctrineExtensions\Query\Mysql\Date;
 
 class AdminChart
 {
@@ -90,5 +92,34 @@ class AdminChart
         $pieChart->getOptions()->setColors(['#cde4f1', '#d2ede3', '#f7e4d1']);
 
         return $pieChart;
+    }
+
+    public function getWebsiteLastFourMonthChart()
+    {
+
+        $date = date("d/m/y");
+        $date_mois_annee = date("m/y");
+
+        $chart = new ColumnChart();
+        $chart->getData()->setArrayToDataTable([
+            ['Mois', 'Création utilisateurs', 'Création de feedbacks', 'Ajouts dans la newsletter'],
+            [date("d/y", strtotime($date." -4 days")), $this->userRepository->getAllUserByMonth(date('m - 4'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 4'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 4'))['value']],
+            [date("d/y", strtotime($date." -3 days")), $this->userRepository->getAllUserByMonth(date('m - 3'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 3'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 3'))['value']],
+            [date("d/y", strtotime($date." -2 days")), $this->userRepository->getAllUserByMonth(date('m - 2'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 2'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 2'))['value']],
+            [date("d/y", strtotime($date." -1 days")), $this->userRepository->getAllUserByMonth(date('m - 1'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 1'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 1'))['value']]
+        ]);
+
+        $chart->getOptions()->getChart()
+            ->setTitle('Statistique du mois '. $date_mois_annee)
+            ->setSubtitle("Actualisé le $date");
+        $chart->getOptions()
+            ->setBars('vertical')
+            ->setHeight(300)
+            ->setWidth(800)
+            ->setColors(['#cde4f1', '#d2ede3', '#f7e4d1'])
+            ->getVAxis()
+            ->setFormat('decimal');
+
+        return $chart;
     }
 }

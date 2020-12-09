@@ -6,28 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/admin/AdminController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Feedbacks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Newsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Newsletter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/FeedbacksRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/FeedbacksRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/NewsletterRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/NewsletterRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/_edit_user.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/_user_card.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/include/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/navbar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EasyAdmin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EasyAdmin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/AdminChart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/AdminChart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Bundles/EasyAdminBundle/welcome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Bundles/EasyAdminBundle/welcome.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -361,14 +345,7 @@
       <workItem from="1607422500531" duration="35000" />
       <workItem from="1607422544407" duration="12236000" />
       <workItem from="1607444549755" duration="8482000" />
-      <workItem from="1607504426062" duration="10704000" />
-    </task>
-    <task id="LOCAL-00093" summary="Update registration.html.twig">
-      <created>1603098425100</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1603098425100</updated>
+      <workItem from="1607504426062" duration="15475000" />
     </task>
     <task id="LOCAL-00094" summary="Update authentication system">
       <created>1603108145876</created>
@@ -706,7 +683,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607090222383</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Adding Administration">
+      <created>1607519847831</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1607519847832</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -742,7 +726,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add unsubscribe newsletter" />
     <MESSAGE value="update design registration.html.twig" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Stable v" />
@@ -767,6 +750,7 @@
     <MESSAGE value="Update admin panel" />
     <MESSAGE value="Add veille + fix" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Adding Administration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Administration" />
   </component>
 </project>

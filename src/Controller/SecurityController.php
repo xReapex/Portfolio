@@ -109,7 +109,7 @@ class SecurityController extends AbstractController
             $manager->flush();
 
             // Flash Message Success
-            $this->addFlash('success', 'Votre email a bien été confirmé !');
+            $this->addFlash('validation_success', 'Votre email a bien été confirmé !');
 
             return $this->redirectToRoute('app_login');
         }

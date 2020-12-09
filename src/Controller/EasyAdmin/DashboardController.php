@@ -43,6 +43,7 @@ class DashboardController extends AbstractDashboardController
         $websiteContentChart = $this->adminChart->getWebsiteContentChart();
         $websiteUserStateChart = $this->adminChart->getWebsiteUserStateChart();
         $websiteContentByDateChart = $this->adminChart->getWebsiteContentByDateChart();
+        $websiteLastFourMonthChart = $this->adminChart->getWebsiteLastFourMonthChart();
 
         return $this->render('@EasyAdmin/welcome.html.twig', [
             'usersCount' => $this->userRepository->countAllUsers(),
@@ -50,7 +51,8 @@ class DashboardController extends AbstractDashboardController
             'newsletterCount' => $this->newsletterRepository->countAllNewsletter(),
             'chart' => $websiteContentChart,
             'chart2' => $websiteUserStateChart,
-            'chart3' => $websiteContentByDateChart
+            'chart3' => $websiteContentByDateChart,
+            'chart4' => $websiteLastFourMonthChart
         ]);
     }
 

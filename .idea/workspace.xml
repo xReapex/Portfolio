@@ -7,11 +7,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EasyAdmin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EasyAdmin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/vendors~app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/vendors~app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Feedbacks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/FeedBacksType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/FeedBacksType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/AdminChart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/AdminChart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Bundles/EasyAdminBundle/welcome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Bundles/EasyAdminBundle/welcome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,14 +348,13 @@
       <workItem from="1607422500531" duration="35000" />
       <workItem from="1607422544407" duration="12236000" />
       <workItem from="1607444549755" duration="8482000" />
-      <workItem from="1607504426062" duration="15475000" />
-    </task>
-    <task id="LOCAL-00094" summary="Update authentication system">
-      <created>1603108145876</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1603108145876</updated>
+      <workItem from="1607504426062" duration="15753000" />
+      <workItem from="1607526918095" duration="1996000" />
+      <workItem from="1607534504722" duration="1629000" />
+      <workItem from="1607609525742" duration="1241000" />
+      <workItem from="1607691799850" duration="453000" />
+      <workItem from="1607696070259" duration="791000" />
+      <workItem from="1607705227924" duration="1247000" />
     </task>
     <task id="LOCAL-00095" summary="UP to date">
       <created>1603108957455</created>
@@ -690,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607519847832</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Add last 4 months stats">
+      <created>1607524810300</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1607524810301</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -726,7 +735,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update design registration.html.twig" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Stable v" />
     <MESSAGE value="SKills update in Service" />
@@ -751,6 +759,7 @@
     <MESSAGE value="Add veille + fix" />
     <MESSAGE value="fix" />
     <MESSAGE value="Adding Administration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Administration" />
+    <MESSAGE value="Add last 4 months stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add last 4 months stats" />
   </component>
 </project>

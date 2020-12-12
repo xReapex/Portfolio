@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Feedbacks;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -24,12 +25,22 @@ class FeedBacksType extends AbstractType
     {
         $user = $this->security->getUser()->getUsername();
         $builder
-            ->add('Title', TextType::class, [
+            ->add('Title', ChoiceType::class, [
                 'help' => 'Quel est l\'objet de votre commentaire ?',
-                'attr' => [
-                    'placeholder' => 'Mon super commentaire !'
-                ],
-                'label' => "Titre"
+                'placeholder' => 'Choisissez un titre',
+                'label' => "Titre",
+                'choices' => [
+                    'Expérience positive' => [
+                        'J\'adore ce site' => 'J\'adore ce site',
+                        'J\'aime bien ce site' => 'J\'aime bien ce site',
+                        'Le site est correct' => 'Le site est correct'
+                    ],
+                    'Expérience négative' => [
+                        'Des choses à améliorer' => 'Des choses à améliorer',
+                        'Je n\'aime pas trop ce site' => 'Je n\'aime pas trop ce site',
+                        'Ce site est horrible' => 'Ce site est horrible'
+                    ]
+                ]
             ])
 
             ->add('Content', TextType::class, [

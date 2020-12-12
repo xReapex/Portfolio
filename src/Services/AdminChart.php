@@ -15,12 +15,14 @@ class AdminChart
     private $userRepository;
     private $feedbackRepository;
     private $newsletterRepository;
+    private $colors;
 
     public function __construct(UserRepository $userRepository, FeedbacksRepository $feedbackRepository, NewsletterRepository $newsletterRepository)
     {
         $this->userRepository = $userRepository;
         $this->feedbackRepository = $feedbackRepository;
         $this->newsletterRepository = $newsletterRepository;
+        $this->colors = ['#5DADE2', '#48C9B0', '#F5B041'];
     }
     
     public function getWebsiteContentChart()
@@ -33,7 +35,7 @@ class AdminChart
                 ['Newsletter', $this->newsletterRepository->countAllNewsletter()['value']],
             ]
         );
-        $pieChart->getOptions()->setTitle('Contenus du site.');
+        $pieChart->getOptions()->setTitle('Contenu du site');
         $pieChart->getOptions()->setHeight(350);
         $pieChart->getOptions()->setWidth(400);
         $pieChart->getOptions()->getTitleTextStyle()->setBold(true);
@@ -42,7 +44,7 @@ class AdminChart
         $pieChart->getOptions()->getTitleTextStyle()->setFontName('Arial');
         $pieChart->getOptions()->getTitleTextStyle()->setFontSize(15);
         $pieChart->getOptions()->setIs3D(true);
-        $pieChart->getOptions()->setColors(['#cde4f1', '#d2ede3', '#f7e4d1']);
+        $pieChart->getOptions()->setColors($this->colors);
 
         return $pieChart;
     }
@@ -56,7 +58,7 @@ class AdminChart
                 ['En attente', $this->userRepository->count(['is_verified' => '0'])],
             ]
         );
-        $pieChart->getOptions()->setTitle('Etat utilisateurs.');
+        $pieChart->getOptions()->setTitle('Etat utilisateurs');
         $pieChart->getOptions()->setHeight(350);
         $pieChart->getOptions()->setWidth(400);
         $pieChart->getOptions()->getTitleTextStyle()->setBold(true);
@@ -65,7 +67,7 @@ class AdminChart
         $pieChart->getOptions()->getTitleTextStyle()->setFontName('Arial');
         $pieChart->getOptions()->getTitleTextStyle()->setFontSize(15);
         $pieChart->getOptions()->setIs3D(true);
-        $pieChart->getOptions()->setColors(['#cde4f1', '#d2ede3', '#f7e4d1']);
+        $pieChart->getOptions()->setColors($this->colors);
 
         return $pieChart;
     }
@@ -80,7 +82,7 @@ class AdminChart
                 ['Newsletter', $this->newsletterRepository->getAllNewsletterByMonth(date('m'))['value']]
             ]
         );
-        $pieChart->getOptions()->setTitle('Activité du mois.');
+        $pieChart->getOptions()->setTitle('Activité du mois');
         $pieChart->getOptions()->setHeight(350);
         $pieChart->getOptions()->setWidth(400);
         $pieChart->getOptions()->getTitleTextStyle()->setBold(true);
@@ -89,7 +91,7 @@ class AdminChart
         $pieChart->getOptions()->getTitleTextStyle()->setFontName('Arial');
         $pieChart->getOptions()->getTitleTextStyle()->setFontSize(15);
         $pieChart->getOptions()->setIs3D(true);
-        $pieChart->getOptions()->setColors(['#cde4f1', '#d2ede3', '#f7e4d1']);
+        $pieChart->getOptions()->setColors($this->colors);
 
         return $pieChart;
     }
@@ -102,7 +104,7 @@ class AdminChart
 
         $chart = new ColumnChart();
         $chart->getData()->setArrayToDataTable([
-            ['Mois', 'Création utilisateurs', 'Création de feedbacks', 'Ajouts dans la newsletter'],
+            ['Mois', 'Créations utilisateurs', 'Créations de feedbacks', 'Ajouts dans la newsletter'],
             [date("d/y", strtotime($date." -4 days")), $this->userRepository->getAllUserByMonth(date('m - 4'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 4'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 4'))['value']],
             [date("d/y", strtotime($date." -3 days")), $this->userRepository->getAllUserByMonth(date('m - 3'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 3'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 3'))['value']],
             [date("d/y", strtotime($date." -2 days")), $this->userRepository->getAllUserByMonth(date('m - 2'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 2'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 2'))['value']],
@@ -110,13 +112,13 @@ class AdminChart
         ]);
 
         $chart->getOptions()->getChart()
-            ->setTitle('Statistique du mois '. $date_mois_annee)
+            ->setTitle('Statistiques des 4 derniers mois')
             ->setSubtitle("Actualisé le $date");
         $chart->getOptions()
             ->setBars('vertical')
             ->setHeight(300)
             ->setWidth(800)
-            ->setColors(['#cde4f1', '#d2ede3', '#f7e4d1'])
+            ->setColors($this->colors)
             ->getVAxis()
             ->setFormat('decimal');
 

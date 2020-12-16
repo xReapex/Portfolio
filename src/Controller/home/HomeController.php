@@ -86,6 +86,7 @@ class HomeController extends AbstractController
      */
     public function sendNewsletter(EmailManager $emailManager)
     {
+        //On envoie tout les emails et on redirige
         $emailManager->sendAllEmails();
         return $this->redirectToRoute('app.home');
     }

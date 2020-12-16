@@ -9,8 +9,6 @@ use App\Repository\FeedbacksRepository;
 use App\Repository\NewsletterRepository;
 use App\Repository\UserRepository;
 use App\Services\AdminChart;
-use CMEN\GoogleChartsBundle\GoogleCharts\Charts\Material\LineChart;
-use CMEN\GoogleChartsBundle\GoogleCharts\Charts\PieChart;
 use DateTime;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;

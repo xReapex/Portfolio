@@ -6,15 +6,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/vendors~app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/vendors~app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Feedbacks.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Feedbacks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/FeedBacksType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/FeedBacksType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/about/skills/SkillsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/home/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/AdminChart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/AdminChart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bundles/EasyAdminBundle/welcome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Bundles/EasyAdminBundle/welcome.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +173,9 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/beberlei/doctrineextensions" />
+      <path value="$PROJECT_DIR$/vendor/symfony/lock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/rate-limiter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hQEHlGYc7TEjD4sPvpm6nkekyp" />
@@ -355,13 +362,11 @@
       <workItem from="1607691799850" duration="453000" />
       <workItem from="1607696070259" duration="791000" />
       <workItem from="1607705227924" duration="1247000" />
-    </task>
-    <task id="LOCAL-00095" summary="UP to date">
-      <created>1603108957455</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1603108957455</updated>
+      <workItem from="1607775195574" duration="828000" />
+      <workItem from="1607934151156" duration="1824000" />
+      <workItem from="1607940281075" duration="4466000" />
+      <workItem from="1608026503958" duration="12000" />
+      <workItem from="1608043809648" duration="665000" />
     </task>
     <task id="LOCAL-00096" summary="update design login">
       <created>1603110505312</created>
@@ -699,7 +704,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607524810301</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="fix + 5.2">
+      <created>1607775504316</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1607775504316</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -735,7 +747,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="workspace.xml" />
     <MESSAGE value="Stable v" />
     <MESSAGE value="SKills update in Service" />
     <MESSAGE value="Update project vue to load faster (+7s -&gt; -4s)" />
@@ -760,6 +771,7 @@
     <MESSAGE value="fix" />
     <MESSAGE value="Adding Administration" />
     <MESSAGE value="Add last 4 months stats" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add last 4 months stats" />
+    <MESSAGE value="fix + 5.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix + 5.2" />
   </component>
 </project>

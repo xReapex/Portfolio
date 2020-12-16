@@ -105,10 +105,10 @@ class AdminChart
         $chart = new ColumnChart();
         $chart->getData()->setArrayToDataTable([
             ['Mois', 'Créations utilisateurs', 'Créations de feedbacks', 'Ajouts dans la newsletter'],
-            [date("d/y", strtotime($date." -4 days")), $this->userRepository->getAllUserByMonth(date('m - 4'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 4'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 4'))['value']],
-            [date("d/y", strtotime($date." -3 days")), $this->userRepository->getAllUserByMonth(date('m - 3'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 3'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 3'))['value']],
-            [date("d/y", strtotime($date." -2 days")), $this->userRepository->getAllUserByMonth(date('m - 2'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 2'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 2'))['value']],
-            [date("d/y", strtotime($date." -1 days")), $this->userRepository->getAllUserByMonth(date('m - 1'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 1'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 1'))['value']]
+            [date("m/y", strtotime($date_mois_annee." -4 months")), $this->userRepository->getAllUserByMonth(date('m - 4'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 4'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 4'))['value']],
+            [date("m/y", strtotime($date_mois_annee." -3 months")), $this->userRepository->getAllUserByMonth(date('m - 3'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 3'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 3'))['value']],
+            [date("m/y", strtotime($date_mois_annee." -2 months")), $this->userRepository->getAllUserByMonth(date('m - 2'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 2'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 2'))['value']],
+            [date("m/y", strtotime($date_mois_annee." -1 months")), $this->userRepository->getAllUserByMonth(date('m - 1'))['value'], $this->feedbackRepository->getAllFeedbackByMonth(date('m - 1'))['value'], $this->newsletterRepository->getAllNewsletterByMonth(date('m - 1'))['value']]
         ]);
 
         $chart->getOptions()->getChart()

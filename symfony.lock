@@ -254,6 +254,18 @@
     "swiftmailer/swiftmailer": {
         "version": "v6.2.3"
     },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "71599f5b0fdeeeec0fb90e9b17c85e6f5e1350c1"
+        },
+        "files": [
+            "./public/.htaccess"
+        ]
+    },
     "symfony/asset": {
         "version": "v5.1.5"
     },
@@ -381,6 +393,18 @@
     "symfony/intl": {
         "version": "v5.1.5"
     },
+    "symfony/lock": {
+        "version": "5.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "5.2",
+            "ref": "13350583a83fa636bf45a5fb62da3bdc73be52a1"
+        },
+        "files": [
+            "./config/packages/lock.yaml"
+        ]
+    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
@@ -476,6 +500,9 @@
     },
     "symfony/property-info": {
         "version": "v5.1.5"
+    },
+    "symfony/rate-limiter": {
+        "version": "v5.2.0"
     },
     "symfony/routing": {
         "version": "5.1",

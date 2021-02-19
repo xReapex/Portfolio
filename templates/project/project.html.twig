@@ -8,7 +8,37 @@
         <div class="centre">
             <div>
                 <h2>Portfolio de projets</h2>
-                <p>Bienvenue sur la page qui regroupe tous mes projets répertoriés à ce jour. Vous pouvez soit accéder directement à mon<a href="https://gitlab.com/reapex" class="text-warning"> GitLab</a> ou bien parcourir les différents thèmes de mes projets. Vous pouvez par exemple commencer à aller voir mes <a href="#projet-formation" class="text-info">projets de formation</a>, c'est à dire les projets qui m'ont permis de me former dans diverses technologies... Vous pouvez également trouver des <a href="#projet-perso" class="text-success">projets personnels</a> de tous types...</p>
+                <p>Bienvenue sur la page qui regroupe tous mes projets répertoriés à ce jour. Vous pouvez soit accéder directement à mon<a href="https://gitlab.com/reapex" class="text-warning"> GitLab</a> ou bien parcourir les différents thèmes de mes projets. Vous pouvez par exemple commencer à aller voir mes <a href="#projet-formation" class="text-info">projets de formation</a>, c'est à dire les projets qui m'ont permis de me former dans diverses technologies... Vous pouvez également trouver des <a href="#projet-perso" class="text-success">projets personnels</a> de tous types...<br>Vous pouvez consulter <a href="#projet_a_la_une" class="text-danger">les projets à la une</a>, ce sont des projets maintenus et utilisablent dès maintenant ! N'hésitez pas à me faire parvenir vos avis.</p>
+            </div>
+        </div>
+
+        <div class="centre">
+            <div id="projet_a_la_une">
+                <div style="height: 25vh"></div>
+                <center><h1 >Projets à la une</h1></center><br><br>
+                <div class="row">
+                    <div class="zoom col-sm-6">
+                        <div class="card border-info project-card" style="width: 18rem; height: 100%">
+                            <div class="card-body">
+                                <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> Gestion de budget</h7>
+                                <h6 class="card-text">Ce projet est une application de bureau de gestion de budget. Gérez votre budget depuis votre ordinateur, saisissez votre budget puis ajoutez des dépenses ou des rentrées d'argent puis analysez votre bilan <a class="text-info" href="{{ path('app.projet.download.gdb') }}"><i class="fas fa-download"></i></a> . <a class="text-info" href="{{ path('app.projet.docs.url_generator', {'name': 'gdb'}) }}">Docs</a></h6>
+                                <a href="https://gitlab.com/reapex/gestionnaire-de-budget/-/blob/master/README.md" class="btn btn-primary" target="_blank"><i class="fab fa-readme"></i> README.md</a>
+                                <a href="https://gitlab.com/reapex/gestionnaire-de-budget" class="btn btn-warning" target="_blank"><i class="fab fa-gitlab"></i> Gitlab</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zoom col-sm-6">
+                        <div class="card border-info project-card" style="width: 18rem; height: 100%">
+                            <div class="card-body">
+                                <h7 class="card-title"><c class="text-warning"><i class="fab fa-gitlab"></i></c> Catalogue de films</h7>
+                                <h6 class="card-text">Ce projet est un site servant de catalogue de films, retrouvez vos films ou séries, leurs notes ou bien découvrez de nouveaux films ou série à voir en triant par genres. Créez un compte pour profiter pleinement du site. <a class="text-info" href="{{ path('app.projet.docs.url_generator', {'name': 'catalogue'}) }}">Docs</a></h6>
+                                <a href="https://gitlab.com/reapex/site_symfony5/-/blob/master/README.md" class="btn btn-primary" target="_blank"><i class="fab fa-readme"></i> README.md</a>
+                                <a href="https://gitlab.com/reapex/site_symfony5" class="btn btn-warning" target="_blank"><i class="fab fa-gitlab"></i> Gitlab</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

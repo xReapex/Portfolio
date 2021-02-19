@@ -70,4 +70,23 @@ class ProjectController extends AbstractController
         }
         return $this->redirectToRoute('app.project');
     }
+
+    /**
+     * @Route("/projet/dwl/gdb", name="app.projet.download.gdb")
+     */
+    public function downloadExecutable(): RedirectResponse
+    {
+        return new RedirectResponse('https://gitlab.com/reapex/gestionnaire-de-budget/-/archive/v1.0.3/gestionnaire-de-budget-v1.0.3.zip');
+    }
+
+    /**
+     * @Route("/projet/docs/{name}", name="app.projet.docs.url_generator")
+     * @param $name
+     */
+    public function generateProjetDocsRoute($name)
+    {
+
+        if ($name === "gdb"){return $this->render('project/projet/gdb_docs.html.twig');}
+        if ($name === "catalogue"){return $this->render('project/projet/catalogue_docs.html.twig');}
+    }
 }

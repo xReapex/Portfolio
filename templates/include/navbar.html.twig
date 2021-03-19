@@ -9,16 +9,16 @@
             {% if is_granted('ROLE_USER') %}
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item underline-link">
-                    <a class="nav-link nav-test" href="{{ path('app.about') }}"><i class="fas fa-address-card"></i> A propos</a>
+                    <a class="nav-link nav-test" href="{{ path('app.about') }}">A propos</a>
                 </li>
                 <li class="nav-item underline-link">
-                    <a class="nav-link nav-test" href="{{ path('app.project') }}"><i class="fas fa-project-diagram"></i> Projets</a>
+                    <a class="nav-link nav-test" href="{{ path('app.project') }}">Projets</a>
                 </li>
                 <li class="nav-item underline-link">
-                    <a class="nav-link nav-test" href="{{ path('app.veille') }}"><i class="fas fa-lightbulb"></i> Veille</a>
+                    <a class="nav-link nav-test" href="{{ path('app.veille') }}">Veille</a>
                 </li>
                 <li class="nav-item underline-link">
-                    <a class="nav-link nav-test" href="{{ path('app.feedbacks.home') }}"><i class="fas fa-comments"></i> Feedbacks</a>
+                    <a class="nav-link nav-test" href="{{ path('app.feedbacks.home') }}">Feedbacks</a>
                 </li>
             </ul>
             {% endif %}

@@ -16,3 +16,8 @@
 .phpunit.result.cache
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
+
+.gitignore
+.idea
+/tests
+/translations

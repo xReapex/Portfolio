@@ -19,11 +19,18 @@ class VeilleController extends AbstractController
         $rss_link = "https://www.01net.com/rss/actualites/securite/";
         $rss_load = simplexml_load_file($rss_link);
 
-        // img
-        $link = $rss_load->channel->item->enclosure['url'];
+        $i = 0;
+        $res = [];
+
+        foreach ($rss_load->channel->item as $item){
+            array_push($res, $item);
+            $i++;
+
+            if ($i > 5) break;
+        };
 
         return $this->render('veille/veille.html.twig', [
-            'link' => $link
+            "items" => $res
         ]);
     }
 }

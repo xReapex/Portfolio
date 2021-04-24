@@ -5,16 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
+    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="Update &amp; fix">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/veille/VeilleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/veille/VeilleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/projet/catalogue_docs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/projet/catalogue_docs.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/projet/gdb_docs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/projet/gdb_docs.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/veille/veille.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/veille/veille.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,10 +202,10 @@
       <recent name="$PROJECT_DIR$/public/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\portfolio_website\public\local" />
       <recent name="C:\wamp64\www\portfolio_website\public" />
       <recent name="C:\wamp64\www\portfolio_website\config\packages" />
       <recent name="C:\wamp64\www\portfolio_website\src\Controller\admin" />
-      <recent name="C:\wamp64\www\portfolio_website\public\local" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
@@ -408,7 +406,30 @@
       <workItem from="1617098127907" duration="4000" />
       <workItem from="1617128156528" duration="2871000" />
       <workItem from="1617270342297" duration="4527000" />
-      <workItem from="1617436416011" duration="6996000" />
+      <workItem from="1617436416011" duration="7545000" />
+      <workItem from="1617612409438" duration="1700000" />
+      <workItem from="1617621486983" duration="1170000" />
+      <workItem from="1617629853234" duration="1838000" />
+      <workItem from="1617782537212" duration="3769000" />
+      <workItem from="1618067894868" duration="33000" />
+      <workItem from="1618067988488" duration="521000" />
+      <workItem from="1618145693879" duration="2119000" />
+      <workItem from="1618213577484" duration="26000" />
+      <workItem from="1618213614732" duration="3278000" />
+      <workItem from="1618244034107" duration="2040000" />
+      <workItem from="1618250295166" duration="624000" />
+      <workItem from="1618408424688" duration="2705000" />
+      <workItem from="1618415442776" duration="1490000" />
+      <workItem from="1618470716876" duration="80000" />
+      <workItem from="1618567784955" duration="953000" />
+      <workItem from="1618911498442" duration="20000" />
+      <workItem from="1618911548639" duration="2157000" />
+      <workItem from="1618991146669" duration="7036000" />
+      <workItem from="1619116412372" duration="1775000" />
+      <workItem from="1619182949579" duration="502000" />
+      <workItem from="1619183495796" duration="114000" />
+      <workItem from="1619183649253" duration="78000" />
+      <workItem from="1619275181330" duration="19000" />
     </task>
     <task id="LOCAL-00097" summary="update design login">
       <created>1603111327222</created>

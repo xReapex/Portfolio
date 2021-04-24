@@ -4,28 +4,132 @@
 
 {% block body %}
 
-    <div class="container" style="margin-top: 3%">
-        <div class="row">
+    <div class="container">
+        <div>
             <center>
-                <h1>
-                    Veille technologique
+                <h1 style="margin-top: 10%">
+                    Veille technologique (Cryptomonnaies)
                 </h1>
             </center>
-            {% for item in items %}
-                <div class="col-md-4">
-                    <div class="card" style="width: 350px; height: 500px; margin-top: 5%">
-                        <img class="card-img-top" style="object-fit: fill" src="{{ item.enclosure.attributes.url | raw }}" alt="Card image cap">
+            <p style="margin-top: 10%">Tout d'abord, une cryptomonnaies est définie telle que une monnaie numérique en
+                usage sur Internet, indépendante des réseaux bancaires et liée à un système de cryptage.<br><br>Depuis
+                quelques années, les cryptomonnaies et en particulier <i class="fab fa-bitcoin"></i> Bitcoin poussent à
+                remplacer le système actuel de payement. Les cryptomonnaies ne sont pas taxées et les différents protocol de chaque cryptomonnaies ainsi que leurs rapidité permettent des payements quasiment instantanés et un développement d'application plus facile.
+            </p>
+            <center>
+                <img style="width: 600px; height: 400px; margin-bottom: 5%" src="{{ asset('local/solana.jpg') }}">
+            </center>
+            <p>Cependant le minage de cryptomonnaies est pointé du doigt pour
+                sa consommation d'énergie dépassant parfois la consommation de pays entiers :</p>
+            <center>
+                <img style="width: 600px; height: 400px" src="{{ asset('local/Bitcoin_energie.jpg') }}">
+            </center>
+
+            <p style="margin-top: 2%">Cependant, le marché des cryptomonnaies s'étend de jour en jour et les entreprises
+                s'intéresse de plus en plus à ce marche et place beaucoup de leurs capital en eux. L'entreprise d'Elon
+                Musk, Tesla, à par exemple investi 1,5 Miliard dans le Bitcoin et offre désormais la possibilité de
+                payer avec cette cryptomonnaie.</p>
+            <center>
+                <img src="{{ asset('local/3.jpg') }}" alt="">
+            </center>
+            <p style="margin-top: 2%">D'autres acteurs financiers actuels voient l'opportunitée que sont les
+                cryptomonnaie et se décident eux aussi à participer à l'aventure, Paypal s'est par exemple mis à
+                accepter certaines cryptomonnaies pour pouvoir faire des achats avec des monnaies telles que BTC, ETH et
+                LTC. Le marché étant trés volatile, certain préferent se placer sur des monnaies stables appelées
+                "Stablecoins", c'est ce qu'a fait Visa en acceptant l'USDC (US Dollar Coin), une cryptomonnaie qui
+                corrèle avec le prix du Dollar Américain.</p>
+            <p>Depuis peu, les "NFT" (Non fungible token), qui peut être définit comme un type spécial de jeton cryptographique qui représente quelque chose d'unique, commencent à se démocratiser. De plus en plus de plateformes permettent d'acheter des NFT ou bien de publier ses propres oeuvres comme par exemple OpenSea, Foundation, MakersPlace, Zora Protocol, Nifty Gateway.</p>
+            <p>Le monde des NFT se dévoile au grand public et certaines marque organise meme des concours pour gagner de ces oeuvres virtuelle a l'effigie de la marque :</p>
+
+            <center>
+                <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Envie d&#39;avoir un <a href="https://twitter.com/hashtag/NFT?src=hash&amp;ref_src=twsrc%5Etfw">#NFT</a> chez toi ?<br>Pour participer au tirage au sort et tenter de remporter l’un de nos NFT avec son cadre numérique, il faut RT et follow <a href="https://twitter.com/McDonaldsFrance?ref_src=twsrc%5Etfw">@mcdonaldsfrance</a> au plus tard le 13 avril. <a href="https://twitter.com/hashtag/McDoNFT?src=hash&amp;ref_src=twsrc%5Etfw">#McDoNFT</a> <a href="https://t.co/jifHlmJxf0">pic.twitter.com/jifHlmJxf0</a></p>&mdash; McDonald&#39;s France (@McDonaldsFrance) <a href="https://twitter.com/McDonaldsFrance/status/1380460483493339137?ref_src=twsrc%5Etfw">April 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </center>
+        </div>
+        <div class="center">
+            <div>
+                <div class="row justify-content-center" style="margin-top: 25%">
+                    <center>
+                        <h1>Sources :</h1>
+                    </center>
+                    <div class="card col-4" style="width: 350px; height: 480px;">
+                        <a href="https://bitcoin.fr/bitcoin-cent-milliards-de-milliards-de-hashs-par-seconde/"
+                           target="_blank">
+                            <img class="card-img-top" src="{{ asset('local/1.jpg') }}">
+                        </a>
                         <div class="card-body" style="align-items: center">
-                            <h5 class="card-title">{{ item.title }}</h5>
-                            <p class="card-text">{{ item.description | u.truncate(120) }}...</p>
+                            <h5 class="card-title">Bitcoin : cent milliards de milliards de hashs par seconde : </h5>
+                            <p class="card-text">Selon certaines estimations, la puissance de calcul du réseau Bitcoin
+                                aurait ponctuellement dépassé les 100 000 000 TH/s, soit une augmentation de 100% en un
+                                an seulement.<br><br>
+                                <c class="text-muted">Publié le : 19 septembre 2019</c>
+                            </p>
                         </div>
-                        <div class="card-footer">
-                            <small class="text-muted">{{ item.pubDate }}</small>
+                    </div>
+                    <div class="card col-4" style="width: 350px; height: 480px; margin-left: 3%">
+                        <a href="https://bitcoin.fr/le-cours-du-bitcoin-en-chute-libre/" target="_blank">
+                            <img class="card-img-top" src="{{ asset('local/2.jpg') }}">
+                        </a>
+                        <div class="card-body" style="align-items: center">
+                            <h5 class="card-title">Le cours du Bitcoin en chute libre : </h5>
+                            <p class="card-text">En baisse de plus de 45% en 24 heures, le cours du bitcoin est à son
+                                plus bas niveau depuis le début de l’année.
+                                Point le plus bas atteint aujourd’hui : 3790€.
+                                – 40% en 24 heures
+                                – 47% en une semaine
+                                – 51% en un mois.<br><br>
+                                <c class="text-muted">Publié le : 13 mars 2020</c>
+                            </p>
                         </div>
                     </div>
                 </div>
-
-            {% endfor %}
+                <div class="row align-items-center" style="margin-top: 5%">
+                    <div class="card col-4" style="width: 350px; height: 480px;">
+                        <a href="https://bitcoin.fr/elon-musk-confirme-que-tesla-accepte-desormais-les-bitcoins/"
+                           target="_blank">
+                            <img class="card-img-top" src="{{ asset('local/3.jpg') }}">
+                        </a>
+                        <div class="card-body" style="align-items: center">
+                            <h5 class="card-title">Tesla accepte désormais les bitcoins : </h5>
+                            <p class="card-text">Dans un tweet publie ce matin, Elon Musk confirme qu’il est désormais
+                                possible d’acheter une Tesla en payant en bitcoin. Les bitcoins encaissés ne seront pas
+                                convertis en dollars et seront conservés directement par l’entreprise.<br><br>
+                                <c class="text-muted">Publié le : 24 mars 2021</c>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-4" style="width: 350px; height: 480px;">
+                        <a href="https://www.frandroid.com/crypto-monnaie/892677_visa-accepte-desormais-une-crypto-monnaie-la-stablecoin-usdc-mais-quest-ce-que-cest"
+                           target="_blank">
+                            <img class="card-img-top" src="{{ asset('local/4.jpg') }}"
+                                 style="width: 270px; margin-left: 8%">
+                        </a>
+                        <div class="card-body" style="align-items: center">
+                            <h5 class="card-title">Visa accepte désormais une crypto-monnaie : le stablecoin USDC
+                                : </h5>
+                            <p class="card-text">Visa, qui possède l'une des plus grandes plateformes de paiement au
+                                monde, a commencé à échanger des crypto-monnaies. Les américains auront la possibilité
+                                de payer et collecter en USDC.<br><br>
+                                <c class="text-muted">Publié le : 30 mars 2021</c>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-4" style="width: 350px; height: 480px;">
+                        <a href="https://www.phonandroid.com/paypal-permet-enfin-de-payer-en-bitcoin-et-cryptomonnaies.html"
+                           target="_blank">
+                            <img class="card-img-top" src="{{ asset('local/5.jpg') }}"
+                                 style="width: 290px; margin-left: 8%">
+                        </a>
+                        <div class="card-body" style="align-items: center">
+                            <h5 class="card-title">PayPal permet enfin de payer en Bitcoin et cryptomonnaies : </h5>
+                            <p class="card-text"><br>Les utilisateurs américains peuvent dés maintenant régler leurs
+                                achats en Bitcoin, en Ethereum ou encore en LiteCoin. Ces devises virtuelles seront
+                                acceptées sur plus de 29 millions de boutiques en ligne.<br><br>
+                                <c class="text-muted">Publié le : 30 mars 2021</c>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

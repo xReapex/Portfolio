@@ -5,16 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="Update &amp; fix">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about/about.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about/about.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/project.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/project.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/projet/catalogue_docs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/projet/catalogue_docs.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/projet/gdb_docs.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/projet/gdb_docs.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/veille/veille.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/veille/veille.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="3da18b47-9add-4f9f-9982-07e10e229f27" name="Default Changelist" comment="Update &amp; fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +179,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/Dev/binance-wallet-tracker" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -430,6 +421,7 @@
       <workItem from="1619183495796" duration="114000" />
       <workItem from="1619183649253" duration="78000" />
       <workItem from="1619275181330" duration="19000" />
+      <workItem from="1619275888037" duration="90000" />
     </task>
     <task id="LOCAL-00097" summary="update design login">
       <created>1603111327222</created>
